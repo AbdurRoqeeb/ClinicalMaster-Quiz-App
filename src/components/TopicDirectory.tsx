@@ -54,7 +54,7 @@ export const TopicDirectory: React.FC<TopicDirectoryProps> = ({
           </div>
           <h2 className="text-lg sm:text-xl font-bold text-slate-900 uppercase tracking-tight">Clinical Topics Directory ({CLINICAL_TOPICS.length} Topics)</h2>
           <p className="text-slate-500 text-xs sm:text-sm mt-0.5">
-            Select any of the {CLINICAL_TOPICS.length} curriculum topics (Pages 1–72) to practice board vignettes and review key pearls.
+            Select any of the {CLINICAL_TOPICS.length} curriculum topics to practice board vignettes and review key pearls.
           </p>
         </div>
 
@@ -123,13 +123,13 @@ export const TopicDirectory: React.FC<TopicDirectoryProps> = ({
               }`}
             >
               <div>
-                {/* Card Header: Category & Page Badge */}
+                {/* Card Header: Category & Question Count */}
                 <div className="flex items-center justify-between gap-2 text-[10px] mb-2 font-bold">
                   <span className="text-indigo-800 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded-xs uppercase tracking-wider">
                     {topic.category}
                   </span>
                   <span className="text-slate-500 font-mono">
-                    {topic.pageRange}
+                    {topic.questionCount} Qs
                   </span>
                 </div>
 

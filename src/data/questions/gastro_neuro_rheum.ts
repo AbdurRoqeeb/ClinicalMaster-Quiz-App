@@ -2,942 +2,404 @@ import { Question } from '../../types';
 
 export const GASTRO_NEURO_RHEUM_QUESTIONS: Question[] = [
   // ----------------------------------------------------
-  // GASTROINTESTINAL BLEEDING (UPPER & LOWER) (Pages 7-10)
+  // MANAGEMENT OF UPPER GI BLEEDING (Pages 37-40)
   // ----------------------------------------------------
   {
-    id: 'gib_q1',
-    topicId: 'gi_bleeding',
-    topicTitle: 'Gastrointestinal Bleeding (Upper & Lower)',
+    id: 'ugib_q1',
+    topicId: 'upper_gi_bleeding',
+    topicTitle: 'Management of Upper GI Bleeding',
     questionNumber: 1,
-    clinicalVignette: 'A 54-year-old man presents to the emergency department with a 6-hour history of vomiting bright red blood. He has a known history of alcohol-related cirrhosis and portal hypertension. On arrival, his blood pressure is 88/50 mmHg and heart rate is 122 bpm. Which of the following is the most appropriate initial pharmacological agent to administer while preparing for urgent endoscopy?',
+    clinicalVignette: 'A 62-year-old man presents with massive hematemesis and melena. He has known liver cirrhosis. On examination: blood pressure is 85/50 mmHg, heart rate is 128 bpm, extremities are cold and clammy, and he has marked splenomegaly. While initiating IV fluid resuscitation with packed red blood cells, which pharmacological regimen should be started immediately prior to emergency endoscopy?',
     options: [
-      { id: 'A', text: 'Intravenous tranexamic acid' },
-      { id: 'B', text: 'Intravenous vasoactive agent (e.g., Terlipressin or Octreotide)' },
-      { id: 'C', text: 'Oral beta-blocker (propranolol)' },
-      { id: 'D', text: 'High-dose oral antacid suspension' }
+      { id: 'A', text: 'Intravenous Terlipressin (or Octreotide) plus prophylactic intravenous Ceftriaxone' },
+      { id: 'B', text: 'Oral Propranolol 40 mg twice daily plus oral sucralfate' },
+      { id: 'C', text: 'Intravenous Tranexamic acid 1 g stat alone' },
+      { id: 'D', text: 'High-dose oral antacid suspension via nasogastric tube' }
     ],
-    correctOption: 'B',
-    correctAnswerText: 'Intravenous vasoactive agent (e.g., Terlipressin or Octreotide)',
-    explanation: 'In suspected acute variceal bleeding, intravenous vasoactive therapy (Terlipressin, Octreotide, or Somatostatin) must be started immediately upon presentation before endoscopy. These agents induce splanchnic vasoconstriction, reducing portal venous inflow and decreasing variceal pressure, thereby controlling hemorrhage and reducing rebleeding and mortality.',
+    correctOption: 'A',
+    correctAnswerText: 'Intravenous Terlipressin (or Octreotide) plus prophylactic intravenous Ceftriaxone',
+    explanation: 'In suspected acute variceal hemorrhage, vasoactive drugs (Terlipressin, Octreotide, Somatostatin) must be initiated immediately on presentation before diagnostic endoscopy to reduce splanchnic blood flow and lower portal venous pressure. Short-term prophylactic antibiotic therapy (IV Ceftriaxone 1 g/day for up to 7 days) is mandatory because bacterial infections occur in up to 50% of cirrhotic bleeders; antibiotic prophylaxis significantly reduces early rebleeding, spontaneous bacterial peritonitis, and all-cause mortality.',
     optionRationales: {
-      A: 'Tranexamic acid has not shown mortality benefit in acute variceal hemorrhage and increases thromboembolic risk in cirrhosis.',
-      B: 'Correct. Intravenous vasoactive agents (Terlipressin / Octreotide) reduce portal pressure and are first-line prior to endoscopy.',
-      C: 'Non-selective beta-blockers are used for secondary prophylaxis, but are strictly contraindicated in acute hypovolemic shock / active bleeding.',
-      D: 'Oral antacids are ineffective for acute variceal hemorrhage.'
+      A: 'Correct. Vasoactive agents (Terlipressin/Octreotide) reduce portal inflow while prophylactic Ceftriaxone reduces sepsis, rebleeding, and mortality.',
+      B: 'Non-selective beta-blockers (propranolol) are strictly contraindicated in acute shock/active bleeding; they are used only for secondary prophylaxis once stabilized.',
+      C: 'Tranexamic acid has no proven mortality benefit in variceal bleeding and increases thromboembolic complications in cirrhosis.',
+      D: 'Oral antacids are completely ineffective for life-threatening variceal hemorrhage.'
     },
-    keyTakeaway: 'Early administration of IV vasoactive agents (Terlipressin / Octreotide) alongside prophylactic antibiotics is mandatory in acute variceal bleeding.',
-    sourcePageRef: 'Pages 7–8, Q1',
+    keyTakeaway: 'Early IV vasoactive therapy (Terlipressin / Octreotide) combined with prophylactic antibiotics (IV Ceftriaxone) is mandatory in acute variceal bleeding.',
+    sourcePageRef: 'Pages 37–38, Q1',
     difficulty: 'High Yield',
-    tags: ['Variceal Bleeding', 'Terlipressin', 'Octreotide', 'Cirrhosis']
+    tags: ['Variceal Bleeding', 'Terlipressin', 'Ceftriaxone Prophylaxis', 'Cirrhosis', 'Upper GI Bleed']
   },
   {
-    id: 'gib_q2',
-    topicId: 'gi_bleeding',
-    topicTitle: 'Gastrointestinal Bleeding (Upper & Lower)',
+    id: 'ugib_q2',
+    topicId: 'upper_gi_bleeding',
+    topicTitle: 'Management of Upper GI Bleeding',
     questionNumber: 2,
-    clinicalVignette: 'A 68-year-old man with osteoarthritis taking high-dose naproxen presents with melena and fatigue. Hemoglobin is 7.2 g/dL. Endoscopy reveals a 2-cm clean-based ulcer (Forrest class III) in the gastric antrum with no active bleeding or visible vessel. What is the appropriate endoscopic and pharmacological management?',
+    clinicalVignette: 'A 58-year-old man presents with melena following 2 weeks of high-dose ibuprofen use for severe osteoarthritis. Emergency upper endoscopy reveals a 1.5-cm peptic ulcer in the duodenal bulb with active arterial spurting (Forrest Class Ia). Which endoscopic intervention is recommended as the standard of care for definitive hemostasis?',
     options: [
-      { id: 'A', text: 'Dual endoscopic therapy (epinephrine injection + hemoclip) plus IV PPI infusion for 72 hours' },
-      { id: 'B', text: 'No endoscopic intervention required; switch to oral PPI and discontinue NSAIDs' },
-      { id: 'C', text: 'Endoscopic band ligation' },
-      { id: 'D', text: 'Emergency surgical partial gastrectomy' }
+      { id: 'A', text: 'Epinephrine (adrenaline) injection alone as monotherapy' },
+      { id: 'B', text: 'Dual endoscopic therapy (e.g., Epinephrine injection combined with thermal coagulation or mechanical through-the-scope hemoclips)' },
+      { id: 'C', text: 'Argon plasma coagulation alone without mechanical clipping' },
+      { id: 'D', text: 'Immediate emergency laparotomy and partial gastrectomy without endoscopic therapy' }
     ],
     correctOption: 'B',
-    correctAnswerText: 'No endoscopic intervention required; switch to oral PPI and discontinue NSAIDs',
-    explanation: 'According to the Forrest Classification of peptic ulcer bleeding, a clean-based ulcer (Forrest Class III) has an extremely low risk of rebleeding (<5%) and does not require endoscopic hemostatic therapy (no clips, thermal, or epinephrine needed). The patient can be transitioned to oral high-dose PPI therapy, have offending NSAIDs stopped, and undergo outpatient management.',
+    correctAnswerText: 'Dual endoscopic therapy (e.g., Epinephrine injection combined with thermal coagulation or mechanical through-the-scope hemoclips)',
+    explanation: 'For high-risk peptic ulcer bleeding (Forrest Class Ia active spurting, Ib active oozing, or IIa non-bleeding visible vessel), dual endoscopic therapy is guideline-mandated. Epinephrine injection provides transient local vasoconstriction and initial visualization, but must ALWAYS be combined with a second definitive hemostatic modality (mechanical hemoclips or thermal contact coagulation / bipolar probe). Epinephrine monotherapy is inadequate due to unacceptably high rebleeding rates.',
     optionRationales: {
-      A: 'Endoscopic therapy and 72-hour IV PPI infusions are reserved for high-risk stigmata (Forrest Ia, Ib, IIa, IIb).',
-      B: 'Correct. Forrest III clean-based ulcers do not warrant endoscopic therapy; oral PPI and stopping NSAIDs is sufficient.',
-      C: 'Band ligation is indicated for esophageal varices, not gastric peptic ulcers.',
-      D: 'Surgery is reserved for refractory bleeding failing repeat endoscopy.'
+      A: 'Epinephrine monotherapy has high rebleeding rates and is inferior to combination therapy.',
+      B: 'Correct. Dual therapy (epinephrine injection plus mechanical hemoclip or thermal coagulation) is the standard of care.',
+      C: 'Argon plasma coagulation is non-contact and insufficient for deep arterial spurters in peptic ulcers.',
+      D: 'Surgery is reserved for refractory bleeding that fails repeated endoscopic intervention.'
     },
-    keyTakeaway: 'Clean-based peptic ulcers (Forrest III) have very low rebleeding risk and do not require endoscopic therapy.',
-    sourcePageRef: 'Page 8, Q2',
+    keyTakeaway: 'High-risk bleeding peptic ulcers (Forrest Ia, Ib, IIa) require dual endoscopic therapy (epinephrine injection plus mechanical hemoclip or thermal coagulation).',
+    sourcePageRef: 'Page 38, Q2',
+    difficulty: 'High Yield',
+    tags: ['Peptic Ulcer', 'Forrest Classification', 'Dual Endoscopy', 'Hemoclips', 'Hemostasis']
+  },
+  {
+    id: 'ugib_q3',
+    topicId: 'upper_gi_bleeding',
+    topicTitle: 'Management of Upper GI Bleeding',
+    questionNumber: 3,
+    clinicalVignette: 'A 70-year-old woman presents with a single episode of mild coffee-ground emesis. Her initial Glasgow-Blatchford Score (GBS) is calculated as 0 (Hemoglobin 13.5 g/dL, Blood Urea 4.2 mmol/L, Systolic BP 125 mmHg, Heart Rate 72 bpm, no melena, syncope, hepatic disease, or heart failure). Which of the following is the most appropriate management plan?',
+    options: [
+      { id: 'A', text: 'Urgent ICU admission, balloon tamponade, and emergent angiography' },
+      { id: 'B', text: 'Safe outpatient management with low risk of requiring blood transfusion or endoscopic intervention' },
+      { id: 'C', text: 'Immediate endotracheal intubation and emergency surgical consultation' },
+      { id: 'D', text: 'High-dose IV PPI infusion for 72 hours in the high-dependency unit' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Safe outpatient management with low risk of requiring blood transfusion or endoscopic intervention',
+    explanation: 'The Glasgow-Blatchford Score (GBS) is the standard risk-stratification score used at initial presentation of upper GI bleeding before endoscopy. A GBS of 0 (or score <= 1 in many clinical guidelines) identifies very low-risk patients who have virtually zero risk of mortality, negligible need for endoscopic hemostatic intervention, and no requirement for blood transfusion. Such patients can be safely discharged for outpatient diagnostic workup.',
+    optionRationales: {
+      A: 'ICU and balloon tamponade are for catastrophic refractory variceal shock.',
+      B: 'Correct. A GBS of 0 identifies very low risk, allowing safe outpatient management without hospital admission.',
+      C: 'Intubation and emergent surgery are completely unnecessary for a GBS score of 0.',
+      D: 'Continuous 72-hour IV PPI infusions are indicated only after successful endoscopic treatment of high-risk ulcer stigmata.'
+    },
+    keyTakeaway: 'A Glasgow-Blatchford Score (GBS) of 0 identifies very low-risk upper GI bleed patients who can safely be managed as outpatients.',
+    sourcePageRef: 'Pages 38–39, Q3',
     difficulty: 'Core Clinical',
-    tags: ['Peptic Ulcer', 'Forrest Classification', 'Endoscopy', 'Upper GI Bleeding']
+    tags: ['Glasgow-Blatchford Score', 'GBS', 'Risk Stratification', 'Upper GI Bleeding', 'Triage']
   },
   {
-    id: 'gib_q3',
-    topicId: 'gi_bleeding',
-    topicTitle: 'Gastrointestinal Bleeding (Upper & Lower)',
-    questionNumber: 3,
-    clinicalVignette: 'A 74-year-old woman presents with painless, large-volume maroon-to-bright red rectal bleeding (hematochezia). She is hemodynamically stable. An upper endoscopy is performed and is completely normal. What is the most common cause of acute massive lower gastrointestinal bleeding in this age group?',
-    options: [
-      { id: 'A', text: 'Colonic diverticulosis' },
-      { id: 'B', text: 'Hemorrhoids' },
-      { id: 'C', text: 'Colonic adenocarcinoma' },
-      { id: 'D', text: 'Ischemic colitis' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Colonic diverticulosis',
-    explanation: 'Colonic Diverticulosis is the most common cause of acute, massive, painless lower gastrointestinal bleeding in elderly adults (accounting for 30–50% of cases). Diverticula form where penetrating vasa recta breach the muscularis propria, exposing the nutrient artery to mechanical stretch and segmental thinning, leading to sudden arterial hemorrhage into the lumen.',
-    optionRationales: {
-      A: 'Correct. Diverticulosis is the leading cause of major painless lower GI bleeding in older adults.',
-      B: 'Hemorrhoids typically cause small-volume bright red blood on toilet paper or dripping into the bowl, not large-volume maroon hematochezia.',
-      C: 'Colonic malignancy causes chronic occult blood loss, microcytic anemia, or bowel obstruction, rarely acute massive bleeding.',
-      D: 'Ischemic colitis presents with crampy abdominal pain followed by bloody diarrhea in patients with cardiovascular risk factors.'
-    },
-    keyTakeaway: 'Colonic diverticulosis is the leading etiology of acute, massive, painless lower gastrointestinal bleeding in older adults.',
-    sourcePageRef: 'Pages 8–9, Q3',
-    difficulty: 'High Yield',
-    tags: ['Lower GI Bleeding', 'Diverticulosis', 'Hematochezia', 'Geriatrics']
-  },
-  {
-    id: 'gib_q4',
-    topicId: 'gi_bleeding',
-    topicTitle: 'Gastrointestinal Bleeding (Upper & Lower)',
+    id: 'ugib_q4',
+    topicId: 'upper_gi_bleeding',
+    topicTitle: 'Management of Upper GI Bleeding',
     questionNumber: 4,
-    clinicalVignette: 'A 60-year-old man with alcoholic cirrhosis presents with acute upper GI bleeding from esophageal varices. In addition to hemodynamic resuscitation and intravenous octreotide, which of the following prophylactic medications is proven to significantly reduce the risk of spontaneous bacterial peritonitis, rebleeding, and overall mortality?',
+    clinicalVignette: 'A 65-year-old cirrhotic patient with massive refractory esophageal variceal hemorrhage continues to bleed exsanguinating amounts of blood despite endoscopic band ligation and IV terlipressin infusion. As a temporary bridge to definitive rescue therapy (TIPS / Shunt), a Sengstaken-Blakemore tube is placed and inflated. What is the maximum recommended duration for continuous balloon inflation to prevent ischemic pressure necrosis and esophageal perforation?',
     options: [
-      { id: 'A', text: 'Prophylactic short-course IV antibiotic (e.g., Ceftriaxone 1 g daily for up to 7 days)' },
-      { id: 'B', text: 'Oral ciprofloxacin for 6 months' },
-      { id: 'C', text: 'Intravenous metronidazole' },
-      { id: 'D', text: 'Intravenous broad-spectrum antifungal (fluconazole)' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Prophylactic short-course IV antibiotic (e.g., Ceftriaxone 1 g daily for up to 7 days)',
-    explanation: 'Bacterial infections (bacteremia, SBP, pneumonia) develop in up to 50% of cirrhotic patients with acute GI hemorrhage due to bacterial translocation and immune dysfunction. Routine short-course prophylactic antibiotics (IV Ceftriaxone 1 g/day for up to 7 days, or oral norfloxacin/ciprofloxacin) significantly decrease rebleeding rates, prevent SBP/sepsis, and improve overall survival.',
-    optionRationales: {
-      A: 'Correct. Prophylactic IV Ceftriaxone for up to 7 days is a guideline-mandated standard of care in cirrhotic GI bleeding.',
-      B: 'Long-term 6-month fluoroquinolones are unnecessary and breed antimicrobial resistance.',
-      C: 'Metronidazole does not cover common Gram-negative enteric rods causing SBP/sepsis in cirrhosis.',
-      D: 'Routine antifungal prophylaxis is not indicated.'
-    },
-    keyTakeaway: 'Short-course antibiotic prophylaxis (Ceftriaxone 1 g IV daily for up to 7 days) reduces rebleeding and mortality in cirrhotic variceal bleeding.',
-    sourcePageRef: 'Page 9, Q4',
-    difficulty: 'High Yield',
-    tags: ['Cirrhosis', 'Variceal Bleeding', 'Ceftriaxone Prophylaxis', 'SBP Prevention']
-  },
-  {
-    id: 'gib_q5',
-    topicId: 'gi_bleeding',
-    topicTitle: 'Gastrointestinal Bleeding (Upper & Lower)',
-    questionNumber: 5,
-    clinicalVignette: 'A 78-year-old man with chronic atrial fibrillation and vascular disease presents with sudden-onset severe, crampy left lower quadrant abdominal pain followed 4 hours later by moderate-volume bloody diarrhea. Colonoscopy reveals pale, edematous mucosa with petechial hemorrhages and dusky ulcerations sharply demarcated at the splenic flexure. What is the most likely diagnosis?',
-    options: [
-      { id: 'A', text: 'Ulcerative colitis' },
-      { id: 'B', text: 'Ischemic colitis' },
-      { id: 'C', text: 'Clostridioides difficile colitis' },
-      { id: 'D', text: 'Angiodysplasia' }
+      { id: 'A', text: '6 hours' },
+      { id: 'B', text: '24 hours (with periodic deflation)' },
+      { id: 'C', text: '72 hours continuously' },
+      { id: 'D', text: '7 days' }
     ],
     correctOption: 'B',
-    correctAnswerText: 'Ischemic colitis',
-    explanation: 'Ischemic colitis results from transient non-occlusive hypoperfusion of the mesenteric microvasculature. It characteristically affects "watershed" regions of the colon with vulnerable collateral blood supply—most notably the Splenic Flexure (Griffiths\' point, between SMA and IMA) and the Rectosigmoid Junction (Sudeck\'s point). It presents with acute crampy abdominal pain rapidly followed by bloody diarrhea in older vascular patients.',
+    correctAnswerText: '24 hours (with periodic deflation)',
+    explanation: 'Balloon tamponade (using Sengstaken-Blakemore or Minnesota tubes) is strictly a temporary rescue bridge for catastrophic, refractory variceal bleeding when endoscopy fails. Because prolonged mucosal compression causes severe ischemic mucosal necrosis, ulceration, and catastrophic esophageal perforation, the balloon should not remain inflated continuously for more than 24 hours (and ideally no more than 12–24 hours). Deflation of the esophageal balloon every 6–12 hours for 5 minutes is recommended to maintain mucosal viability while organizing TIPS or surgery.',
     optionRationales: {
-      A: 'Ulcerative colitis begins in the rectum and spreads contiguously proximally without watershed demarcation.',
-      B: 'Correct. Crampy pain followed by bloody diarrhea affecting the splenic flexure watershed is diagnostic of ischemic colitis.',
-      C: 'C. difficile presents with watery diarrhea, leukocytosis, and pseudomembranes following antibiotic exposure.',
-      D: 'Angiodysplasia causes painless lower GI bleeding without preceding ischemic pain.'
+      A: '6 hours may be too short if organizing transfer for TIPS, though shorter duration is always safer.',
+      B: 'Correct. The maximum duration is 24 hours with intermittent deflation to prevent fatal esophageal rupture/necrosis.',
+      C: 'Leaving the balloon inflated for 72 hours causes extensive transmural esophageal necrosis and perforation.',
+      D: '7 days would inevitably cause fatal esophageal wall necrosis.'
     },
-    keyTakeaway: 'Ischemic colitis presents with acute crampy abdominal pain followed by bloody diarrhea, classically localizing to watershed zones like the splenic flexure.',
-    sourcePageRef: 'Pages 9–10, Q5',
+    keyTakeaway: 'Balloon tamponade (Sengstaken-Blakemore tube) is a short-term bridge to TIPS/surgery and must not be left inflated continuously for more than 24 hours.',
+    sourcePageRef: 'Page 39, Q4',
+    difficulty: 'High Yield',
+    tags: ['Sengstaken-Blakemore', 'Balloon Tamponade', 'Variceal Bleed', 'Esophageal Perforation']
+  },
+  {
+    id: 'ugib_q5',
+    topicId: 'upper_gi_bleeding',
+    topicTitle: 'Management of Upper GI Bleeding',
+    questionNumber: 5,
+    clinicalVignette: 'A 54-year-old man with a bleeding duodenal ulcer undergoes successful endoscopic hemoclipping and thermal coagulation. He is started on an intravenous Omeprazole bolus of 80 mg followed by a continuous infusion of 8 mg/hour for 72 hours. What is the precise physiological rationale for maintaining an intragastric pH above 6.0 following endoscopic hemostasis?',
+    options: [
+      { id: 'A', text: 'Intragastric pH > 6.0 is required to eradicate Helicobacter pylori within 24 hours' },
+      { id: 'B', text: 'Pepsin is irreversibly inactivated and platelet aggregation and fibrin clot stabilization are optimized at pH >= 6.0' },
+      { id: 'C', text: 'High intragastric pH increases gastric mucosal hydrochloric acid secretion to prevent bacterial overgrowth' },
+      { id: 'D', text: 'High pH induces splanchnic arterial vasoconstriction comparable to terlipressin' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Pepsin is irreversibly inactivated and platelet aggregation and fibrin clot stabilization are optimized at pH >= 6.0',
+    explanation: 'Platelet aggregation and blood coagulation are virtually abolished at acidic pH (< 5.4), and gastric pepsin (which lyses fibrin clots) is maximally active at pH 1.5–3.5. Raising and maintaining the intragastric pH >= 6.0 irreversibly inactivates pepsin, stabilizes platelet aggregation, prevents fibrin clot dissolution over the sealed blood vessel, and significantly reduces the risk of recurrent peptic ulcer hemorrhage.',
+    optionRationales: {
+      A: 'H. pylori eradication requires oral antibiotic combination regimens, not acute IV PPI monotherapy.',
+      B: 'Correct. At pH >= 6.0, pepsin is inactivated and platelet aggregation/fibrin clot stability is maintained.',
+      C: 'High pH suppresses acid secretion rather than increasing it.',
+      D: 'PPIs do not act on splanchnic vascular receptors.'
+    },
+    keyTakeaway: 'Maintaining intragastric pH >= 6.0 with high-dose IV PPI therapy inactivates pepsin and stabilizes platelet clot formation, preventing ulcer rebleeding.',
+    sourcePageRef: 'Pages 39–40, Q5',
+    difficulty: 'High Yield',
+    tags: ['Proton Pump Inhibitors', 'Intragastric pH', 'Pepsin Inactivation', 'Clot Stabilization']
+  },
+
+  // ----------------------------------------------------
+  // COMPARISON OF CT SCAN & MRI IN STROKE MANAGEMENT (Pages 52-53)
+  // ----------------------------------------------------
+  {
+    id: 'stroke_q1',
+    topicId: 'stroke_imaging',
+    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
+    questionNumber: 1,
+    clinicalVignette: 'A 65-year-old man presents with sudden-onset right hemiplegia and expressive aphasia starting 90 minutes ago. Non-contrast CT (NCCT) head shows no acute hemorrhage and no hyperdense MCA sign, with an Alberta Stroke Program Early CT Score (ASPECTS) of 10. What is the primary role of non-contrast CT head in the hyperacute management of suspected ischemic stroke within the thrombolysis window?',
+    options: [
+      { id: 'A', text: 'Identifying salvageable ischemic penumbra' },
+      { id: 'B', text: 'Rapidly ruling out intracranial hemorrhage and large established core infarction before intravenous thrombolysis' },
+      { id: 'C', text: 'Visualizing the precise site of distal cortical microvascular thrombosis' },
+      { id: 'D', text: 'Confirming the specific histologic subtype of ischemic neuronal necrosis' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Rapidly ruling out intracranial hemorrhage and large established core infarction before intravenous thrombolysis',
+    explanation: 'The primary, indispensable clinical role of non-contrast head CT in hyperacute stroke (<= 4.5 hours) is to rapidly exclude acute intracranial hemorrhage (which is an absolute contraindication to thrombolysis) and detect early extensive established infarction (such as hypoattenuation involving > 1/3 of the MCA territory, which carries prohibitive bleeding risk). NCCT is widely available, rapid (<1 minute), and reliably rules out bleeding.',
+    optionRationales: {
+      A: 'Ischemic penumbra requires CT Perfusion (CTP) or MRI DWI-PWI mismatch, not routine NCCT.',
+      B: 'Correct. Non-contrast CT is performed primarily to rule out intracranial hemorrhage and massive established infarct.',
+      C: 'Distal cortical thrombi require CT Angiography (CTA) or MR Angiography (MRA).',
+      D: 'Histology cannot be determined by non-contrast CT.'
+    },
+    keyTakeaway: 'The primary goal of non-contrast CT head in acute stroke is rapid exclusion of intracranial hemorrhage prior to thrombolysis.',
+    sourcePageRef: 'Page 52, Q1',
+    difficulty: 'High Yield',
+    tags: ['Stroke Imaging', 'NCCT', 'Thrombolysis', 'Intracranial Hemorrhage', 'ASPECTS']
+  },
+  {
+    id: 'stroke_q2',
+    topicId: 'stroke_imaging',
+    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
+    questionNumber: 2,
+    clinicalVignette: 'A 58-year-old woman presents with acute left-sided weakness 2 hours after symptom onset. On MRI brain, Diffusion-Weighted Imaging (DWI) shows high signal intensity (bright) with corresponding low signal on Apparent Diffusion Coefficient (ADC) in the right middle cerebral artery territory, while T2/FLAIR images appear entirely normal. What does this "DWI-FLAIR mismatch" signify?',
+    options: [
+      { id: 'A', text: 'An acute ischemic lesion within the early time window (<4.5 hours) where brain tissue is salvageable before irreversible FLAIR hyperintensity develops' },
+      { id: 'B', text: 'A subacute ischemic stroke occurring more than 48 hours ago' },
+      { id: 'C', text: 'An acute subarachnoid hemorrhage with false-negative CT' },
+      { id: 'D', text: 'An imaging artifact caused by patient motion during MRI acquisition' }
+    ],
+    correctOption: 'A',
+    correctAnswerText: 'An acute ischemic lesion within the early time window (<4.5 hours) where brain tissue is salvageable before irreversible FLAIR hyperintensity develops',
+    explanation: 'Diffusion-Weighted Imaging (DWI) is exquisitely sensitive to cytotoxic edema (restricted water diffusion) within minutes of arterial occlusion. In contrast, T2/FLAIR hyperintensity requires 4 to 6 hours to develop as vasogenic edema and tissue breakdown accumulate. Therefore, a lesion visible on DWI but not yet visible on FLAIR ("DWI-FLAIR mismatch") definitively establishes that the stroke is hyperacute (< 4.5 hours old), making the patient eligible for IV thrombolysis even when the exact time of symptom onset is unknown.',
+    optionRationales: {
+      A: 'Correct. DWI-positive with FLAIR-negative proves the stroke is < 4.5 hours old (salvageable ischemic tissue).',
+      B: 'Subacute strokes (>48 hours) show prominent FLAIR and T2 hyperintensity.',
+      C: 'Subarachnoid hemorrhage appears hyperintense on FLAIR in CSF spaces, not an isolated parenchymal DWI lesion.',
+      D: 'This is a genuine biological mismatch validating hyperacute ischemia.'
+    },
+    keyTakeaway: 'DWI-FLAIR mismatch (positive DWI, negative FLAIR) proves that an ischemic stroke is within the 4.5-hour thrombolysis window.',
+    sourcePageRef: 'Pages 52–53, Q2',
+    difficulty: 'High Yield',
+    tags: ['DWI-FLAIR Mismatch', 'MRI Brain', 'Thrombolysis Window', 'Cytotoxic Edema']
+  },
+  {
+    id: 'stroke_q3',
+    topicId: 'stroke_imaging',
+    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
+    questionNumber: 3,
+    clinicalVignette: 'A 70-year-old man goes to bed normal at 10:00 PM and awakens at 6:00 AM with left hemiparesis and hemineglect ("wake-up stroke"). Because the exact time of stroke onset is unknown, which advanced neuroimaging strategy is indicated by current AHA/ASA guidelines to determine eligibility for intravenous thrombolysis (alteplase / tenecteplase)?',
+    options: [
+      { id: 'A', text: 'Routine non-contrast CT head alone' },
+      { id: 'B', text: 'MRI brain demonstrating DWI positive lesion with negative FLAIR (DWI-FLAIR mismatch) or CT perfusion showing ischemic core vs penumbra mismatch' },
+      { id: 'C', text: 'Skull X-ray and carotid Doppler ultrasonography' },
+      { id: 'D', text: 'Immediate cerebral angiography via femoral artery catheterization' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'MRI brain demonstrating DWI positive lesion with negative FLAIR (DWI-FLAIR mismatch) or CT perfusion showing ischemic core vs penumbra mismatch',
+    explanation: 'In "wake-up strokes" and strokes with unknown time of onset, advanced neuroimaging has revolutionized patient selection. Based on the WAKE-UP trial, patients with MRI DWI-FLAIR mismatch (indicating stroke onset < 4.5 hours) benefit significantly from IV thrombolysis with excellent functional recovery. Alternatively, automated CT Perfusion (CTP) demonstrating a small ischemic core with a large salvageable penumbral mismatch qualifies patients for thrombolysis or endovascular thrombectomy.',
+    optionRationales: {
+      A: 'NCCT alone cannot determine the precise age of the ischemic core in wake-up strokes.',
+      B: 'Correct. MRI DWI-FLAIR mismatch or CT Perfusion core-penumbra mismatch identifies candidates for reperfusion therapy.',
+      C: 'Skull X-rays and Doppler ultrasound cannot assess parenchymal brain ischemia or penumbra.',
+      D: 'Invasive catheter angiography is therapeutic for thrombectomy, but non-invasive MRI/CT perfusion is required first for selection.'
+    },
+    keyTakeaway: 'MRI DWI-FLAIR mismatch or CT Perfusion enables safe reperfusion therapy in wake-up strokes and unknown onset times.',
+    sourcePageRef: 'Page 53, Q3',
+    difficulty: 'High Yield',
+    tags: ['Wake-up Stroke', 'CT Perfusion', 'WAKE-UP Trial', 'Penumbra', 'Thrombolysis']
+  },
+  {
+    id: 'stroke_q4',
+    topicId: 'stroke_imaging',
+    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
+    questionNumber: 4,
+    clinicalVignette: 'A 60-year-old woman receives IV alteplase for acute ischemic stroke. Two hours after the infusion, she suddenly complains of severe headache, nausea, and her Glasgow Coma Scale (GCS) drops precipitously from 14 to 9 with a blood pressure of 190/110 mmHg. What is the immediate priority diagnostic and management action?',
+    options: [
+      { id: 'A', text: 'Immediately discontinue ongoing infusions, perform emergent non-contrast CT head to evaluate for symptomatic intracranial hemorrhage, and check stat fibrinogen and coagulation panel' },
+      { id: 'B', text: 'Administer high-dose intravenous heparin bolus to prevent recurrent arterial re-occlusion' },
+      { id: 'C', text: 'Administer oral aspirin 300 mg and observe in the ward' },
+      { id: 'D', text: 'Discharge to general medical ward for supportive nursing care' }
+    ],
+    correctOption: 'A',
+    correctAnswerText: 'Immediately discontinue ongoing infusions, perform emergent non-contrast CT head to evaluate for symptomatic intracranial hemorrhage, and check stat fibrinogen and coagulation panel',
+    explanation: 'Symptomatic Intracranial Hemorrhage (sICH) is the most feared and lethal complication of IV thrombolytic therapy (occurring in ~5–6% of cases). Sudden neurological deterioration, acute headache, vomiting, acute hypertension, or reduced consciousness warrants immediate cessation of any thrombolytic/antiplatelet agents, emergent non-contrast CT head to detect bleeding, STAT coagulation studies (fibrinogen, PT/INR, aPTT, platelets), and immediate preparation of reversal agents (Cryoprecipitate for fibrinogen < 150 mg/dL, tranexamic acid, and prothrombin complex concentrate).',
+    optionRationales: {
+      A: 'Correct. Stop infusions, perform emergent NCCT to confirm/exclude sICH, and check fibrinogen for reversal.',
+      B: 'Heparin is strictly contraindicated and will cause catastrophic fatal hemorrhage if intracranial bleeding has occurred.',
+      C: 'Aspirin is contraindicated during acute hemorrhagic transformation.',
+      D: 'Discharge is inappropriate; this is a neuro-critical life-threatening emergency.'
+    },
+    keyTakeaway: 'Sudden neurological deterioration after thrombolysis demands immediate drug cessation, emergent NCCT head, and stat fibrinogen/coagulation workup for sICH.',
+    sourcePageRef: 'Page 53, Q4',
+    difficulty: 'High Yield',
+    tags: ['Thrombolysis Complications', 'sICH', 'Emergency NCCT', 'Fibrinogen', 'Reversal']
+  },
+  {
+    id: 'stroke_q5',
+    topicId: 'stroke_imaging',
+    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
+    questionNumber: 5,
+    clinicalVignette: 'A 72-year-old hypertensive man presents with acute vertigo, ataxia, dysarthria, dysphagia, and right Horner\'s syndrome (lateral medullary syndrome / Wallenberg syndrome). A non-contrast head CT performed on arrival is reported as normal. Why is MRI (specifically DWI and T2) markedly superior to CT in evaluating posterior fossa and brainstem strokes?',
+    options: [
+      { id: 'A', text: 'CT produces prominent beam-hardening and streak artifacts from the dense petrous temporal and occipital bones obscuring brainstem detail' },
+      { id: 'B', text: 'CT cannot differentiate gray matter from white matter in any part of the brain' },
+      { id: 'C', text: 'MRI cannot detect ischemic strokes in the anterior circulation' },
+      { id: 'D', text: 'Posterior fossa strokes do not cause restricted water diffusion' }
+    ],
+    correctOption: 'A',
+    correctAnswerText: 'CT produces prominent beam-hardening and streak artifacts from the dense petrous temporal and occipital bones obscuring brainstem detail',
+    explanation: 'Non-contrast CT has very poor sensitivity (<20–30%) for acute posterior fossa (brainstem and cerebellar) ischemic strokes because the thick, dense surrounding bones of the skull base (petrous temporal bone and occipital bone) cause severe "beam-hardening" and streak artifacts, obscuring the brainstem and cerebellum. MRI (specifically DWI/T2/FLAIR) is not subject to bone-attenuation artifacts and has >95% sensitivity for brainstem and posterior fossa infarctions.',
+    optionRationales: {
+      A: 'Correct. Beam-hardening artifacts from the dense skull base bones severely degrade CT visualization of the brainstem.',
+      B: 'CT can differentiate cortical gray-white matter boundaries in the supratentorial hemispheres.',
+      C: 'MRI is equally superior for both anterior and posterior circulation strokes.',
+      D: 'Posterior fossa strokes cause profound cytotoxic edema and restricted diffusion visible on DWI.'
+    },
+    keyTakeaway: 'MRI DWI is the gold standard for posterior fossa/brainstem strokes because CT is obscured by dense bone beam-hardening artifacts.',
+    sourcePageRef: 'Page 53, Q5',
+    difficulty: 'High Yield',
+    tags: ['Posterior Fossa Stroke', 'Beam-Hardening Artifact', 'MRI DWI', 'Brainstem Ischemia']
+  },
+
+  // ----------------------------------------------------
+  // INDICATIONS FOR STEROID USE & STEROID EQUIVALENT DOSES (Pages 70-72)
+  // ----------------------------------------------------
+  {
+    id: 'steroid_q1',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
+    questionNumber: 1,
+    clinicalVignette: 'A 32-year-old woman with known Addison\'s disease (primary adrenal insufficiency) on daily oral maintenance therapy presents with acute bacterial gastroenteritis, persistent vomiting, high fever (39.2°C), and hypotension (BP 80/50 mmHg). What is the appropriate adjustment to her corticosteroid regimen during this acute severe physiological stress?',
+    options: [
+      { id: 'A', text: 'Temporarily discontinue all corticosteroid replacement until vomiting subsides' },
+      { id: 'B', text: 'Switch immediately to parenteral Hydrocortisone (100 mg IV stat bolus followed by 100 mg IV every 6 to 8 hours or 200 mg/24h continuous infusion) with vigorous IV saline rehydration' },
+      { id: 'C', text: 'Double her usual oral fludrocortisone dose without administering hydrocortisone' },
+      { id: 'D', text: 'Administer low-dose oral dexamethasone (0.5 mg once daily)' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Switch immediately to parenteral Hydrocortisone (100 mg IV stat bolus followed by 100 mg IV every 6 to 8 hours or 200 mg/24h continuous infusion) with vigorous IV saline rehydration',
+    explanation: 'Patients with adrenal insufficiency cannot mount an endogenous cortisol response to severe physiological stress (fever, sepsis, trauma, surgery) or retain oral medications during vomiting. Without prompt "stress-dose" parenteral hydrocortisone (100 mg IV bolus followed by 50–100 mg IV q6–8h or 200 mg/day continuous infusion) and aggressive IV 0.9% normal saline rehydration, the patient will rapidly deteriorate into fatal circulatory collapse (adrenal crisis).',
+    optionRationales: {
+      A: 'Discontinuing steroids precipitates lethal hypovolemic shock and adrenal crisis.',
+      B: 'Correct. Stress-dose IV hydrocortisone (100 mg stat, then q6-8h) with IV saline is life-saving in adrenal crisis.',
+      C: 'At high doses (>=100 mg/day), hydrocortisone provides sufficient mineralocorticoid activity; fludrocortisone is unnecessary acutely and oral drugs cannot be absorbed during vomiting.',
+      D: 'Low-dose oral dexamethasone is inadequate and cannot be retained during active vomiting.'
+    },
+    keyTakeaway: 'Adrenal insufficiency patients facing severe physiological stress or vomiting require immediate stress-dose parenteral hydrocortisone (100 mg IV bolus then q6–8h) and IV saline.',
+    sourcePageRef: 'Pages 70–71, Q1',
+    difficulty: 'High Yield',
+    tags: ['Adrenal Crisis', 'Addison Disease', 'Stress-Dose Hydrocortisone', 'Steroid Prescribing']
+  },
+  {
+    id: 'steroid_q2',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
+    questionNumber: 2,
+    clinicalVignette: 'A patient with severe Crohn\'s disease is treated with oral Prednisolone 40 mg daily for 8 weeks. His bowel symptoms resolve completely, and the physician plans to discontinue the medication. Which of the following is the most critical physiological reason for tapering systemic corticosteroids gradually rather than stopping abruptly?',
+    options: [
+      { id: 'A', text: 'To prevent sudden rebound hypoglycemia' },
+      { id: 'B', text: 'To allow recovery of the suppressed hypothalamic-pituitary-adrenal (HPA) axis and prevent acute secondary adrenal crisis' },
+      { id: 'C', text: 'To stimulate gastric acid secretion and accelerate mucosal healing' },
+      { id: 'D', text: 'To prevent acute severe hypercalcemia' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'To allow recovery of the suppressed hypothalamic-pituitary-adrenal (HPA) axis and prevent acute secondary adrenal crisis',
+    explanation: 'Exogenous corticosteroid therapy at supraphysiological doses (> 5 mg/day prednisolone equivalent) for more than 3 to 4 weeks causes prolonged negative feedback inhibition of hypothalamic CRH and pituitary ACTH secretion. This leads to bilateral adrenal cortical atrophy. Abrupt cessation of the drug unmasks severe secondary adrenal insufficiency (acute adrenal crisis) and causes severe disease rebound. Gradual dose tapering allows the pituitary-adrenal axis and adrenal cortex sufficient time (weeks to months) to recover endogenous steroidogenesis.',
+    optionRationales: {
+      A: 'Steroids cause hyperglycemia; stopping them does not cause isolated rebound hypoglycemia as the primary hazard.',
+      B: 'Correct. Gradual tapering is essential to allow HPA axis recovery and prevent life-threatening secondary adrenal crisis.',
+      C: 'Steroids do not heal ulcers; they increase peptic ulcer risk.',
+      D: 'Hypercalcemia is not the driving reason for steroid tapering.'
+    },
+    keyTakeaway: 'Corticosteroids used for >3 weeks suppress the HPA axis; gradual dose tapering is mandatory to avoid secondary adrenal crisis.',
+    sourcePageRef: 'Page 71, Q2',
+    difficulty: 'High Yield',
+    tags: ['HPA Axis Suppression', 'Steroid Tapering', 'Secondary Adrenal Insufficiency', 'Pharmacology']
+  },
+  {
+    id: 'steroid_q3',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
+    questionNumber: 3,
+    clinicalVignette: 'A 55-year-old woman with polymyalgia rheumatica requires long-term corticosteroid therapy with Prednisolone 15 mg daily for at least 12 months. Which of the following prophylactic regimens should be routinely initiated from the onset of therapy to mitigate glucocorticoid-induced osteoporosis (GIOP)?',
+    options: [
+      { id: 'A', text: 'Calcium (1,000–1,200 mg/day) and Vitamin D (800–2,000 IU/day) supplementation plus an oral bisphosphonate (e.g., Alendronate or Risedronate) based on fracture risk assessment' },
+      { id: 'B', text: 'High-dose loop diuretics and phosphate binders' },
+      { id: 'C', text: 'Immediate cessation of all dietary calcium intake to avoid hypercalciuria' },
+      { id: 'D', text: 'Daily intramuscular parathyroid hormone injections without calcium' }
+    ],
+    correctOption: 'A',
+    correctAnswerText: 'Calcium (1,000–1,200 mg/day) and Vitamin D (800–2,000 IU/day) supplementation plus an oral bisphosphonate (e.g., Alendronate or Risedronate) based on fracture risk assessment',
+    explanation: 'Glucocorticoids cause rapid bone loss within the first 3 to 6 months of therapy by inhibiting osteoblastogenesis, promoting osteoclast survival, reducing intestinal calcium absorption, and increasing renal calcium wasting. Guidelines (ACR/IOF) recommend baseline fracture risk assessment (FRAX, DEXA), lifestyle counseling, daily Calcium (1,000–1,200 mg/day) and Vitamin D (800–2,000 IU/day), plus oral bisphosphonates (Alendronate 70 mg weekly or Risedronate 35 mg weekly) in individuals at moderate-to-high fracture risk receiving >= 2.5–5 mg/day prednisolone for >= 3 months.',
+    optionRationales: {
+      A: 'Correct. Calcium, Vitamin D, and Bisphosphonates form the cornerstone of GIOP prevention.',
+      B: 'Loop diuretics increase renal calcium loss and worsen osteoporosis.',
+      C: 'Dietary calcium restriction worsens negative calcium balance and bone loss.',
+      D: 'Teriparatide (PTH analog) is second-line for very high risk, but always requires calcium/vitamin D repletion.'
+    },
+    keyTakeaway: 'Long-term corticosteroid therapy requires proactive prevention of Glucocorticoid-Induced Osteoporosis (GIOP) with Calcium, Vitamin D, and Bisphosphonates.',
+    sourcePageRef: 'Pages 71–72, Q3',
     difficulty: 'Core Clinical',
-    tags: ['Ischemic Colitis', 'Watershed Areas', 'Splenic Flexure', 'Lower GI Bleeding']
-  },
-
-  // ----------------------------------------------------
-  // MOVEMENT DISORDERS & PARKINSON'S DISEASE (Pages 33-36)
-  // ----------------------------------------------------
-  {
-    id: 'pd_q1',
-    topicId: 'movement_disorders_parkinsons',
-    topicTitle: "Movement Disorders & Parkinson's Disease",
-    questionNumber: 1,
-    clinicalVignette: 'A 66-year-old retired teacher presents with a 9-month history of a resting tremor in his right hand ("pill-rolling"), progressive slowness in buttoning his shirts (bradykinesia), and difficulty initiating walking. On examination, there is cogwheel rigidity in his right upper limb and reduced arm swing. What is the primary neuropathological hallmark of idiopathic Parkinson\'s disease?',
-    options: [
-      { id: 'A', text: 'Degeneration of GABAergic medium spiny neurons in the caudate nucleus' },
-      { id: 'B', text: 'Loss of dopaminergic neurons in the substantia nigra pars compacta with intracellular Lewy bodies (alpha-synuclein)' },
-      { id: 'C', text: 'Amyloid-beta plaques and neurofibrillary tau tangles in the hippocampus' },
-      { id: 'D', text: 'Demyelination of the corticospinal tracts' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Loss of dopaminergic neurons in the substantia nigra pars compacta with intracellular Lewy bodies (alpha-synuclein)',
-    explanation: 'Idiopathic Parkinson\'s disease is pathologically characterized by the selective loss of pigmented dopaminergic neurons in the Substantia Nigra pars compacta (SNpc) of the midbrain, accompanied by intracellular eosinophilic inclusions called Lewy bodies composed of aggregated, misfolded Alpha-Synuclein protein.',
-    optionRationales: {
-      A: 'Loss of GABAergic medium spiny neurons in the caudate is the hallmark of Huntington\'s disease.',
-      B: 'Correct. Degeneration of SNpc dopaminergic neurons with Lewy bodies (alpha-synuclein) defines Parkinson\'s disease.',
-      C: 'Amyloid plaques and tau tangles are the hallmark of Alzheimer\'s disease.',
-      D: 'Corticospinal demyelination occurs in Multiple Sclerosis or ALS.'
-    },
-    keyTakeaway: 'Parkinson\'s disease is caused by loss of dopaminergic neurons in the substantia nigra pars compacta and alpha-synuclein Lewy bodies.',
-    sourcePageRef: 'Pages 33–34, Q1',
-    difficulty: 'High Yield',
-    tags: ['Parkinson Disease', 'Substantia Nigra', 'Alpha-Synuclein', 'Lewy Bodies']
+    tags: ['GIOP', 'Osteoporosis Prophylaxis', 'Bisphosphonates', 'Prednisolone', 'Bone Health']
   },
   {
-    id: 'pd_q2',
-    topicId: 'movement_disorders_parkinsons',
-    topicTitle: "Movement Disorders & Parkinson's Disease",
-    questionNumber: 2,
-    clinicalVignette: 'A 68-year-old man with Parkinson\'s disease treated with Levodopa/Carbidopa for 6 years complains that his medication effects "wear off" 3 hours after each dose, causing severe stiffness and tremor before the next dose is due. He also experiences involuntary writhing choreiform movements of his neck and limbs 1 hour after taking his pills. What are these motor complications called, and what is the underlying mechanism?',
-    options: [
-      { id: 'A', text: 'Motor fluctuations (wearing-off) and peak-dose dyskinesias due to progressive loss of striatal dopamine storage capacity and pulsatile receptor stimulation' },
-      { id: 'B', text: 'Tardive dyskinesia from dopamine receptor blockade' },
-      { id: 'C', text: 'Serotonin syndrome from drug interactions' },
-      { id: 'D', text: 'Conversion to atypical parkinsonism (PSP)' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Motor fluctuations (wearing-off) and peak-dose dyskinesias due to progressive loss of striatal dopamine storage capacity and pulsatile receptor stimulation',
-    explanation: 'With advancing disease, progressive loss of nigrostriatal nerve terminals impairs the brain\'s capacity to buffer and store exogenous dopamine. The short plasma half-life of levodopa (60–90 min) causes pulsatile stimulation of striatal dopamine receptors, leading to "wearing-off" motor fluctuations and peak-dose dyskinesias. Management includes adding COMT inhibitors (Entacapone), MAO-B inhibitors, or dopamine agonists.',
-    optionRationales: {
-      A: 'Correct. Progressive loss of presynaptic storage leads to pulsatile levodopa levels, wearing-off, and peak-dose dyskinesia.',
-      B: 'Tardive dyskinesia is caused by chronic neuroleptic antipsychotic dopamine receptor blockade.',
-      C: 'Serotonin syndrome presents with hyperthermia, hyperreflexia, and clonus.',
-      D: 'Motor fluctuations are standard long-term levodopa complications in idiopathic PD, not PSP.'
-    },
-    keyTakeaway: 'Long-term levodopa therapy leads to "wearing-off" and peak-dose dyskinesias due to loss of presynaptic dopaminergic buffering.',
-    sourcePageRef: 'Pages 34–35, Q2',
-    difficulty: 'High Yield',
-    tags: ['Levodopa', 'Motor Fluctuations', 'Peak-Dose Dyskinesia', 'Wearing-Off']
-  },
-  {
-    id: 'pd_q3',
-    topicId: 'movement_disorders_parkinsons',
-    topicTitle: "Movement Disorders & Parkinson's Disease",
-    questionNumber: 3,
-    clinicalVignette: 'A 69-year-old man presents with parkinsonian symptoms including stiffness and slow gait. However, his history reveals recurrent unprovoked falls backwards within the first year of symptoms. Examination shows profound impairment of voluntary vertical downward gaze (supranuclear ophthalmoplegia), axial rigidity greater than limb rigidity, and lack of response to high-dose levodopa. What is the most likely diagnosis?',
-    options: [
-      { id: 'A', text: 'Idiopathic Parkinson\'s disease' },
-      { id: 'B', text: 'Progressive Supranuclear Palsy (PSP)' },
-      { id: 'C', text: 'Multiple System Atrophy (MSA)' },
-      { id: 'D', text: 'Corticobasal Degeneration' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Progressive Supranuclear Palsy (PSP)',
-    explanation: 'Progressive Supranuclear Palsy (PSP / Steele-Richardson-Olszewski syndrome) is an atypical parkinsonian tauopathy. Classic red-flag features that distinguish PSP from idiopathic PD include: (1) early unprovoked falls (especially backward instability) in year 1, (2) vertical supranuclear gaze palsy (loss of voluntary vertical saccades/downgaze), (3) prominent axial rigidity and "surprised" facial expression, and (4) poor or absent response to levodopa.',
-    optionRationales: {
-      A: 'Idiopathic PD has unilateral onset, prominent resting tremor, good levodopa response, and late falls.',
-      B: 'Correct. Early falls + vertical supranuclear gaze palsy + axial rigidity + levodopa resistance = PSP.',
-      C: 'Multiple System Atrophy features prominent early autonomic failure (orthostatic hypotension, urinary incontinence) and cerebellar ataxia.',
-      D: 'Corticobasal degeneration features asymmetric limb apraxia, cortical sensory loss, and alien limb phenomenon.'
-    },
-    keyTakeaway: 'Progressive Supranuclear Palsy (PSP) is characterized by early backward falls, vertical supranuclear gaze palsy, and poor levodopa response.',
-    sourcePageRef: 'Page 35, Q3',
-    difficulty: 'High Yield',
-    tags: ['PSP', 'Atypical Parkinsonism', 'Supranuclear Gaze Palsy', 'Tauopathy']
-  },
-  {
-    id: 'pd_q4',
-    topicId: 'movement_disorders_parkinsons',
-    topicTitle: "Movement Disorders & Parkinson's Disease",
+    id: 'steroid_q4',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
     questionNumber: 4,
-    clinicalVignette: 'A 38-year-old woman presents with bilateral postural and action tremor of the hands that worsens when holding a cup of tea or writing. She notes that a glass of wine significantly improves her tremor. Her father and grandfather had similar tremors. Examination reveals an 8-Hz kinetic tremor with no resting tremor, no rigidity, and no bradykinesia. What is the first-line pharmacological treatment for this condition?',
+    clinicalVignette: 'A patient with confirmed primary adrenal insufficiency requires lifelong maintenance hormone replacement therapy. Which combination of corticosteroids best replicates normal physiological adrenal cortical endocrine output?',
     options: [
-      { id: 'A', text: 'Levodopa/Carbidopa' },
-      { id: 'B', text: 'Propranolol or Primidone' },
-      { id: 'C', text: 'Trihexyphenidyl' },
-      { id: 'D', text: 'Haloperidol' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Propranolol or Primidone',
-    explanation: 'The clinical presentation (bilateral action/postural tremor, positive family history, improvement with alcohol, absence of parkinsonian signs) is classic for Essential Tremor. First-line pharmacological therapy for essential tremor consists of Propranolol (a non-selective beta-adrenergic blocker) or Primidone (an anticonvulsant metabolized to phenobarbital and phenylethylmalonamide).',
-    optionRationales: {
-      A: 'Levodopa treats resting tremor in Parkinson\'s disease, not essential tremor.',
-      B: 'Correct. Propranolol and Primidone are the established first-line treatments for essential tremor.',
-      C: 'Trihexyphenidyl is an anticholinergic used for parkinsonian resting tremor or dystonia.',
-      D: 'Haloperidol is a dopamine antagonist that causes drug-induced parkinsonism and tardive syndromes.'
-    },
-    keyTakeaway: 'Essential tremor is an action/postural tremor relieved by alcohol, treated first-line with Propranolol or Primidone.',
-    sourcePageRef: 'Pages 35–36, Q4',
-    difficulty: 'High Yield',
-    tags: ['Essential Tremor', 'Propranolol', 'Primidone', 'Movement Disorders']
-  },
-  {
-    id: 'pd_q5',
-    topicId: 'movement_disorders_parkinsons',
-    topicTitle: "Movement Disorders & Parkinson's Disease",
-    questionNumber: 5,
-    clinicalVignette: 'A 28-year-old man presents with progressive dysarthria, drooling, dystonic posturing of the upper limbs, and mood lability. Slit-lamp ophthalmological examination demonstrates a golden-brown ring at the limbus of the cornea (Kayser-Fleischer rings). What is the initial diagnostic laboratory profile for this disorder?',
-    options: [
-      { id: 'A', text: 'Low serum ceruloplasmin, elevated 24-hour urinary copper excretion, and elevated hepatic copper' },
-      { id: 'B', text: 'Elevated serum ceruloplasmin and low urinary copper' },
-      { id: 'C', text: 'Elevated serum ferritin and transferrin saturation' },
-      { id: 'D', text: 'Positive anti-GAD antibodies' }
+      { id: 'A', text: 'Oral Hydrocortisone (15–25 mg daily in divided doses, 2/3 on waking, 1/3 in early afternoon) plus oral Fludrocortisone (0.05–0.2 mg once daily in the morning)' },
+      { id: 'B', text: 'Oral Dexamethasone 4 mg once daily alone' },
+      { id: 'C', text: 'Intravenous Methylprednisolone 500 mg weekly' },
+      { id: 'D', text: 'Oral Prednisolone 30 mg every other day without mineralocorticoid replacement' }
     ],
     correctOption: 'A',
-    correctAnswerText: 'Low serum ceruloplasmin, elevated 24-hour urinary copper excretion, and elevated hepatic copper',
-    explanation: 'This describes Wilson\'s Disease (hepatolenticular degeneration), an autosomal recessive defect in the copper-transporting P-type ATPase (ATP7B gene). Impaired biliary copper excretion leads to toxic copper accumulation in the liver, basal ganglia (causing parkinsonism, dystonia, dysarthria, psychiatric changes), and Descemet\'s membrane of the cornea (Kayser-Fleischer rings). Diagnostic evaluation shows low serum ceruloplasmin (<20 mg/dL) and high 24-hour urinary copper (>100 ug/day).',
+    correctAnswerText: 'Oral Hydrocortisone (15–25 mg daily in divided doses, 2/3 on waking, 1/3 in early afternoon) plus oral Fludrocortisone (0.05–0.2 mg once daily in the morning)',
+    explanation: 'Primary adrenal insufficiency involves destruction of all three adrenal cortical zones, resulting in deficiency of both glucocorticoids (cortisol) and mineralocorticoids (aldosterone). Physiological maintenance replacement requires oral Hydrocortisone (15–25 mg/day split in a circadian pattern: highest dose upon waking, smaller dose in early afternoon to mimic normal circadian rhythm) PLUS oral Fludrocortisone (0.05–0.2 mg/day) to regulate sodium retention, potassium excretion, and intravascular volume.',
     optionRationales: {
-      A: 'Correct. Wilson\'s disease features low ceruloplasmin with elevated 24-hour urinary and tissue copper levels.',
-      B: 'Ceruloplasmin is characteristically reduced in >90% of Wilson\'s patients.',
-      C: 'High ferritin and transferrin saturation indicate Hemochromatosis.',
-      D: 'Anti-GAD antibodies are seen in Stiff-Person Syndrome and Type 1 Diabetes.'
+      A: 'Correct. Circadian Hydrocortisone (glucocorticoid) plus Fludrocortisone (mineralocorticoid) perfectly replaces physiological adrenal cortical secretion.',
+      B: 'Dexamethasone has zero mineralocorticoid activity, long half-life, and causes HPA suppression and cushingoid features.',
+      C: 'High-dose weekly pulses are for severe inflammatory autoimmune pulses, not physiological replacement.',
+      D: 'Prednisolone alone lacks sufficient mineralocorticoid potency for primary adrenal failure without fludrocortisone.'
     },
-    keyTakeaway: 'Wilson\'s disease causes neuropsychiatric symptoms and KF rings, diagnosed by low ceruloplasmin and elevated 24-hour urinary copper excretion.',
-    sourcePageRef: 'Page 36, Q5',
+    keyTakeaway: 'Primary adrenal insufficiency replacement requires circadian Hydrocortisone (glucocorticoid) plus Fludrocortisone (mineralocorticoid).',
+    sourcePageRef: 'Page 72, Q4',
     difficulty: 'High Yield',
-    tags: ['Wilson Disease', 'Ceruloplasmin', 'Kayser-Fleischer Rings', 'Copper Metabolism']
-  },
-
-  // ----------------------------------------------------
-  // SYSTEMIC LUPUS ERYTHEMATOSUS (SLE) (Pages 36-39)
-  // ----------------------------------------------------
-  {
-    id: 'sle_q1',
-    topicId: 'sle',
-    topicTitle: 'Systemic Lupus Erythematosus (SLE)',
-    questionNumber: 1,
-    clinicalVignette: 'A 26-year-old woman presents with photosensitive malar rash, inflammatory polyarthritis of the PIP and MCP joints, oral ulcers, and pleuritic chest pain. Urinalysis shows 3+ proteinuria and cellular casts. Serum antinuclear antibody (ANA) is positive at a titer of 1:1280 (homogeneous pattern). Which autoantibody is the MOST specific for the diagnosis of SLE and correlates closely with disease activity and lupus nephritis?',
-    options: [
-      { id: 'A', text: 'Anti-Ro/SSA' },
-      { id: 'B', text: 'Anti-double-stranded DNA (anti-dsDNA)' },
-      { id: 'C', text: 'Anti-centromere antibody' },
-      { id: 'D', text: 'Anti-histone antibody' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Anti-double-stranded DNA (anti-dsDNA)',
-    explanation: 'While ANA is highly sensitive (>98%) for SLE, Anti-dsDNA and Anti-Smith (anti-Sm) antibodies are highly specific for SLE. Furthermore, Anti-dsDNA titers fluctuate with disease activity and correlate directly with the development and flares of active Lupus Nephritis and complement consumption (low C3 and C4).',
-    optionRationales: {
-      A: 'Anti-Ro/SSA is associated with subacute cutaneous lupus and neonatal lupus with congenital heart block, but lacks the nephritis correlation of anti-dsDNA.',
-      B: 'Correct. Anti-dsDNA is highly specific for SLE and directly correlates with disease flares and lupus nephritis.',
-      C: 'Anti-centromere antibodies are specific for Limited Cutaneous Systemic Sclerosis (CREST).',
-      D: 'Anti-histone antibodies are seen in drug-induced lupus erythematosus.'
-    },
-    keyTakeaway: 'Anti-dsDNA antibodies are highly specific for SLE and correlate directly with lupus nephritis and disease activity flares.',
-    sourcePageRef: 'Pages 36–37, Q1',
-    difficulty: 'High Yield',
-    tags: ['SLE', 'Anti-dsDNA', 'Lupus Nephritis', 'Autoantibodies']
+    tags: ['Adrenal Insufficiency', 'Hydrocortisone', 'Fludrocortisone', 'Circadian Dosing']
   },
   {
-    id: 'sle_q2',
-    topicId: 'sle',
-    topicTitle: 'Systemic Lupus Erythematosus (SLE)',
-    questionNumber: 2,
-    clinicalVignette: 'A 29-year-old woman with known SLE presents for evaluation of persistent hypertension and peripheral edema. 24-hour urine protein is 3.8 g/day, and serum creatinine has risen from 0.8 to 1.6 mg/dL. Renal biopsy shows diffuse global endocapillary hypercellularity, subendothelial immune deposits ("wire-loop" lesions), and prominent capillary wall thickening. Which class of Lupus Nephritis is this, and what is the recommended induction therapy?',
-    options: [
-      { id: 'A', text: 'Class II (Mesangial proliferative); oral low-dose prednisone' },
-      { id: 'B', text: 'Class IV (Diffuse lupus nephritis); high-dose IV pulse corticosteroids plus Mycophenolate Mofetil or IV Cyclophosphamide' },
-      { id: 'C', text: 'Class V (Membranous lupus nephritis); ACE inhibitor monotherapy' },
-      { id: 'D', text: 'Class I (Minimal mesangial); observation only' },
-      { id: 'E', text: 'Class VI (Advanced sclerotic); emergency hemodialysis only' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Class IV (Diffuse lupus nephritis); high-dose IV pulse corticosteroids plus Mycophenolate Mofetil or IV Cyclophosphamide',
-    explanation: 'Class IV (Diffuse Lupus Nephritis) is the most common, severe, and aggressive form of renal involvement in SLE (>50% of glomeruli involved, wire-loop subendothelial immune complex deposits). Standard induction therapy to prevent end-stage renal disease requires high-dose corticosteroids (IV methylprednisolone pulses followed by oral prednisone) COMBINED with either Mycophenolate Mofetil (MMF) or intravenous Cyclophosphamide.',
-    optionRationales: {
-      A: 'Class II is mild mesangial disease without wire loops or nephrotic-range proteinuria.',
-      B: 'Correct. Class IV diffuse proliferative nephritis requires intensive immunosuppressive induction with pulse steroids plus MMF or Cyclophosphamide.',
-      C: 'Class V is pure subepithelial membranous disease causing nephrotic syndrome.',
-      D: 'Class I is minimal mesangial disease without clinical renal impairment.',
-      E: 'Class VI is advanced sclerotic disease (>90% glomerulosclerosis).'
-    },
-    keyTakeaway: 'Class IV (Diffuse proliferative) lupus nephritis requires intensive induction immunosuppression with pulse corticosteroids plus MMF or Cyclophosphamide.',
-    sourcePageRef: 'Pages 37–38, Q2',
-    difficulty: 'High Yield',
-    tags: ['Lupus Nephritis', 'Class IV', 'Cyclophosphamide', 'Mycophenolate']
-  },
-  {
-    id: 'sle_q3',
-    topicId: 'sle',
-    topicTitle: 'Systemic Lupus Erythematosus (SLE)',
-    questionNumber: 3,
-    clinicalVignette: 'A 31-year-old woman with SLE has a history of two unprovoked deep vein thromboses and three consecutive spontaneous first-trimester miscarriages. Laboratory testing reveals a persistently prolonged aPTT that fails to correct with normal mixing plasma, a positive lupus anticoagulant test, and high-titer anticardiolipin IgG antibodies. What is the diagnosis, and what is the long-term management for secondary thromboprophylaxis?',
-    options: [
-      { id: 'A', text: 'Immune Thrombocytopenic Purpura; oral prednisone' },
-      { id: 'B', text: 'Antiphospholipid Syndrome (APS); long-term oral anticoagulation with Warfarin (target INR 2.0–3.0)' },
-      { id: 'C', text: 'Disseminated Intravascular Coagulation; fresh frozen plasma infusions' },
-      { id: 'D', text: 'Factor V Leiden deficiency; low-dose aspirin monotherapy' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Antiphospholipid Syndrome (APS); long-term oral anticoagulation with Warfarin (target INR 2.0–3.0)',
-    explanation: 'The patient meets the Sydney criteria for Antiphospholipid Syndrome (APS / secondary to SLE): vascular thrombosis (DVT), recurrent pregnancy morbidity (miscarriages), and persistent antiphospholipid antibodies (Lupus anticoagulant / anticardiolipin). The paradox of a prolonged in vitro aPTT with in vivo hypercoagulability is classic. Long-term secondary thromboprophylaxis requires lifelong Vitamin K Antagonist (Warfarin) anticoagulation targeting an INR of 2.0–3.0.',
-    optionRationales: {
-      A: 'ITP causes isolated thrombocytopenic bleeding, not recurrent venous thromboses and miscarriages.',
-      B: 'Correct. Secondary Antiphospholipid Syndrome with thrombosis mandates long-term Warfarin anticoagulation (target INR 2-3).',
-      C: 'DIC causes widespread consumptive microvascular clotting and severe bleeding with low fibrinogen.',
-      D: 'Aspirin alone is insufficient for established venous thromboembolism in APS.'
-    },
-    keyTakeaway: 'Secondary Antiphospholipid Syndrome (thrombosis + miscarriages + aPL antibodies) requires long-term Warfarin anticoagulation (INR 2–3).',
-    sourcePageRef: 'Page 38, Q3',
-    difficulty: 'High Yield',
-    tags: ['Antiphospholipid Syndrome', 'Lupus Anticoagulant', 'Warfarin', 'Thrombosis']
-  },
-  {
-    id: 'sle_q4',
-    topicId: 'sle',
-    topicTitle: 'Systemic Lupus Erythematosus (SLE)',
-    questionNumber: 4,
-    clinicalVignette: 'A 24-year-old newly diagnosed SLE patient is initiated on Hydroxychloroquine (HCQ) 200 mg daily. She asks why this drug is recommended for all SLE patients regardless of disease severity. Which of the following represents the proven long-term clinical benefits of hydroxychloroquine in SLE?',
-    options: [
-      { id: 'A', text: 'It completely eliminates the need for any sun protection' },
-      { id: 'B', text: 'It reduces flare rates, prevents organ damage accrual, lowers thrombotic risk, and improves overall long-term survival' },
-      { id: 'C', text: 'It cures the underlying genetic defect causing autoimmunity' },
-      { id: 'D', text: 'It replaces renal transplantation in end-stage lupus nephritis' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'It reduces flare rates, prevents organ damage accrual, lowers thrombotic risk, and improves overall long-term survival',
-    explanation: 'Hydroxychloroquine (HCQ, an antimalarial / Toll-like receptor signaling modulator) is the cornerstone baseline therapy for all patients with SLE unless contraindicated. High-quality evidence confirms that continuous HCQ therapy reduces lupus flare rates, prevents cumulative irreversible organ damage, lowers the risk of arterial/venous thrombosis, and confers a substantial survival benefit.',
-    optionRationales: {
-      A: 'Sun protection (SPF 50+) remains mandatory because ultraviolet light directly triggers keratinocyte apoptosis and SLE flares.',
-      B: 'Correct. HCQ is the disease-modifying anchor in SLE, reducing flares, thrombotic events, damage accrual, and mortality.',
-      C: 'HCQ modulates endosomal TLRs and antigen presentation, but does not alter genome sequence.',
-      D: 'HCQ cannot reverse end-stage sclerotic renal failure.'
-    },
-    keyTakeaway: 'Hydroxychloroquine is the cornerstone therapy for all SLE patients, proven to reduce flares, thrombosis, damage accrual, and mortality.',
-    sourcePageRef: 'Pages 38–39, Q4',
-    difficulty: 'High Yield',
-    tags: ['Hydroxychloroquine', 'SLE Maintenance', 'Disease Modification']
-  },
-  {
-    id: 'sle_q5',
-    topicId: 'sle',
-    topicTitle: 'Systemic Lupus Erythematosus (SLE)',
+    id: 'steroid_q5',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
     questionNumber: 5,
-    clinicalVignette: 'A pregnant woman with active SLE and high-titer Anti-Ro/SSA and Anti-La/SSB antibodies undergoes routine fetal echocardiography at 20 weeks gestation. The fetal heart rate is found to be 52 bpm, with complete dissociation between atrial and ventricular contractions. What is the diagnosis?',
+    clinicalVignette: 'A 45-year-old man with severe asthma has been taking Prednisolone 20 mg daily for 6 months. How does the anti-inflammatory potency and mineralocorticoid activity of Prednisolone compare to Hydrocortisone (cortisol)?',
     options: [
-      { id: 'A', text: 'Fetal ventricular tachycardia' },
-      { id: 'B', text: 'Congenital complete (3rd-degree) atrioventricular heart block due to transplacental transfer of maternal anti-Ro/La antibodies' },
-      { id: 'C', text: 'Physiological fetal sinus bradycardia' },
-      { id: 'D', text: 'Tetralogy of Fallot' }
+      { id: 'A', text: 'Prednisolone is half as potent as hydrocortisone with zero anti-inflammatory activity' },
+      { id: 'B', text: 'Prednisolone has approximately 4 to 5 times the anti-inflammatory potency of hydrocortisone and significantly less mineralocorticoid (salt-retaining) activity' },
+      { id: 'C', text: 'Prednisolone is 30 times more potent than dexamethasone' },
+      { id: 'D', text: 'Prednisolone has pure mineralocorticoid effects with no glucocorticoid action' }
     ],
     correctOption: 'B',
-    correctAnswerText: 'Congenital complete (3rd-degree) atrioventricular heart block due to transplacental transfer of maternal anti-Ro/La antibodies',
-    explanation: 'Neonatal Lupus Erythematosus results from transplacental passage of maternal IgG Anti-Ro/SSA and Anti-La/SSB antibodies beginning at 16–24 weeks gestation. These autoantibodies bind to fetal cardiac conduction tissue (AV node and bundle of His), triggering immune-mediated inflammation, calcification, and irreversible fibrosis, producing permanent Congenital Complete (3rd-degree) Heart Block.',
+    correctAnswerText: 'Prednisolone has approximately 4 to 5 times the anti-inflammatory potency of hydrocortisone and significantly less mineralocorticoid (salt-retaining) activity',
+    explanation: 'Standard systemic corticosteroid equivalencies: Hydrocortisone (cortisol) = 20 mg (anti-inflammatory potency 1.0, mineralocorticoid potency 1.0); Prednisone / Prednisolone = 5 mg (anti-inflammatory potency 4.0–5.0, mineralocorticoid potency 0.8); Methylprednisolone = 4 mg (potency 5.0, mineralocorticoid 0.5); Dexamethasone = 0.75 mg (potency 25–30, mineralocorticoid 0). Therefore, 5 mg of prednisolone equals 20 mg of hydrocortisone (4x more potent anti-inflammatory) with slightly less mineralocorticoid salt-retaining effect.',
     optionRationales: {
-      A: 'Fetal heart rate is 52 bpm (severe bradycardia, not tachycardia).',
-      B: 'Correct. Transplacental anti-Ro/SSA antibodies cause permanent inflammatory fibrosis of the fetal AV node (congenital 3rd-degree heart block).',
-      C: 'Fetal heart rate of 52 bpm with AV dissociation is severe structural heart block, never physiological.',
-      D: 'Tetralogy of Fallot does not present as isolated complete AV block on fetal ultrasound.'
+      A: 'Prednisolone is 4–5 times MORE potent than hydrocortisone.',
+      B: 'Correct. Prednisolone is 4–5x more potent than hydrocortisone with reduced mineralocorticoid activity.',
+      C: 'Dexamethasone is ~6 times more potent than prednisolone (0.75 mg dex = 5 mg pred).',
+      D: 'Prednisolone is predominantly a glucocorticoid (anti-inflammatory), not a pure mineralocorticoid.'
     },
-    keyTakeaway: 'Maternal Anti-Ro/SSA antibodies cross the placenta to cause neonatal lupus and irreversible congenital complete heart block.',
-    sourcePageRef: 'Page 39, Q5',
+    keyTakeaway: 'Prednisolone (5 mg) is 4–5 times more potent than Hydrocortisone (20 mg) as an anti-inflammatory and has lower mineralocorticoid salt-retaining effect.',
+    sourcePageRef: 'Page 72, Q5',
     difficulty: 'High Yield',
-    tags: ['Neonatal Lupus', 'Anti-Ro/SSA', 'Congenital Heart Block', 'Pregnancy']
-  },
-
-  // ----------------------------------------------------
-  // AUTOIMMUNE HEPATITIS (AIH) (Pages 44-46)
-  // ----------------------------------------------------
-  {
-    id: 'aih_q1',
-    topicId: 'autoimmune_hepatitis',
-    topicTitle: 'Autoimmune Hepatitis (AIH)',
-    questionNumber: 1,
-    clinicalVignette: 'A 32-year-old woman presents with fatigue, jaundice, and right upper quadrant discomfort. Laboratory tests show: ALT 780 IU/L, AST 650 IU/L, Total Bilirubin 4.8 mg/dL, and Alkaline Phosphatase 120 IU/L (mild elevation). Viral hepatitis serologies (A, B, C, E) are negative. Serum protein electrophoresis shows marked hypergammaglobulinemia with elevated IgG. Which autoantibody profile is most characteristic of Type 1 Autoimmune Hepatitis?',
-    options: [
-      { id: 'A', text: 'Anti-Liver Kidney Microsome-1 (anti-LKM1) and anti-LC1' },
-      { id: 'B', text: 'Antinuclear Antibody (ANA) and Anti-Smooth Muscle Antibody (ASMA) with anti-actin specificity' },
-      { id: 'C', text: 'Antimitochondrial Antibody (AMA)' },
-      { id: 'D', text: 'Anti-Centromere Antibody' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Antinuclear Antibody (ANA) and Anti-Smooth Muscle Antibody (ASMA) with anti-actin specificity',
-    explanation: 'Type 1 Autoimmune Hepatitis (accounting for 80–90% of AIH cases worldwide, typically affecting young to middle-aged women) is characterized by positive Antinuclear Antibodies (ANA) and Anti-Smooth Muscle Antibodies (ASMA, specifically directed against F-actin) along with polyclonal IgG hypergammaglobulinemia.',
-    optionRationales: {
-      A: 'Anti-LKM1 and anti-LC1 antibodies define Type 2 AIH (which primarily affects pediatric/adolescent patients).',
-      B: 'Correct. Type 1 AIH is characterized by ANA, ASMA (anti-actin), and elevated IgG.',
-      C: 'Antimitochondrial antibodies (AMA) are the diagnostic hallmark of Primary Biliary Cholangitis (PBC).',
-      D: 'Anti-centromere antibodies are seen in CREST / limited scleroderma.'
-    },
-    keyTakeaway: 'Type 1 Autoimmune Hepatitis is characterized by positive ANA, ASMA (anti-actin), and marked polyclonal IgG hypergammaglobulinemia.',
-    sourcePageRef: 'Pages 44–45, Q1',
-    difficulty: 'High Yield',
-    tags: ['Autoimmune Hepatitis', 'Type 1 AIH', 'ANA', 'ASMA', 'IgG']
-  },
-  {
-    id: 'aih_q2',
-    topicId: 'autoimmune_hepatitis',
-    topicTitle: 'Autoimmune Hepatitis (AIH)',
-    questionNumber: 2,
-    clinicalVignette: 'A 14-year-old girl is evaluated for acute jaundice and elevated transaminases (ALT 1100 IU/L). Autoantibody panel is negative for ANA and ASMA, but positive for Anti-Liver Kidney Microsome type 1 (anti-LKM1) antibodies. Which autoantigen is targeted by anti-LKM1 in Type 2 Autoimmune Hepatitis?',
-    options: [
-      { id: 'A', text: 'Cytochrome P450 2D6 (CYP2D6)' },
-      { id: 'B', text: 'Formiminotransferase cyclodeaminase (FTCD)' },
-      { id: 'C', text: 'Pyruvate dehydrogenase complex (PDC-E2)' },
-      { id: 'D', text: 'UDP-glucuronosyltransferase' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Cytochrome P450 2D6 (CYP2D6)',
-    explanation: 'Type 2 Autoimmune Hepatitis (predominantly presenting in children and adolescent girls with rapid progression to acute liver failure) is driven by anti-LKM1 autoantibodies that specifically target the Cytochrome P450 2D6 (CYP2D6) enzyme located on the endoplasmic reticulum of hepatocytes.',
-    optionRationales: {
-      A: 'Correct. Anti-LKM1 autoantibodies in Type 2 AIH specifically target the Cytochrome P450 2D6 (CYP2D6) antigen.',
-      B: 'FTCD is targeted by anti-Liver Cytosol type 1 (anti-LC1) antibodies.',
-      C: 'PDC-E2 is the mitochondrial antigen targeted by AMA in Primary Biliary Cholangitis.',
-      D: 'UDP-glucuronosyltransferase is deficient in Gilbert and Crigler-Najjar syndromes.'
-    },
-    keyTakeaway: 'Type 2 AIH features anti-LKM1 autoantibodies targeted against Cytochrome P450 2D6 (CYP2D6).',
-    sourcePageRef: 'Page 45, Q2',
-    difficulty: 'Advanced',
-    tags: ['Type 2 AIH', 'Anti-LKM1', 'CYP2D6', 'Pediatric Hepatology']
-  },
-  {
-    id: 'aih_q3',
-    topicId: 'autoimmune_hepatitis',
-    topicTitle: 'Autoimmune Hepatitis (AIH)',
-    questionNumber: 3,
-    clinicalVignette: 'A liver biopsy is performed in a 40-year-old woman with suspected autoimmune hepatitis. What histopathological triad on liver biopsy provides the strongest histological evidence for Autoimmune Hepatitis?',
-    options: [
-      { id: 'A', text: 'Interface hepatitis (piecemeal necrosis), dense lymphoplasmacytic infiltrate with abundant plasma cells, and hepatocyte rosettes / emperipolesis' },
-      { id: 'B', text: 'Granulomatous destruction of interlobular bile ducts with ductopenia' },
-      { id: 'C', text: 'Macrovesicular steatosis with Mallory-Denk bodies and neutrophilic perivenular infiltration' },
-      { id: 'D', text: 'Concentric "onion-skin" periductal fibrosis of large bile ducts' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Interface hepatitis (piecemeal necrosis), dense lymphoplasmacytic infiltrate with abundant plasma cells, and hepatocyte rosettes / emperipolesis',
-    explanation: 'The classic liver biopsy features diagnostic of Autoimmune Hepatitis are: (1) Interface hepatitis (lymphoplasmacytic inflammatory destruction extending across the limiting plate into the hepatic lobule), (2) Dense plasma cell-rich infiltration in portal tracts, (3) Hepatocyte rosette formation, and (4) Emperipolesis (active penetration of intact lymphocytes into hepatocytes).',
-    optionRationales: {
-      A: 'Correct. Interface hepatitis + plasma cell-predominant infiltrate + hepatocyte rosettes/emperipolesis is the histological hallmark of AIH.',
-      B: 'Granulomatous bile duct destruction is typical of Primary Biliary Cholangitis (PBC).',
-      C: 'Steatosis with Mallory bodies and neutrophils describes alcoholic/non-alcoholic steatohepatitis (NASH).',
-      D: 'Concentric "onion-skin" fibrosis defines Primary Sclerosing Cholangitis (PSC).'
-    },
-    keyTakeaway: 'Liver histology in AIH characteristically shows interface hepatitis, plasma cell-rich portal infiltrates, and hepatocyte rosettes.',
-    sourcePageRef: 'Pages 45–46, Q3',
-    difficulty: 'High Yield',
-    tags: ['Liver Biopsy', 'Interface Hepatitis', 'Plasma Cells', 'AIH Pathology']
-  },
-  {
-    id: 'aih_q4',
-    topicId: 'autoimmune_hepatitis',
-    topicTitle: 'Autoimmune Hepatitis (AIH)',
-    questionNumber: 4,
-    clinicalVignette: 'A 38-year-old woman is diagnosed with Type 1 AIH (ALT 640 IU/L, IgG elevated, typical biopsy). What is the standard first-line pharmacological regimen for inducing and maintaining disease remission in Autoimmune Hepatitis?',
-    options: [
-      { id: 'A', text: 'Interferon-alpha plus ribavirin' },
-      { id: 'B', text: 'Ursodeoxycholic acid (UDCA) monotherapy' },
-      { id: 'C', text: 'Prednisolone (or Budesonide in non-cirrhotic patients) combined with Azathioprine' },
-      { id: 'D', text: 'Infliximab monotherapy' }
-    ],
-    correctOption: 'C',
-    correctAnswerText: 'Prednisolone (or Budesonide in non-cirrhotic patients) combined with Azathioprine',
-    explanation: 'The established first-line therapy for AIH is oral Prednisolone (or oral Budesonide in non-cirrhotic patients) combined with Azathioprine (a purine synthesis inhibitor). This combination achieves biochemical remission in >80% of patients while allowing rapid corticosteroid dose-tapering to minimize steroid-related adverse effects. Azathioprine is continued as long-term maintenance monotherapy.',
-    optionRationales: {
-      A: 'Interferons stimulate the immune system and can precipitate fatal fulminant liver failure in AIH.',
-      B: 'Ursodeoxycholic acid is first-line for Primary Biliary Cholangitis (PBC), not AIH.',
-      C: 'Correct. Prednisolone (or budesonide) plus Azathioprine is the standard of care for AIH induction and maintenance.',
-      D: 'TNF-alpha inhibitors like infliximab are not first-line and carry severe hepatotoxicity risks.'
-    },
-    keyTakeaway: 'First-line therapy for AIH is Prednisolone (or Budesonide) plus Azathioprine, transitioned to Azathioprine maintenance.',
-    sourcePageRef: 'Page 46, Q4',
-    difficulty: 'High Yield',
-    tags: ['AIH Treatment', 'Prednisolone', 'Azathioprine', 'Budesonide']
-  },
-  {
-    id: 'aih_q5',
-    topicId: 'autoimmune_hepatitis',
-    topicTitle: 'Autoimmune Hepatitis (AIH)',
-    questionNumber: 5,
-    clinicalVignette: 'Prior to initiating Azathioprine in a patient with newly diagnosed Autoimmune Hepatitis, which enzyme activity or genotype should be tested to avoid severe, potentially fatal drug-induced myelosuppression?',
-    options: [
-      { id: 'A', text: 'Glucose-6-phosphate dehydrogenase (G6PD)' },
-      { id: 'B', text: 'Thiopurine S-methyltransferase (TPMT) and/or NUDT15' },
-      { id: 'C', text: 'Dihydropyrimidine dehydrogenase (DPD)' },
-      { id: 'D', text: 'CYP2C19' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Thiopurine S-methyltransferase (TPMT) and/or NUDT15',
-    explanation: 'Azathioprine is converted to 6-mercaptopurine, which is inactivated by Thiopurine S-Methyltransferase (TPMT). Patients with homozygous or heterozygous TPMT deficiency (or NUDT15 variants) preferentially shunt 6-MP into toxic 6-thioguanine nucleotides (6-TGN), causing life-threatening bone marrow aplasia and profound pancytopenia. Pre-treatment TPMT testing is mandatory.',
-    optionRationales: {
-      A: 'G6PD deficiency causes acute hemolytic anemia when exposed to oxidant drugs (rasburicase, primaquine, dapsone).',
-      B: 'Correct. TPMT and NUDT15 testing prevents fatal myelosuppression before starting Azathioprine.',
-      C: 'DPD testing is performed before 5-fluorouracil / capecitabine chemotherapy.',
-      D: 'CYP2C19 metabolizes clopidogrel and PPIs.'
-    },
-    keyTakeaway: 'Always measure TPMT activity/genotype before starting Azathioprine to prevent fatal bone marrow suppression.',
-    sourcePageRef: 'Page 46, Q5',
-    difficulty: 'High Yield',
-    tags: ['TPMT', 'Azathioprine', 'Pharmacogenomics', 'Myelosuppression']
-  },
-
-  // ----------------------------------------------------
-  // INVESTIGATION OF CHRONIC DIARRHEA (Pages 49-51)
-  // ----------------------------------------------------
-  {
-    id: 'cd_q1',
-    topicId: 'chronic_diarrhea',
-    topicTitle: 'Investigation of Chronic Diarrhea',
-    questionNumber: 1,
-    clinicalVignette: 'A 42-year-old woman presents with a 4-month history of watery diarrhea (6–8 bowel movements/day). When she fasts for 24 hours prior to a colonoscopy, her diarrhea completely ceases. Fecal analysis shows: Stool Na⁺: 35 mmol/L, Stool K⁺: 25 mmol/L, Measured stool osmolality: 290 mOsm/kg. What is the calculated fecal osmotic gap, and what type of chronic diarrhea does this represent?',
-    options: [
-      { id: 'A', text: 'Fecal osmotic gap = 170 mOsm/kg; Osmotic diarrhea' },
-      { id: 'B', text: 'Fecal osmotic gap = 30 mOsm/kg; Secretory diarrhea' },
-      { id: 'C', text: 'Fecal osmotic gap = 0 mOsm/kg; Motility disorder' },
-      { id: 'D', text: 'Fecal osmotic gap = 50 mOsm/kg; Inflammatory diarrhea' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Fecal osmotic gap = 170 mOsm/kg; Osmotic diarrhea',
-    explanation: 'Fecal Osmotic Gap is calculated as: 290 – 2 × (Stool Na + Stool K). Here: 290 – 2 × (35 + 25) = 290 – 120 = 170 mOsm/kg. An osmotic gap > 100–125 mOsm/kg defines Osmotic Diarrhea (caused by unabsorbed luminal solutes, such as lactose, malabsorption, or osmotic laxatives). Crucially, osmotic diarrhea characteristically ceases during fasting, confirming the diagnosis.',
-    optionRationales: {
-      A: 'Correct. Osmotic gap is 170 mOsm/kg (>100 mOsm/kg) and cessation with fasting is pathognomonic for osmotic diarrhea.',
-      B: 'Secretory diarrhea has an osmotic gap < 50 mOsm/kg and persists during fasting.',
-      C: 'Motility disorders typically have normal osmotic gaps.',
-      D: 'Inflammatory diarrhea features blood, mucus, and elevated fecal calprotectin.'
-    },
-    keyTakeaway: 'Fecal osmotic gap > 100 mOsm/kg that resolves upon fasting is diagnostic of Osmotic Diarrhea.',
-    sourcePageRef: 'Pages 49–50, Q1',
-    difficulty: 'High Yield',
-    tags: ['Chronic Diarrhea', 'Fecal Osmotic Gap', 'Osmotic vs Secretory', 'Gastroenterology']
-  },
-  {
-    id: 'cd_q2',
-    topicId: 'chronic_diarrhea',
-    topicTitle: 'Investigation of Chronic Diarrhea',
-    questionNumber: 2,
-    clinicalVignette: 'A 55-year-old man presents with voluminous, watery diarrhea (3 L/day) that continues unabated during a 48-hour fast and wakes him from sleep at night. Stool electrolytes show: Stool Na⁺: 95 mmol/L, Stool K⁺: 40 mmol/L. Fecal osmotic gap is calculated at 20 mOsm/kg (<50 mOsm/kg). What is the mechanism of this diarrhea, and which underlying condition should be investigated?',
-    options: [
-      { id: 'A', text: 'Osmotic diarrhea; Lactose intolerance' },
-      { id: 'B', text: 'Secretory diarrhea; Neuroendocrine tumor (e.g., VIPoma, carcinoid, Zollinger-Ellison) or microscopic colitis' },
-      { id: 'C', text: 'Exudative diarrhea; Ulcerative colitis' },
-      { id: 'D', text: 'Factitious diarrhea; Ingestion of polyethylene glycol' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Secretory diarrhea; Neuroendocrine tumor (e.g., VIPoma, carcinoid, Zollinger-Ellison) or microscopic colitis',
-    explanation: 'A low fecal osmotic gap (<50 mOsm/kg), nocturnal diarrhea, high stool volume (>1 L/day), and persistence despite fasting are classic hallmarks of Secretory Diarrhea. Secretory diarrhea is caused by active mucosal chloride/water secretion or inhibition of sodium absorption, driven by bacterial toxins, enterohormones (VIPoma / WDHA syndrome, gastrinoma, carcinoid), microscopic colitis, or bile acid malabsorption.',
-    optionRationales: {
-      A: 'Osmotic diarrhea has a high osmotic gap (>100 mOsm/kg) and ceases with fasting.',
-      B: 'Correct. Low osmotic gap (<50 mOsm/kg) + persistence with fasting = Secretory diarrhea (VIPoma, carcinoid, microscopic colitis).',
-      C: 'Exudative diarrhea presents with blood, pus, and mucosal friability.',
-      D: 'Polyethylene glycol causes osmotic diarrhea with a high osmotic gap.'
-    },
-    keyTakeaway: 'Secretory diarrhea features a low fecal osmotic gap (<50 mOsm/kg), persists during fasting, and causes nocturnal diarrhea.',
-    sourcePageRef: 'Page 50, Q2',
-    difficulty: 'High Yield',
-    tags: ['Secretory Diarrhea', 'VIPoma', 'Nocturnal Diarrhea', 'Electrolytes']
-  },
-  {
-    id: 'cd_q3',
-    topicId: 'chronic_diarrhea',
-    topicTitle: 'Investigation of Chronic Diarrhea',
-    questionNumber: 3,
-    clinicalVignette: 'A 30-year-old woman presents with chronic bloating, steatorrhea (pale, foul-smelling, floating stools), iron-deficiency anemia, and an itchy, vesicular skin eruption on her elbows and knees (dermatitis herpetiformis). What is the single most sensitive and specific initial serological test for Celiac Disease?',
-    options: [
-      { id: 'A', text: 'Serum anti-gliadin antibodies (AGA)' },
-      { id: 'B', text: 'Serum IgA Anti-Tissue Transglutaminase (anti-tTG) alongside Total Serum IgA' },
-      { id: 'C', text: 'Fecal calprotectin' },
-      { id: 'D', text: 'Serum anti-parietal cell antibodies' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Serum IgA Anti-Tissue Transglutaminase (anti-tTG) alongside Total Serum IgA',
-    explanation: 'Serum IgA Anti-Tissue Transglutaminase (anti-tTG IgA) is the gold standard first-line serological screening test for celiac disease (sensitivity and specificity >95–98%). Total serum IgA must always be measured concurrently because selective IgA deficiency is 10–15 times more common in celiac disease, which would produce a false-negative IgA anti-tTG result (in which case IgG anti-tTG or IgG-DGP is used).',
-    optionRationales: {
-      A: 'Native anti-gliadin antibodies (AGA) have poor sensitivity and specificity and are obsolete.',
-      B: 'Correct. IgA anti-tTG combined with total serum IgA is the first-line screening test for celiac disease.',
-      C: 'Fecal calprotectin is a marker of neutrophilic intestinal inflammation (IBD), not celiac-specific.',
-      D: 'Anti-parietal cell antibodies are found in autoimmune atrophic gastritis (pernicious anemia).'
-    },
-    keyTakeaway: 'IgA Anti-Tissue Transglutaminase (anti-tTG) with total serum IgA is the gold standard initial screening test for Celiac Disease.',
-    sourcePageRef: 'Pages 50–51, Q3',
-    difficulty: 'High Yield',
-    tags: ['Celiac Disease', 'Anti-tTG IgA', 'Dermatitis Herpetiformis', 'Malabsorption']
-  },
-  {
-    id: 'cd_q4',
-    topicId: 'chronic_diarrhea',
-    topicTitle: 'Investigation of Chronic Diarrhea',
-    questionNumber: 4,
-    clinicalVignette: 'A 28-year-old man presents with chronic crampy lower abdominal pain, recurrent non-bloody loose stools, and significant flatulence for 6 months. He has no nocturnal symptoms, no weight loss, no anemia, and normal inflammatory markers. Stool testing for Fecal Calprotectin is requested. What is the clinical utility of Fecal Calprotectin in evaluating chronic diarrhea?',
-    options: [
-      { id: 'A', text: 'It identifies the specific bacterial pathogen causing dysentery' },
-      { id: 'B', text: 'It is a stable biomarker of neutrophilic mucosal inflammation that reliably differentiates Inflammatory Bowel Disease (IBD) from functional Irritable Bowel Syndrome (IBS)' },
-      { id: 'C', text: 'It directly measures pancreatic exocrine elastase secretion' },
-      { id: 'D', text: 'It measures the rate of colonic bile acid reabsorption' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'It is a stable biomarker of neutrophilic mucosal inflammation that reliably differentiates Inflammatory Bowel Disease (IBD) from functional Irritable Bowel Syndrome (IBS)',
-    explanation: 'Calprotectin is a calcium-binding protein released by activated neutrophils shedding into the intestinal lumen. A low fecal calprotectin (<50 ug/g) has an extremely high negative predictive value (>95%) for mucosal inflammation, effectively ruling out Inflammatory Bowel Disease (Crohn\'s/UC) and avoiding unnecessary colonoscopy in suspected Irritable Bowel Syndrome (IBS).',
-    optionRationales: {
-      A: 'Fecal calprotectin indicates inflammation, not pathogen-specific identification (stool culture/PCR does).',
-      B: 'Correct. Fecal calprotectin reliably differentiates inflammatory intestinal disease (IBD) from non-inflammatory functional disorders (IBS).',
-      C: 'Fecal elastase-1 measures pancreatic exocrine insufficiency.',
-      D: 'SeHCAT retention test evaluates bile acid malabsorption.'
-    },
-    keyTakeaway: 'Fecal Calprotectin is a sensitive stool biomarker of intestinal neutrophilic inflammation that differentiates IBD from IBS.',
-    sourcePageRef: 'Page 51, Q4',
-    difficulty: 'High Yield',
-    tags: ['Fecal Calprotectin', 'IBD vs IBS', 'Biomarkers', 'Chronic Diarrhea']
-  },
-  {
-    id: 'cd_q5',
-    topicId: 'chronic_diarrhea',
-    topicTitle: 'Investigation of Chronic Diarrhea',
-    questionNumber: 5,
-    clinicalVignette: 'A 65-year-old woman presents with chronic, watery, non-bloody diarrhea of 6 months duration. Colonoscopy shows completely normal-appearing colonic mucosa from cecum to rectum. However, random mucosal biopsies taken throughout the colon reveal a thickened subepithelial collagen band (>10 µm) beneath the surface epithelium and an intraepithelial lymphocytic infiltrate. What is the diagnosis?',
-    options: [
-      { id: 'A', text: 'Collagenous Colitis (Microscopic Colitis)' },
-      { id: 'B', text: 'Ulcerative Colitis in endoscopic remission' },
-      { id: 'C', text: 'Pseudomembranous Colitis' },
-      { id: 'D', text: 'Melanosis Coli' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Collagenous Colitis (Microscopic Colitis)',
-    explanation: 'Microscopic Colitis (subtyped into Collagenous Colitis and Lymphocytic Colitis) is a major cause of chronic watery diarrhea in middle-aged and elderly patients (often triggered by NSAIDs, PPIs, or SSRIs). The endoscopic appearance of the colonic mucosa is completely normal, but microscopic histology reveals diagnostic subepithelial collagen bands (>10 um thickness) in collagenous colitis or >20 intraepithelial lymphocytes per 100 enterocytes in lymphocytic colitis. First-line treatment is oral Budesonide.',
-    optionRationales: {
-      A: 'Correct. Normal colonoscopic appearance with a thickened subepithelial collagen band on biopsy defines Collagenous Colitis.',
-      B: 'Ulcerative colitis features mucosal distortion, crypt abscesses, and architectural destruction.',
-      C: 'Pseudomembranous colitis shows yellow-white mucosal plaques on colonoscopy.',
-      D: 'Melanosis coli shows dark brown mucosal pigmentation from chronic anthraquinone laxative abuse.'
-    },
-    keyTakeaway: 'Microscopic (Collagenous) Colitis presents with chronic watery diarrhea, a normal-appearing colonoscopy, and a thickened subepithelial collagen band on biopsy.',
-    sourcePageRef: 'Page 51, Q5',
-    difficulty: 'High Yield',
-    tags: ['Microscopic Colitis', 'Collagenous Colitis', 'Budesonide', 'Biopsy']
-  },
-
-  // ----------------------------------------------------
-  // ASSESSMENT OF DEHYDRATION (Pages 53-54)
-  // ----------------------------------------------------
-  {
-    id: 'dehyd_q1',
-    topicId: 'dehydration_assessment',
-    topicTitle: 'Assessment of Dehydration',
-    questionNumber: 1,
-    clinicalVignette: 'A 4-year-old child is brought to the clinic with acute watery diarrhea and vomiting for 24 hours. On assessment: the child is irritable, eyes are sunken, tears are absent, drinks eagerly when offered water, and skin pinch on the abdomen goes back slowly (taking 1–2 seconds). According to WHO classification, what degree of dehydration is present, and what is the appropriate treatment plan?',
-    options: [
-      { id: 'A', text: 'No Dehydration; WHO Plan A (home fluids and zinc)' },
-      { id: 'B', text: 'Some (Moderate) Dehydration; WHO Plan B (Oral Rehydration Salts 75 mL/kg over 4 hours)' },
-      { id: 'C', text: 'Severe Dehydration; WHO Plan C (Immediate IV Ringer\'s Lactate 100 mL/kg)' },
-      { id: 'D', text: 'Hypernatremic dehydration; high-flow oxygen only' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Some (Moderate) Dehydration; WHO Plan B (Oral Rehydration Salts 75 mL/kg over 4 hours)',
-    explanation: 'Under the WHO IMCI guidelines, "Some Dehydration" is diagnosed when 2 or more of the following signs are present: (1) Restless/irritable, (2) Sunken eyes, (3) Drinks eagerly/thirsty, (4) Skin pinch goes back slowly (<2 sec). Treatment is WHO Plan B: 75 mL/kg of low-osmolarity Oral Rehydration Solution (ORS) administered orally under supervision over a 4-hour period, followed by reassessment.',
-    optionRationales: {
-      A: 'Plan A is for children with diarrhea but no clinical signs of dehydration.',
-      B: 'Correct. Irritability + sunken eyes + thirsty + slow skin pinch defines WHO Some Dehydration treated with Plan B (ORS 75 mL/kg in 4h).',
-      C: 'Plan C (IV fluids) is reserved for Severe Dehydration (lethargic/unconscious, unable to drink, skin pinch very slow >2 sec).',
-      D: 'High-flow oxygen does not correct volume deficits.'
-    },
-    keyTakeaway: 'WHO "Some Dehydration" (irritable, sunken eyes, thirsty, slow skin pinch) is treated with Plan B: supervised ORS 75 mL/kg over 4 hours.',
-    sourcePageRef: 'Pages 53–54, Q1',
-    difficulty: 'High Yield',
-    tags: ['WHO Dehydration', 'Plan B', 'Oral Rehydration Salts', 'Pediatric Fluid Resuscitation']
-  },
-  {
-    id: 'dehyd_q2',
-    topicId: 'dehydration_assessment',
-    topicTitle: 'Assessment of Dehydration',
-    questionNumber: 2,
-    clinicalVignette: 'An 18-month-old infant with cholera presents with severe profuse rice-water diarrhea. On examination: the infant is lethargic and floppy, eyes are deeply sunken, tears absent, unable to drink, radial pulse is feeble, and abdominal skin pinch goes back very slowly (taking >2 seconds). What is the immediate fluid resuscitation strategy according to WHO Plan C?',
-    options: [
-      { id: 'A', text: 'Give 100 mL/kg IV Ringer\'s Lactate (or normal saline): 30 mL/kg in the first 30 minutes (1 hour for infants <1 yr), followed by 70 mL/kg over 2.5 hours (5 hours for infants <1 yr)' },
-      { id: 'B', text: 'Give 500 mL of 5% Dextrose bolus over 10 minutes' },
-      { id: 'C', text: 'Administer ORS via nasogastric tube at 10 mL/kg/hr' },
-      { id: 'D', text: 'Give broad-spectrum antibiotics and wait 6 hours before fluid therapy' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Give 100 mL/kg IV Ringer\'s Lactate (or normal saline): 30 mL/kg in the first 30 minutes (1 hour for infants <1 yr), followed by 70 mL/kg over 2.5 hours (5 hours for infants <1 yr)',
-    explanation: 'The infant exhibits signs of Severe Dehydration / Hypovolemic Shock (lethargic, unable to drink, very slow skin pinch >2s, feeble pulse). WHO Plan C mandates immediate IV resuscitation with 100 mL/kg of Ringer\'s Lactate (or Normal Saline): for patients >= 1 year, give 30 mL/kg over 30 minutes, then 70 mL/kg over 2.5 hours (total 3 hours).',
-    optionRationales: {
-      A: 'Correct. WHO Plan C specifies 100 mL/kg IV Ringer\'s Lactate divided into 30 mL/kg rapid bolus followed by 70 mL/kg infusion.',
-      B: 'Pure 5% Dextrose contains no electrolytes and will cause fatal cerebral edema and acute hyponatremia.',
-      C: 'Nasogastric ORS is second-line only if IV access is completely impossible and patient is transported to an IV facility.',
-      D: 'Delaying fluid resuscitation in cholera shock results in death within hours.'
-    },
-    keyTakeaway: 'Severe dehydration in children requires emergent WHO Plan C: 100 mL/kg IV Ringer\'s Lactate divided into rapid and maintenance phases.',
-    sourcePageRef: 'Page 54, Q2',
-    difficulty: 'High Yield',
-    tags: ['Severe Dehydration', 'WHO Plan C', 'Ringer Lactate', 'Cholera Resuscitation']
-  },
-  {
-    id: 'dehyd_q3',
-    topicId: 'dehydration_assessment',
-    topicTitle: 'Assessment of Dehydration',
-    questionNumber: 3,
-    clinicalVignette: 'Why is low-osmolarity Oral Rehydration Solution (reduced-osmolarity ORS, 245 mOsm/L) recommended over the original 1975 WHO ORS formulation (311 mOsm/L) for non-cholera diarrheal dehydration?',
-    options: [
-      { id: 'A', text: 'It has higher glucose concentration to provide more calories' },
-      { id: 'B', text: 'Reduced sodium and glucose osmolarity reduces stool output, decreases vomiting, and reduces the need for unscheduled IV therapy' },
-      { id: 'C', text: 'It completely eliminates the need for zinc supplementation' },
-      { id: 'D', text: 'It can be given intravenously' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Reduced sodium and glucose osmolarity reduces stool output, decreases vomiting, and reduces the need for unscheduled IV therapy',
-    explanation: 'The original 1975 WHO ORS (osmolarity 311 mOsm/L) occasionally induced osmotic diarrhea in non-cholera viral gastroenteritis. The modernized low-osmolarity ORS (245 mOsm/L: Na+ 75 mmol/L, Glucose 75 mmol/L) optimizes the coupled SGLT-1 sodium-glucose cotransport mechanism while avoiding hypertonic luminal water draw, reducing stool output by 20%, reducing vomiting by 30%, and decreasing the need for IV infusions by 33%.',
-    optionRationales: {
-      A: 'Low-osmolarity ORS actually reduces glucose concentration (from 111 to 75 mmol/L).',
-      B: 'Correct. Reduced osmolarity (245 mOsm/L) significantly reduces stool volume, vomiting frequency, and IV hydration requirements.',
-      C: 'Zinc supplementation (20 mg/day for 10–14 days) remains mandatory alongside ORS.',
-      D: 'ORS is strictly an enteral (oral/NG) solution and must never be infused intravenously.'
-    },
-    keyTakeaway: 'Low-osmolarity ORS (245 mOsm/L) optimizes SGLT-1 transport, reducing stool output, vomiting, and IV fluid requirements.',
-    sourcePageRef: 'Page 54, Q3',
-    difficulty: 'High Yield',
-    tags: ['Low-Osmolarity ORS', 'SGLT-1', 'Diarrhea Management', 'Pediatrics']
-  },
-  {
-    id: 'dehyd_q4',
-    topicId: 'dehydration_assessment',
-    topicTitle: 'Assessment of Dehydration',
-    questionNumber: 4,
-    clinicalVignette: 'A 78-year-old woman in a nursing home is brought to the hospital with acute confusion, dry mucous membranes, and longitudinal tongue furrows. Serum sodium is 158 mmol/L, BUN is 48 mg/dL, and creatinine is 1.8 mg/dL (BUN/Cr ratio > 25:1). What type of dehydration does this represent, and why must the fluid deficit be corrected slowly?',
-    options: [
-      { id: 'A', text: 'Isotonic dehydration; rapid bolus normal saline' },
-      { id: 'B', text: 'Hypernatremic (hypertonic) dehydration; overly rapid water replacement can cause cerebral edema and herniation' },
-      { id: 'C', text: 'Hyponatremic dehydration; rapid 3% hypertonic saline' },
-      { id: 'D', text: 'Pseudodehydration due to hyperglycemia' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Hypernatremic (hypertonic) dehydration; overly rapid water replacement can cause cerebral edema and herniation',
-    explanation: 'In elderly individuals with impaired thirst mechanisms or lack of water access, pure water loss exceeds sodium loss, producing Hypernatremic Dehydration (serum Na > 150 mmol/L, elevated BUN/Cr ratio). In hypernatremia, brain cells synthesize intracellular idiogenic osmoles to defend cell volume. Overly rapid correction of serum sodium (>10–12 mmol/L per 24 hours) causes rapid water influx into brain cells, precipitating fatal Cerebral Edema, seizures, and uncal herniation.',
-    optionRationales: {
-      A: 'Serum sodium of 158 mmol/L confirms hypertonic, not isotonic dehydration.',
-      B: 'Correct. Hypernatremic dehydration must be corrected slowly (<=10-12 mmol/L per 24h) to avoid fatal cerebral edema.',
-      C: 'The patient has hypernatremia, not hyponatremia.',
-      D: 'This is true hypernatremic dehydration with prerenal azotemia.'
-    },
-    keyTakeaway: 'Hypernatremic dehydration requires gradual free-water correction (max 10–12 mmol/L drop per 24 hours) to prevent cerebral edema.',
-    sourcePageRef: 'Page 54, Q4',
-    difficulty: 'High Yield',
-    tags: ['Hypernatremic Dehydration', 'Free Water Deficit', 'Cerebral Edema', 'Geriatric Fluid Management']
-  },
-  {
-    id: 'dehyd_q5',
-    topicId: 'dehydration_assessment',
-    topicTitle: 'Assessment of Dehydration',
-    questionNumber: 5,
-    clinicalVignette: 'Which clinical examination sign is recognized as the single most reliable bedside physical indicator of hypovolemia and extracellular volume depletion in elderly patients?',
-    options: [
-      { id: 'A', text: 'Skin turgor on the dorsum of the hand' },
-      { id: 'B', text: 'Dry mucous membranes (dryness of the mouth and tongue) and longitudinal tongue furrows' },
-      { id: 'C', text: 'Peripheral pitting pedal edema' },
-      { id: 'D', text: 'Elevated jugular venous pressure' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Dry mucous membranes (dryness of the mouth and tongue) and longitudinal tongue furrows',
-    explanation: 'In elderly adults, loss of dermal elastin and subcutaneous fat makes skin turgor testing (especially on the hand or forearm) notoriously unreliable, often showing false-positive tenting. Examination of oral mucous membranes (dryness at the junction of the hard and soft palate) and longitudinal tongue furrows has the highest sensitivity, specificity, and positive predictive value for true volume depletion in geriatric patients.',
-    optionRationales: {
-      A: 'Skin turgor on the back of the hand is falsely prolonged in normal aging due to loss of dermal elasticity.',
-      B: 'Correct. Dry oral mucous membranes and longitudinal tongue furrows are the most reliable clinical signs of dehydration in the elderly.',
-      C: 'Pedal edema indicates venous insufficiency, heart failure, or fluid overload.',
-      D: 'Elevated JVP indicates right heart strain or hypervolemia.'
-    },
-    keyTakeaway: 'In elderly patients, dry mucous membranes and longitudinal tongue furrows are far more reliable indicators of dehydration than skin turgor.',
-    sourcePageRef: 'Page 54, Q5',
-    difficulty: 'Core Clinical',
-    tags: ['Geriatric Dehydration', 'Tongue Furrows', 'Clinical Signs', 'Physical Exam']
-  },
-
-  // ----------------------------------------------------
-  // INTERPRETATION OF LUMBAR PUNCTURE / CSF ANALYSIS (Pages 56-57)
-  // ----------------------------------------------------
-  {
-    id: 'lp_q1',
-    topicId: 'lp_csf_analysis',
-    topicTitle: 'Interpretation of Lumbar Puncture / CSF Analysis',
-    questionNumber: 1,
-    clinicalVignette: 'A 24-year-old university student is brought to the emergency department with a 12-hour history of severe headache, high fever (39.5°C), neck stiffness, and photophobia. Lumbar puncture is performed. CSF analysis reveals: Opening pressure: 320 mmH₂O (Elevated), Appearance: Turbid / Purulent, WBC: 4,500/µL with 92% Neutrophils (Polymorphonuclear cells), Protein: 2.8 g/L (Markedly elevated), Glucose: 0.8 mmol/L (Simultaneous blood glucose: 6.0 mmol/L; CSF-to-blood glucose ratio = 0.13), Gram stain: Gram-negative diplococci. What is the diagnosis?',
-    options: [
-      { id: 'A', text: 'Viral (Aseptic) Meningitis' },
-      { id: 'B', text: 'Acute Bacterial Meningitis (Neisseria meningitidis)' },
-      { id: 'C', text: 'Tuberculous Meningitis' },
-      { id: 'D', text: 'Fungal (Cryptococcal) Meningitis' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Acute Bacterial Meningitis (Neisseria meningitidis)',
-    explanation: 'The CSF profile is classic for Acute Bacterial Meningitis: (1) Marked neutrophilic pleocytosis (>1000/uL, >80% PMNs), (2) Markedly elevated protein (>1-2 g/L), (3) Severely low CSF glucose with CSF:blood ratio < 0.40, (4) High opening pressure (>250 mmH2O), and (5) Gram-negative diplococci identifying Neisseria meningitidis (meningococcus). Immediate IV Ceftriaxone + Dexamethasone is indicated.',
-    optionRationales: {
-      A: 'Viral meningitis shows lymphocytic pleocytosis (<500/uL), normal glucose (ratio >0.6), and normal or mildly elevated protein.',
-      B: 'Correct. Turbid CSF + neutrophil pleocytosis + low glucose ratio (0.13) + Gram-negative diplococci = Neisseria meningitidis meningitis.',
-      C: 'Tuberculous meningitis shows lymphocytic pleocytosis, very high protein (>2-5 g/L), low glucose, and web-like clot formation.',
-      D: 'Cryptococcal meningitis shows lymphocytic predominance and positive India ink / cryptococcal antigen.'
-    },
-    keyTakeaway: 'Acute Bacterial Meningitis CSF is purulent with neutrophilic pleocytosis, high protein, and a CSF-to-blood glucose ratio < 0.40.',
-    sourcePageRef: 'Pages 56–57, Q1',
-    difficulty: 'High Yield',
-    tags: ['Bacterial Meningitis', 'Neisseria meningitidis', 'CSF Analysis', 'Lumbar Puncture']
-  },
-  {
-    id: 'lp_q2',
-    topicId: 'lp_csf_analysis',
-    topicTitle: 'Interpretation of Lumbar Puncture / CSF Analysis',
-    questionNumber: 2,
-    clinicalVignette: 'A 38-year-old HIV-positive patient presents with subacute headache, low-grade fever, weight loss, and cranial nerve VI palsy. Lumbar puncture demonstrates: Opening pressure: 340 mmH₂O, Appearance: Clear with a delicate "cobweb" clot forming upon standing, WBC: 280/µL with 85% Lymphocytes, Protein: 3.5 g/L (Markedly elevated), Glucose: 1.2 mmol/L (Blood glucose: 5.5 mmol/L; CSF-to-blood ratio = 0.22), Acid-fast stain: Positive for acid-fast bacilli. What is the diagnosis?',
-    options: [
-      { id: 'A', text: 'Herpes Simplex Virus Encephalitis' },
-      { id: 'B', text: 'Tuberculous (TB) Meningitis' },
-      { id: 'C', text: 'Multiple Sclerosis flare' },
-      { id: 'D', text: 'Guillain-Barré Syndrome' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Tuberculous (TB) Meningitis',
-    explanation: 'Tuberculous Meningitis characteristically presents with: (1) Lymphocytic-predominant pleocytosis (100–500/uL), (2) Extremely high protein (often 1.5–5.0+ g/L due to dense gelatinous basal exudates), (3) Markedly reduced glucose (CSF:blood ratio < 0.30), (4) Markedly elevated opening pressure, and (5) "Spiderweb/cobweb" clot formation due to high fibrinogen content in stagnant fluid.',
-    optionRationales: {
-      A: 'HSV encephalitis shows lymphocytic pleocytosis and normal/mildly low glucose with prominent RBCs and temporal lobe changes on MRI.',
-      B: 'Correct. Cobweb clot + lymphocytic pleocytosis + very high protein + very low glucose + AFB = Tuberculous Meningitis.',
-      C: 'Multiple Sclerosis CSF shows oligoclonal bands with normal opening pressure, normal glucose, and mild mononuclear pleocytosis.',
-      D: 'Guillain-Barré syndrome shows albuminocytological dissociation (high protein with zero or <10 WBCs).'
-    },
-    keyTakeaway: 'Tuberculous meningitis CSF exhibits lymphocytic pleocytosis, very high protein, very low glucose, and a pathognomonic cobweb/pellicle clot.',
-    sourcePageRef: 'Page 57, Q2',
-    difficulty: 'High Yield',
-    tags: ['Tuberculous Meningitis', 'Cobweb Clot', 'Lymphocytic Pleocytosis', 'CSF Protein']
-  },
-  {
-    id: 'lp_q3',
-    topicId: 'lp_csf_analysis',
-    topicTitle: 'Interpretation of Lumbar Puncture / CSF Analysis',
-    questionNumber: 3,
-    clinicalVignette: 'A 28-year-old woman presents with ascending symmetrical weakness and areflexia in all four limbs 2 weeks after a diarrheal illness caused by Campylobacter jejuni. Lumbar puncture is performed on day 7 of motor symptoms. CSF analysis reveals: Opening pressure: 140 mmH₂O (Normal), Appearance: Clear, WBC count: 2/µL (Normal), Protein: 1.8 g/L (Markedly elevated), Glucose: 3.5 mmol/L (Normal). What is this classic CSF phenomenon called, and what is the underlying diagnosis?',
-    options: [
-      { id: 'A', text: 'Froin syndrome; Spinal cord tumor' },
-      { id: 'B', text: 'Albuminocytological dissociation; Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyradiculoneuropathy)' },
-      { id: 'C', text: 'Pleocytosis; Viral polyneuropathy' },
-      { id: 'D', text: 'Bacterial meningitis in partial remission' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Albuminocytological dissociation; Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyradiculoneuropathy)',
-    explanation: 'The combination of markedly elevated CSF protein (>0.45–2.0+ g/L) with a normal CSF white blood cell count (<5/uL) is known as "Albuminocytological Dissociation". It is the pathognomonic laboratory hallmark of Guillain-Barré Syndrome (GBS / AIDP). It results from inflammatory breakdown of the blood-nerve barrier at the proximal spinal nerve roots without a cellular meningeal inflammatory response.',
-    optionRationales: {
-      A: 'Froin syndrome refers to xanthochromic, rapidly coagulating CSF with extreme protein (>5-10 g/L) below a complete spinal block.',
-      B: 'Correct. High CSF protein with normal cell count defines albuminocytological dissociation in Guillain-Barré Syndrome.',
-      C: 'Pleocytosis means elevated white blood cells in CSF, which is explicitly absent here.',
-      D: 'Bacterial meningitis shows hundreds-to-thousands of neutrophils.'
-    },
-    keyTakeaway: 'Albuminocytological dissociation (markedly elevated protein with normal cell count) is the hallmark of Guillain-Barré Syndrome.',
-    sourcePageRef: 'Page 57, Q3',
-    difficulty: 'High Yield',
-    tags: ['Guillain-Barre Syndrome', 'Albuminocytological Dissociation', 'CSF Protein', 'AIDP']
-  },
-  {
-    id: 'lp_q4',
-    topicId: 'lp_csf_analysis',
-    topicTitle: 'Interpretation of Lumbar Puncture / CSF Analysis',
-    questionNumber: 4,
-    clinicalVignette: 'A 50-year-old woman presents with sudden, catastrophic "thunderclap" headache ("worst headache of my life"). Non-contrast head CT performed 18 hours after symptom onset is reported as normal/equivocal. Lumbar puncture is performed. How do you definitively distinguish true Subarachnoid Hemorrhage (SAH) from a "traumatic (bloody) tap" on CSF analysis?',
-    options: [
-      { id: 'A', text: 'Traumatic tap has higher opening pressure than subarachnoid hemorrhage' },
-      { id: 'B', text: 'True SAH shows persistent blood across serial tubes (Tube 1 to Tube 4) and presence of Xanthochromia (yellowish supernatant on centrifugation detected by spectrophotometry), whereas a traumatic tap shows clearing of blood in consecutive tubes and clear supernatant' },
-      { id: 'C', text: 'Traumatic tap causes severe hypoglycemia in CSF' },
-      { id: 'D', text: 'True SAH has a normal protein level while traumatic tap has elevated protein' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'True SAH shows persistent blood across serial tubes (Tube 1 to Tube 4) and presence of Xanthochromia (yellowish supernatant on centrifugation detected by spectrophotometry), whereas a traumatic tap shows clearing of blood in consecutive tubes and clear supernatant',
-    explanation: 'Differentiating SAH from a traumatic tap relies on two key findings: (1) Clearing: in a traumatic tap, RBC counts drop markedly from tube 1 to tube 4, whereas in true SAH, RBC counts remain consistently elevated across all tubes; and (2) Xanthochromia: in true SAH, RBCs undergo in vivo lysis over >6–12 hours, releasing oxyhemoglobin and bilirubin, creating a yellowish centrifuged supernatant (detected by spectrophotometry). Traumatic taps have a crystal-clear supernatant after centrifugation.',
-    optionRationales: {
-      A: 'Opening pressure is often elevated in SAH due to impaired arachnoid villi resorption.',
-      B: 'Correct. Persistent RBC counts across tubes 1–4 and xanthochromia on spectrophotometry confirm true Subarachnoid Hemorrhage.',
-      C: 'Traumatic tap does not consume CSF glucose.',
-      D: 'Both SAH and traumatic tap elevate CSF protein (due to serum plasma entry).'
-    },
-    keyTakeaway: 'Subarachnoid hemorrhage is differentiated from traumatic tap by lack of RBC clearing across serial tubes and spectrophotometric Xanthochromia.',
-    sourcePageRef: 'Page 57, Q4',
-    difficulty: 'High Yield',
-    tags: ['Subarachnoid Hemorrhage', 'Xanthochromia', 'Traumatic Tap', 'Thunderclap Headache']
-  },
-  {
-    id: 'lp_q5',
-    topicId: 'lp_csf_analysis',
-    topicTitle: 'Interpretation of Lumbar Puncture / CSF Analysis',
-    questionNumber: 5,
-    clinicalVignette: 'A 32-year-old man with suspected acute meningitis has an LP planned. Which of the following clinical signs or history features represents an absolute indication to perform a Non-Contrast Head CT scan BEFORE lumbar puncture to rule out brain herniation?',
-    options: [
-      { id: 'A', text: 'Fever alone (>38.5°C)' },
-      { id: 'B', text: 'Papilledema, new focal neurological deficits, new-onset seizures, or severely impaired level of consciousness (GCS < 12)' },
-      { id: 'C', text: 'Neck stiffness and positive Kernig\'s sign' },
-      { id: 'D', text: 'Mild photophobia' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Papilledema, new focal neurological deficits, new-onset seizures, or severely impaired level of consciousness (GCS < 12)',
-    explanation: 'Performing an LP in the presence of an intracranial space-occupying lesion or severe cerebral edema creates a pressure gradient that can precipitate fatal uncal or transtentorial brain herniation. Mandatory indications for Head CT before LP include: (1) Papilledema on funduscopy, (2) Focal neurological deficits (e.g. hemiparesis, dilated non-reactive pupil), (3) New-onset seizures within 1 week, (4) Moderate-to-severe altered mental status (GCS < 12), and (5) Severe immunocompromised state.',
-    optionRationales: {
-      A: 'Isolated fever without focal signs is expected in meningitis and does not require pre-LP CT.',
-      B: 'Correct. Papilledema, focal neurological deficits, recent seizures, and low GCS mandate pre-LP head CT to prevent brain herniation.',
-      C: 'Meningeal signs are classic for meningitis and do not mandate CT in the absence of focal deficits.',
-      D: 'Mild photophobia is standard in meningitis and is not a contraindication to immediate LP.'
-    },
-    keyTakeaway: 'In suspected meningitis, perform a Head CT prior to LP if papilledema, focal neurological deficits, new seizures, or GCS < 12 are present.',
-    sourcePageRef: 'Page 57, Q5',
-    difficulty: 'High Yield',
-    tags: ['Lumbar Puncture Safety', 'Head CT Indications', 'Brain Herniation', 'Meningitis Protocol']
+    tags: ['Steroid Equivalencies', 'Prednisolone', 'Hydrocortisone', 'Anti-inflammatory Potency']
   }
 ];

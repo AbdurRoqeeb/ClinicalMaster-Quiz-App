@@ -46,9 +46,9 @@ export const HighYieldModal: React.FC<HighYieldModalProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-indigo-700 bg-indigo-50 border border-indigo-200 px-2 py-0.5 rounded-xs">
-                  xM3 Quick Revision
+                  M3 Quick Revision
                 </span>
-                <span className="text-xs text-slate-500 font-mono">{CLINICAL_TOPICS.length} Core Topics (Pages 1–72)</span>
+                <span className="text-xs text-slate-500 font-mono">{CLINICAL_TOPICS.length} Core Topics</span>
               </div>
               <h3 className="text-base sm:text-lg font-bold text-slate-900 uppercase tracking-tight mt-0.5">
                 High-Yield Clinical Pearls & Key Principles
@@ -93,7 +93,7 @@ export const HighYieldModal: React.FC<HighYieldModalProps> = ({
                     </span>
                     <h4 className="font-bold text-slate-900 text-xs sm:text-sm">{topic.title}</h4>
                   </div>
-                  <span className="text-xs font-mono text-slate-500">{topic.pageRange}</span>
+                  <span className="text-xs font-mono text-slate-500">{topic.questionCount} Qs</span>
                 </div>
 
                 <div className="space-y-1.5 pt-1">
@@ -124,7 +124,7 @@ export const HighYieldModal: React.FC<HighYieldModalProps> = ({
 
         {/* Footer */}
         <div className="p-4 border-t border-slate-200 bg-slate-50 flex items-center justify-between text-xs text-slate-500">
-          <span>All high-yield takeaways strictly match the xM3 Batch 2 Tutorial syllabus.</span>
+          <span>All high-yield takeaways strictly match the M3 Batch 2 Tutorial syllabus.</span>
           <button
             onClick={onClose}
             className="px-4 py-1.5 bg-slate-900 hover:bg-indigo-600 text-white rounded-xs font-bold uppercase tracking-wider transition-colors cursor-pointer shadow-2xs"

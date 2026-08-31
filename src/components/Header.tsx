@@ -52,7 +52,7 @@ export const Header: React.FC<HeaderProps> = ({
           </div>
           <div>
             <h1 className="text-base sm:text-lg font-bold tracking-tight text-slate-900 uppercase">
-              ClinicalMaster <span className="font-light text-slate-400 text-xs sm:text-sm tracking-normal">xM3 Tutorial</span>
+              ClinicalMaster <span className="font-light text-slate-400 text-xs sm:text-sm tracking-normal">M3 Tutorial</span>
             </h1>
           </div>
         </div>

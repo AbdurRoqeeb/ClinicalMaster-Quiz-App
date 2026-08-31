@@ -132,11 +132,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
             {question.topicTitle}
           </span>
 
-          {/* Source Document Reference */}
-          <span className="text-slate-500 font-mono font-medium hidden sm:inline-block text-[11px]">
-            Ref: {question.sourcePageRef}
-          </span>
-
           {/* Difficulty Badge */}
           <span
             className={`font-bold px-2 py-0.5 rounded-xs text-[10px] uppercase tracking-wider border ${

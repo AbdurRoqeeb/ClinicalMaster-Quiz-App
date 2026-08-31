@@ -31,8 +31,8 @@ function getGeminiClient(): GoogleGenAI {
   });
 }
 
-const MEDICAL_TUTOR_SYSTEM_INSTRUCTION = `You are "xM3 Clinical Mentor", an expert clinical medicine tutor, attending physician educator, and board preparation specialist.
-You are assisting medical students who are studying clinical medicine and practicing board-style vignettes from the xM3 Batch 2 Tutorial (August 2026).
+const MEDICAL_TUTOR_SYSTEM_INSTRUCTION = `You are "M3 Clinical Mentor", an expert clinical medicine tutor, attending physician educator, and board preparation specialist.
+You are assisting medical students who are studying clinical medicine and practicing board-style vignettes from the M3 Batch 2 Tutorial (August 2026).
 
 Your objectives:
 1. Explain clinical concepts, pathophysiology, diagnostic reasoning, clinical guidelines, pharmacology, and management algorithms clearly and accurately.
@@ -144,7 +144,7 @@ async function startServer() {
   }
 
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(`xM3 Clinical Medicine server listening on port ${PORT}`);
+    console.log(`M3 Clinical Medicine server listening on port ${PORT}`);
   });
 }
 

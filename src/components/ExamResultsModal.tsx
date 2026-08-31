@@ -66,7 +66,7 @@ export const ExamResultsModal: React.FC<ExamResultsModalProps> = ({
 
           <h3 className="text-lg sm:text-xl font-bold uppercase tracking-tight">Clinical Performance Summary</h3>
           <p className="text-xs text-white/80 mt-0.5">
-            xM3 Clinical Medicine Batch 2 Tutorial Progress Report
+            M3 Clinical Medicine Batch 2 Tutorial Progress Report
           </p>
 
           <div className="mt-4 inline-flex items-baseline gap-1.5 bg-white/10 px-4 py-1.5 rounded-xs border border-white/20 text-white font-mono">

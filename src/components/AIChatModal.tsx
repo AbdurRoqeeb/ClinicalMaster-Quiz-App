@@ -31,7 +31,7 @@ const STORAGE_KEY = 'xm3_quiz_ai_chat_history_v1';
 const INITIAL_WELCOME_MESSAGE: ChatMessage = {
   id: 'welcome-msg',
   role: 'model',
-  text: `Hello! I am your **xM3 Clinical Mentor**. 🩺
+  text: `Hello! I am your **M3 Clinical Mentor**. 🩺
 
 I'm here to help you master all **143 clinical medicine questions** from the Batch 2 Tutorial. You can ask me:
 - **Pathophysiology & Mechanisms**: Why a disease process causes specific symptoms or lab abnormalities.
@@ -297,7 +297,7 @@ export const AIChatModal: React.FC<AIChatModalProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="text-sm font-bold tracking-tight uppercase flex items-center gap-1.5">
-                  <span>xM3 Clinical Mentor</span>
+                  <span>M3 Clinical Mentor</span>
                   <span className="inline-flex items-center px-1.5 py-0.2 rounded-2xs text-[10px] font-semibold bg-indigo-500/30 text-indigo-300 border border-indigo-500/40">
                     AI Tutor
                   </span>
