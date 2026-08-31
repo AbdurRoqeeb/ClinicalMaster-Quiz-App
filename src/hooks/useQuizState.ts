@@ -3,45 +3,24 @@ import { ALL_QUESTIONS } from '../data/questions';
 import { CLINICAL_TOPICS } from '../data/topics';
 import { Question, FilterOptions, QuizStats, QuizMode } from '../types';
 
-const STORAGE_KEY = 'xm3_quiz_app_state_v1';
+const STORAGE_KEY = 'm3_quiz_app_state_v2';
+const OLD_STORAGE_KEY = 'xm3_quiz_app_state_v1';
+
+function getStoredItem<T>(suffix: string, fallback: T): T {
+  try {
+    const saved = localStorage.getItem(`${STORAGE_KEY}_${suffix}`) || localStorage.getItem(`${OLD_STORAGE_KEY}_${suffix}`);
+    return saved ? JSON.parse(saved) : fallback;
+  } catch {
+    return fallback;
+  }
+}
 
 export function useQuizState() {
   // Persistent state
-  const [userAnswers, setUserAnswers] = useState<Record<string, string>>(() => {
-    try {
-      const saved = localStorage.getItem(`${STORAGE_KEY}_answers`);
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
-
-  const [submittedQuestions, setSubmittedQuestions] = useState<Record<string, boolean>>(() => {
-    try {
-      const saved = localStorage.getItem(`${STORAGE_KEY}_submitted`);
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
-
-  const [bookmarks, setBookmarks] = useState<string[]>(() => {
-    try {
-      const saved = localStorage.getItem(`${STORAGE_KEY}_bookmarks`);
-      return saved ? JSON.parse(saved) : [];
-    } catch {
-      return [];
-    }
-  });
-
-  const [notes, setNotes] = useState<Record<string, string>>(() => {
-    try {
-      const saved = localStorage.getItem(`${STORAGE_KEY}_notes`);
-      return saved ? JSON.parse(saved) : {};
-    } catch {
-      return {};
-    }
-  });
+  const [userAnswers, setUserAnswers] = useState<Record<string, string>>(() => getStoredItem('answers', {}));
+  const [submittedQuestions, setSubmittedQuestions] = useState<Record<string, boolean>>(() => getStoredItem('submitted', {}));
+  const [bookmarks, setBookmarks] = useState<string[]>(() => getStoredItem('bookmarks', []));
+  const [notes, setNotes] = useState<Record<string, string>>(() => getStoredItem('notes', {}));
 
   // Ephemeral navigation & UI state
   const [activeTopicId, setActiveTopicId] = useState<string | null>(null);

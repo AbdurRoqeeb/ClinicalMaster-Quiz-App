@@ -26,7 +26,8 @@ interface AIChatModalProps {
   onClearInitialPrompt?: () => void;
 }
 
-const STORAGE_KEY = 'xm3_quiz_ai_chat_history_v1';
+const STORAGE_KEY = 'm3_quiz_ai_chat_history_v2';
+const OLD_STORAGE_KEY = 'xm3_quiz_ai_chat_history_v1';
 
 const INITIAL_WELCOME_MESSAGE: ChatMessage = {
   id: 'welcome-msg',
@@ -60,10 +61,26 @@ export const AIChatModal: React.FC<AIChatModalProps> = ({
 }) => {
   const [messages, setMessages] = useState<ChatMessage[]>(() => {
     try {
-      const saved = localStorage.getItem(STORAGE_KEY);
+      let saved = localStorage.getItem(STORAGE_KEY);
+      if (!saved) {
+        saved = localStorage.getItem(OLD_STORAGE_KEY);
+        if (saved) {
+          localStorage.removeItem(OLD_STORAGE_KEY);
+        }
+      }
       if (saved) {
         const parsed = JSON.parse(saved);
-        if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed.map((m: ChatMessage) => {
+            if (m.id === 'welcome-msg') {
+              return INITIAL_WELCOME_MESSAGE;
+            }
+            return {
+              ...m,
+              text: (m.text || '').replace(/\bxM3\b/gi, 'M3').replace(/\bx\s*M3\b/gi, 'M3'),
+            };
+          });
+        }
       }
     } catch {
       // ignore error
