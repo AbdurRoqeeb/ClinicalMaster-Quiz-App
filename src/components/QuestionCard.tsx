@@ -33,6 +33,7 @@ interface QuestionCardProps {
   onSaveNote: (note: string) => void;
   onPreviousQuestion: () => void;
   onNextQuestion: () => void;
+  onReturnToTopics?: () => void;
   hasPrevious: boolean;
   hasNext: boolean;
 }
@@ -52,6 +53,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   onSaveNote,
   onPreviousQuestion,
   onNextQuestion,
+  onReturnToTopics,
   hasPrevious,
   hasNext,
 }) => {
@@ -107,6 +109,19 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       {/* Top Meta Bar */}
       <div className="bg-slate-50 px-4 sm:px-6 py-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs">
         <div className="flex items-center flex-wrap gap-2">
+          {/* Return to Topic Selection Menu Button */}
+          {onReturnToTopics && (
+            <button
+              type="button"
+              onClick={onReturnToTopics}
+              className="flex items-center gap-1 px-2 py-1 bg-white hover:bg-slate-100 text-slate-700 hover:text-slate-900 border border-slate-300 rounded-xs font-bold uppercase tracking-wider text-[10px] transition-colors cursor-pointer shadow-2xs group"
+              title="Return to Topics Selection Menu"
+            >
+              <ChevronLeft className="w-3 h-3 text-indigo-600 group-hover:-translate-x-0.5 transition-transform" />
+              <span>Topics</span>
+            </button>
+          )}
+
           {/* Question Index Badge */}
           <span className="font-mono font-bold text-xs bg-slate-900 text-white px-2.5 py-1 rounded-xs uppercase tracking-wider">
             Q {currentIndex + 1} of {totalQuestions}

@@ -17,6 +17,7 @@ import { Topic, QuizStats } from '../types';
 interface TopicDirectoryProps {
   stats: QuizStats;
   onSelectTopic: (topicId: string) => void;
+  onSelectAllTopics?: () => void;
   onClearTopicProgress?: (topicId: string) => void;
   activeTopicId: string | null;
 }
@@ -24,6 +25,7 @@ interface TopicDirectoryProps {
 export const TopicDirectory: React.FC<TopicDirectoryProps> = ({
   stats,
   onSelectTopic,
+  onSelectAllTopics,
   onClearTopicProgress,
   activeTopicId,
 }) => {
@@ -56,16 +58,29 @@ export const TopicDirectory: React.FC<TopicDirectoryProps> = ({
           </p>
         </div>
 
-        {/* Search input within topics */}
-        <div className="relative min-w-[240px]">
-          <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-          <input
-            type="text"
-            placeholder="Filter topics or keywords..."
-            value={topicSearch}
-            onChange={(e) => setTopicSearch(e.target.value)}
-            className="w-full pl-9 pr-3 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-xs focus:outline-hidden focus:ring-1 focus:ring-indigo-600 focus:bg-white text-slate-800"
-          />
+        {/* Search & All Questions Practice Button */}
+        <div className="flex items-center gap-2.5 flex-wrap sm:flex-nowrap">
+          {onSelectAllTopics && (
+            <button
+              type="button"
+              onClick={onSelectAllTopics}
+              className="px-3.5 py-1.5 bg-slate-900 hover:bg-indigo-600 text-white rounded-xs text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 transition-colors shadow-2xs cursor-pointer shrink-0"
+            >
+              <Play className="w-3.5 h-3.5 text-emerald-400" />
+              <span>Practice All ({stats.totalQuestions})</span>
+            </button>
+          )}
+
+          <div className="relative min-w-[220px] sm:w-64">
+            <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
+            <input
+              type="text"
+              placeholder="Filter topics or keywords..."
+              value={topicSearch}
+              onChange={(e) => setTopicSearch(e.target.value)}
+              className="w-full pl-9 pr-3 py-1.5 text-xs bg-slate-50 border border-slate-200 rounded-xs focus:outline-hidden focus:ring-1 focus:ring-indigo-600 focus:bg-white text-slate-800"
+            />
+          </div>
         </div>
       </div>
 

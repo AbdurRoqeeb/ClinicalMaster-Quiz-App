@@ -59,13 +59,17 @@ export default function App() {
     handleSelectTopic,
   } = useQuizState();
 
-  const [activeTab, setActiveTab] = useState<'practice' | 'directory'>('practice');
+  const [activeTab, setActiveTab] = useState<'practice' | 'directory'>('directory');
   const [isResetModalOpen, setIsResetModalOpen] = useState<boolean>(false);
   const [isAIChatOpen, setIsAIChatOpen] = useState<boolean>(false);
   const [aiChatInitialPrompt, setAiChatInitialPrompt] = useState<string | null>(null);
 
   const activeTopic = CLINICAL_TOPICS.find((t) => t.id === activeTopicId);
   const activeTopicBreakdown = activeTopicId ? stats.topicBreakdown[activeTopicId] : null;
+
+  const handleReturnToTopics = () => {
+    setActiveTab('directory');
+  };
 
   const handleOpenAIChat = (prompt?: string) => {
     if (prompt) {
@@ -113,6 +117,8 @@ export default function App() {
         setSearchQuery={setSearchQuery}
         activeTopicTitle={activeTopic ? activeTopic.title : null}
         onClearTopic={() => handleSelectTopic(null)}
+        activeTab={activeTab}
+        onReturnToTopics={handleReturnToTopics}
       />
 
       {/* Main Container */}
@@ -177,6 +183,10 @@ export default function App() {
               handleSelectTopic(tId);
               setActiveTab('practice');
             }}
+            onSelectAllTopics={() => {
+              handleSelectTopic(null);
+              setActiveTab('practice');
+            }}
             onClearTopicProgress={(tId) => {
               handleClearTopicProgress(tId);
             }}
@@ -202,6 +212,7 @@ export default function App() {
                   onSaveNote={(note) => handleSaveNote(currentQuestion.id, note)}
                   onPreviousQuestion={handlePrev}
                   onNextQuestion={handleNext}
+                  onReturnToTopics={handleReturnToTopics}
                   hasPrevious={currentQuestionIndex > 0}
                   hasNext={currentQuestionIndex < filteredQuestions.length - 1}
                 />
@@ -273,6 +284,17 @@ export default function App() {
                       </button>
                     );
                   })}
+                </div>
+
+                <div className="mt-3 pt-3 border-t border-slate-100">
+                  <button
+                    type="button"
+                    onClick={handleReturnToTopics}
+                    className="w-full py-1.5 px-2 bg-slate-100 hover:bg-indigo-50 hover:text-indigo-700 text-slate-700 border border-slate-200 rounded-xs text-[11px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                  >
+                    <Layers className="w-3.5 h-3.5 text-indigo-600" />
+                    <span>Browse All Topics Directory</span>
+                  </button>
                 </div>
               </div>
 

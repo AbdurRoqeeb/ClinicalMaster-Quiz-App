@@ -20,6 +20,8 @@ interface HeaderProps {
   setSearchQuery: (query: string) => void;
   activeTopicTitle: string | null;
   onClearTopic: () => void;
+  activeTab: 'directory' | 'practice';
+  onReturnToTopics: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -32,6 +34,8 @@ export const Header: React.FC<HeaderProps> = ({
   setSearchQuery,
   activeTopicTitle,
   onClearTopic,
+  activeTab,
+  onReturnToTopics,
 }) => {
   const progressPercent = stats.totalQuestions > 0 
     ? Math.round((stats.answeredCount / stats.totalQuestions) * 100) 
@@ -112,8 +116,20 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Geometric Sub-bar */}
       <div className="bg-slate-50 border-t border-slate-200 px-4 sm:px-6 lg:px-8 py-2">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5 text-xs">
-          {/* Active Context Breadcrumb */}
+          {/* Active Context Breadcrumb & Back to Topics Action */}
           <div className="flex items-center gap-2 w-full sm:w-auto">
+            {activeTab === 'practice' && (
+              <button
+                type="button"
+                onClick={onReturnToTopics}
+                className="flex items-center gap-1.5 px-2.5 py-1 bg-white hover:bg-indigo-50 text-indigo-700 hover:text-indigo-900 border border-slate-300 hover:border-indigo-300 rounded-xs text-xs font-bold uppercase tracking-wider transition-all cursor-pointer shadow-2xs group"
+                title="Return to Topics Selection Menu"
+              >
+                <Layers className="w-3.5 h-3.5 text-indigo-600 group-hover:-translate-x-0.5 transition-transform" />
+                <span>← All Topics</span>
+              </button>
+            )}
+
             <span className="text-[10px] uppercase tracking-widest text-slate-400 font-bold">Scope:</span>
             {activeTopicTitle ? (
               <div className="inline-flex items-center gap-1.5 bg-white text-indigo-900 font-bold px-2.5 py-0.5 rounded-xs border-l-2 border-indigo-600 border border-slate-200 text-xs shadow-2xs">
