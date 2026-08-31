@@ -1,0 +1,6 @@
+{
+  "name": "xM3 Clinical Medicine Mastery Quiz",
+  "description": "Comprehensive interactive clinical quiz and study portal derived exhaustively from the xM3 Batch 2 Tutorial (August 2026) covering 143 clinical scenarios with in-depth rationales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
