@@ -29,6 +29,7 @@ import { ExamResultsModal } from './components/ExamResultsModal';
 import { ResetProgressModal } from './components/ResetProgressModal';
 import { AIChatModal } from './components/AIChatModal';
 import { CLINICAL_TOPICS } from './data/topics';
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
   const {
@@ -105,7 +106,9 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-100/70 flex flex-col font-sans text-slate-900 selection:bg-indigo-600 selection:text-white">
+    <>
+      <Analytics />
+      <div className="min-h-screen bg-slate-100/70 flex flex-col font-sans text-slate-900 selection:bg-indigo-600 selection:text-white">
       {/* Top Navigation Header */}
       <Header
         stats={stats}
@@ -365,6 +368,7 @@ export default function App() {
         initialPrompt={aiChatInitialPrompt}
         onClearInitialPrompt={() => setAiChatInitialPrompt(null)}
       />
-    </div>
+      </div>
+    </>
   );
 }
