@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   Bookmark, 
   BookmarkCheck, 
@@ -57,10 +57,25 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 }) => {
   const [showNoteEditor, setShowNoteEditor] = useState<boolean>(false);
   const [localNote, setLocalNote] = useState<string>(userNote || '');
+  const cardRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     setLocalNote(userNote || '');
   }, [userNote]);
+
+  // Smoothly scroll the next question card to the center of the viewport
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (cardRef.current) {
+        cardRef.current.scrollIntoView({
+          behavior: 'smooth',
+          block: 'center',
+        });
+      }
+    }, 60);
+
+    return () => clearTimeout(timer);
+  }, [question.id]);
 
   // Keyboard shortcut listener for options (A, B, C, D, E or 1, 2, 3, 4, 5) and navigation
   useEffect(() => {
@@ -103,7 +118,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   const isCorrect = selectedOption === question.correctOption;
 
   return (
-    <article className="bg-white rounded-xs border border-slate-200 shadow-xs overflow-hidden">
+    <article 
+      ref={cardRef} 
+      id={`question-card-${question.id}`}
+      className="bg-white rounded-xs border border-slate-200 shadow-xs overflow-hidden"
+    >
       {/* Top Meta Bar */}
       <div className="bg-slate-50 px-4 sm:px-6 py-3 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3 text-xs">
         <div className="flex items-center flex-wrap gap-2">
