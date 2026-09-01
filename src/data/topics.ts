@@ -7,7 +7,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Emergency & Critical Care',
     description: 'Recognition of life-threatening asthma, "silent chest", ABG interpretation in asthma, IV magnesium sulfate mechanism, and target SpO2 in pregnancy.',
     questionCount: 5,
-    pageRange: 'Pages 1–3',
+    pageRange: '',
     colorTheme: 'teal',
     iconName: 'Wind',
     highYieldConcepts: [
@@ -24,7 +24,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'The Rule of 15s, Whipple\'s triad, distinguishing insulinoma vs factitious insulin (C-peptide), hypoglycemia in CKD, and emergency glucagon in rural settings.',
     questionCount: 5,
-    pageRange: 'Pages 4–6',
+    pageRange: '',
     colorTheme: 'amber',
     iconName: 'Activity',
     highYieldConcepts: [
@@ -41,7 +41,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Infectious Diseases & Toxicology',
     description: 'Myotoxic vs hemotoxic vs neurotoxic envenoming, 20-minute whole blood clotting test (20WBCT), NSAID avoidance in coagulopathy, compartment syndrome vs arterial pulse, and rhabdomyolysis hydration.',
     questionCount: 5,
-    pageRange: 'Pages 6–8',
+    pageRange: '',
     colorTheme: 'emerald',
     iconName: 'ShieldAlert',
     highYieldConcepts: [
@@ -58,14 +58,14 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Diagnostics & Therapeutics',
     description: 'Tube additives, color coding, coagulation profiles (Light Blue/Citrate), OGTT/Glycolysis inhibition (Grey/Fluoride), CBC (Purple/EDTA), underfilling artifacts, and delayed film prep.',
     questionCount: 5,
-    pageRange: 'Pages 8–10',
+    pageRange: '',
     colorTheme: 'blue',
     iconName: 'FlaskConical',
     highYieldConcepts: [
       'Light blue cap (Sodium Citrate) for PT, aPTT, INR clotting studies',
       'Grey cap (Fluoride Oxalate) inhibits enolase/glycolysis for glucose & OGTT',
       'Purple/Lavender (EDTA) chelates calcium for hematology & CBC',
-      'Half-filled EDTA tubes cause hypertonicity, cell shrinkage & altered red cell indices',
+      'Half-filled EDTA tubes cause hypertonicity, cell shrinkage & inaccurate cell indices',
       'Delayed blood film (>2-4h) causes smear cells, smudge cells & morphological artifacts'
     ]
   },
@@ -75,7 +75,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Postprandial glycemic excursions, Advanced Glycation End-products (AGEs), high-fiber low-GI dietary substitution in T2DM/NAFLD, gestational diabetes, and meal composition.',
     questionCount: 5,
-    pageRange: 'Pages 11–13',
+    pageRange: '',
     colorTheme: 'orange',
     iconName: 'Utensils',
     highYieldConcepts: [
@@ -92,7 +92,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Cardiovascular Medicine',
     description: 'Hemodynamic mechanisms, CCB edema resolution by ACEi, alpha-blocker first-dose syncope, beta-blocker + non-DHP CCB heart block, hydralazine lupus, and renal artery stenosis AKI.',
     questionCount: 5,
-    pageRange: 'Pages 13–15',
+    pageRange: '',
     colorTheme: 'rose',
     iconName: 'HeartPulse',
     highYieldConcepts: [
@@ -109,7 +109,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Nephrology & Acid-Base',
     description: 'Systematic acid-base analysis: acute vs chronic disorders, uncompensated vs fully compensated metabolic alkalosis, PE respiratory alkalosis, COPD acute-on-chronic acidosis, and opioid hypoventilation.',
     questionCount: 5,
-    pageRange: 'Pages 16–18',
+    pageRange: '',
     colorTheme: 'cyan',
     iconName: 'ActivitySquare',
     highYieldConcepts: [
@@ -126,7 +126,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Diagnostics & Therapeutics',
     description: 'Individualization of nutrition, sodium restriction in heart failure, stroke dysphagia pureed textures, and high-energy high-protein nutrition in severe wasting.',
     questionCount: 5,
-    pageRange: 'Pages 18–20',
+    pageRange: '',
     colorTheme: 'lime',
     iconName: 'Apple',
     highYieldConcepts: [
@@ -143,7 +143,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Euvolemic hyponatremia, small cell lung cancer ectopic AVP, aquaporin-2 insertion, hypertonic saline for seizures, osmotic demyelination syndrome risk, and cerebral salt wasting differentiation.',
     questionCount: 5,
-    pageRange: 'Pages 20–22',
+    pageRange: '',
     colorTheme: 'indigo',
     iconName: 'Droplets',
     highYieldConcepts: [
@@ -160,7 +160,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Central DI vs Nephrogenic DI vs Primary Polydipsia, water deprivation test protocols, desmopressin response, lithium toxicity mechanism, and medullary wash-out.',
     questionCount: 5,
-    pageRange: 'Pages 22–25',
+    pageRange: '',
     colorTheme: 'sky',
     iconName: 'GlassWater',
     highYieldConcepts: [
@@ -177,7 +177,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Infectious Diseases & Toxicology',
     description: 'Severe falciparum protocols, IV artesunate criteria for treatment failure, delayed post-artesunate hemolytic anemia (PADH), concurrent bacterial sepsis shock, and post-cerebral malaria ACT selection.',
     questionCount: 5,
-    pageRange: 'Pages 25–28',
+    pageRange: '',
     colorTheme: 'red',
     iconName: 'Bug',
     highYieldConcepts: [
@@ -194,7 +194,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Diagnostics & Therapeutics',
     description: 'Restrictive transfusion triggers (Hb 7-8 g/dL), active coagulopathy correction with FFP, Transfusion-Associated Circulatory Overload (TACO) vs TRALI, and Cryoprecipitate for hypofibrinogenemia.',
     questionCount: 5,
-    pageRange: 'Pages 28–30',
+    pageRange: '',
     colorTheme: 'crimson',
     iconName: 'Flame',
     highYieldConcepts: [
@@ -211,7 +211,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Cardiovascular Medicine',
     description: 'Hyperkalemia action potential depolarization, Prominent U waves in hypokalemia, Shortened QT in hypercalcemia, ST segment prolongation in hypocalcemia, and IV Calcium gluconate.',
     questionCount: 5,
-    pageRange: 'Pages 30–32',
+    pageRange: '',
     colorTheme: 'violet',
     iconName: 'Zap',
     highYieldConcepts: [
@@ -228,7 +228,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Emergency & Critical Care',
     description: 'Hour-1 Sepsis Bundle, IV hydrocortisone in refractory vasopressor shock, surgical source control in hollow viscus perforation, refractory hyperkalemic shock dialysis, and anastomotic leaks.',
     questionCount: 5,
-    pageRange: 'Pages 33–35',
+    pageRange: '',
     colorTheme: 'purple',
     iconName: 'AlertOctagon',
     highYieldConcepts: [
@@ -245,7 +245,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Emergency & Critical Care',
     description: 'COPD exacerbation BiPAP indications, hazards of unmonitored high-flow O2 in chronic CO2 retainers, Acute-on-Chronic Type 2 classification, NIV contraindications (copious secretions), and post-extubation BiPAP.',
     questionCount: 5,
-    pageRange: 'Pages 35–37',
+    pageRange: '',
     colorTheme: 'cyan',
     iconName: 'Lungs',
     highYieldConcepts: [
@@ -262,7 +262,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Gastroenterology & Hepatology',
     description: 'Active spurting peptic ulcer dual endoscopic hemostasis, wide-bore IV resuscitation, Terlipressin & prophylactic antibiotics in variceal bleeds, rescue Sengstaken-Blakemore to TIPS, and endoscopy timing within 24h.',
     questionCount: 5,
-    pageRange: 'Pages 37–40',
+    pageRange: '',
     colorTheme: 'rose',
     iconName: 'Stethoscope',
     highYieldConcepts: [
@@ -279,7 +279,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Probe-to-bone test & MRI for osteomyelitis, Ankle-Brachial Index (ABI) false elevation (>1.4) in Monckeberg medial sclerosis, deep tissue biopsy vs superficial swabs, 10g monofilament, and CT angiography.',
     questionCount: 5,
-    pageRange: 'Pages 40–42',
+    pageRange: '',
     colorTheme: 'amber',
     iconName: 'Footprints',
     highYieldConcepts: [
@@ -296,7 +296,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Smart connected insulin pens tracking "Insulin on Board" (IOB) to prevent dose stacking, CGM trajectory rate-of-change AI predictions, Telemedicine platforms, digital adherence logs, and sensor lag verification.',
     questionCount: 5,
-    pageRange: 'Pages 42–44',
+    pageRange: '',
     colorTheme: 'emerald',
     iconName: 'Cpu',
     highYieldConcepts: [
@@ -313,7 +313,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Emergency & Critical Care',
     description: 'Severe asthma escalation role, IM adrenaline dosing & 5-minute repeat in anaphylaxis, immediate defibrillation vs adrenaline timing in VF arrest, Atropine for unstable bradycardia, and nebulized adrenaline in croup.',
     questionCount: 5,
-    pageRange: 'Pages 45–47',
+    pageRange: '',
     colorTheme: 'red',
     iconName: 'Syringe',
     highYieldConcepts: [
@@ -330,7 +330,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Nephrology & Acid-Base',
     description: 'Insulin-dextrose Na+/K+ ATPase stimulation, IV calcium gluconate cardiac membrane antagonism, emergency hemodialysis in anuric renal failure, DKA hyperkalemia management, and RAASi preservation strategies.',
     questionCount: 5,
-    pageRange: 'Pages 47–49',
+    pageRange: '',
     colorTheme: 'indigo',
     iconName: 'Flame',
     highYieldConcepts: [
@@ -347,7 +347,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Infectious Diseases & Toxicology',
     description: 'Prognostic indicators (age, incubation period <7d, onset period <48h), Cephalic tetanus from otitis media with CN VII palsy, and environmental control (quiet, darkened isolation room).',
     questionCount: 3,
-    pageRange: 'Pages 49–50',
+    pageRange: '',
     colorTheme: 'purple',
     iconName: 'ShieldMinus',
     highYieldConcepts: [
@@ -362,7 +362,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Diagnostics & Therapeutics',
     description: 'Abrams needle for closed pleural biopsy, Menghini suction needle for percutaneous liver biopsy, Tru-cut core cutting needles, and Jamshidi bone marrow aspiration needles.',
     questionCount: 2,
-    pageRange: 'Page 51',
+    pageRange: '',
     colorTheme: 'slate',
     iconName: 'Pin',
     highYieldConcepts: [
@@ -376,7 +376,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Emergency & Critical Care',
     description: 'Non-contrast CT brain as rapid initial scan to exclude hemorrhage, Diffusion-Weighted MRI (DWI) for posterior fossa/early ischemia, DWI-FLAIR mismatch in wake-up strokes, post-tPA CT for hemorrhage, and basal ganglia ICH.',
     questionCount: 5,
-    pageRange: 'Pages 52–53',
+    pageRange: '',
     colorTheme: 'blue',
     iconName: 'Scan',
     highYieldConcepts: [
@@ -393,7 +393,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Nephrology & Acid-Base',
     description: 'Acute ethylene glycol (antifreeze) toxicity hemodialysis, uremic pericardial friction rub urgent dialysis, Peritoneal dialysis contraindications post-laparotomy, Continuous Renal Replacement Therapy (CRRT) in septic shock, and refractory hyperkalemia.',
     questionCount: 5,
-    pageRange: 'Pages 54–56',
+    pageRange: '',
     colorTheme: 'teal',
     iconName: 'Filter',
     highYieldConcepts: [
@@ -410,7 +410,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Psychogenic ED sympathetic overactivity with preserved nocturnal erections, Second-line Intracavernosal Alprostadil (PGE1) after PDE-5i failure, and First-line oral Sildenafil criteria.',
     questionCount: 3,
-    pageRange: 'Pages 56–57',
+    pageRange: '',
     colorTheme: 'violet',
     iconName: 'UserCheck',
     highYieldConcepts: [
@@ -425,7 +425,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Insulin resistance causing acanthosis nigricans, hyperinsulinemia-driven theca cell androgen excess, Letrozole (aromatase inhibitor) as first-line ovulation induction, and follicular arrest causing anovulatory infertility.',
     questionCount: 4,
-    pageRange: 'Pages 57–59',
+    pageRange: '',
     colorTheme: 'fuchsia',
     iconName: 'Sparkles',
     highYieldConcepts: [
@@ -441,7 +441,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Multimodal therapy, pulmonary edema & heart failure management, plasma exchange / emergency surgery rescue therapy, beta-blocker cardiac collapse in thyrotoxic cardiomyopathy, and treating concurrent precipitating sepsis.',
     questionCount: 4,
-    pageRange: 'Pages 59–61',
+    pageRange: '',
     colorTheme: 'rose',
     iconName: 'Flame',
     highYieldConcepts: [
@@ -457,7 +457,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Depressed central respiratory chemosensitivity, Levothyroxine (IV T4) with stress-dose hydrocortisone, SIADH-like free water impairment with 3% saline for seizures, secondary central hypopituitarism steroid rule, and avoiding IV T3 in CAD.',
     questionCount: 5,
-    pageRange: 'Pages 61–64',
+    pageRange: '',
     colorTheme: 'blue',
     iconName: 'ThermometerSnowflake',
     highYieldConcepts: [
@@ -469,12 +469,29 @@ export const CLINICAL_TOPICS: Topic[] = [
     ]
   },
   {
+    id: 'drug_poisoning',
+    title: 'Principles of Managing Drug Poisoning',
+    category: 'Infectious Diseases & Toxicology',
+    description: 'Urinary alkalinization for salicylates, airway protection before decontamination, hemodialysis criteria in low-Vd toxicities, Atropine + Pralidoxime in organophosphates, and Naloxone in opioid overdoses.',
+    questionCount: 5,
+    pageRange: '',
+    colorTheme: 'emerald',
+    iconName: 'ShieldAlert',
+    highYieldConcepts: [
+      'Urinary alkalinization (IV sodium bicarbonate, target urine pH 7.5–8.5) ion-traps salicylate to accelerate renal clearance',
+      'Airway protection via endotracheal intubation must strictly precede any gastrointestinal decontamination in obtunded patients',
+      'Hemodialysis effectively removes toxins with low molecular weight, low volume of distribution (<1 L/kg), and low protein binding',
+      'Organophosphate toxicity requires high-dose IV Atropine (muscarinic reversal) combined with Pralidoxime (cholinesterase reactivation)',
+      'Opioid toxidrome with respiratory depression (RR < 10/min, pinpoint pupils) requires prompt IV/IM Naloxone and ventilatory support'
+    ]
+  },
+  {
     id: 'hypopituitarism',
     title: 'Hypopituitarism',
     category: 'Endocrinology & Metabolism',
     description: 'Postpartum pituitary necrosis (Sheehan syndrome) lack of pigmentation (ACTH deficiency), preserved aldosterone via RAAS in secondary adrenal crisis, mandatory glucocorticoid before thyroid replacement, lab diagnosis, and pituitary stalk disruption.',
     questionCount: 5,
-    pageRange: 'Pages 64–66',
+    pageRange: '',
     colorTheme: 'purple',
     iconName: 'Crown',
     highYieldConcepts: [
@@ -491,7 +508,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Cardiovascular Medicine',
     description: 'Serial high-sensitivity cardiac troponin delta dynamics in NSTEMI, Myocardial Injury vs true Type 1 MI in critical illness, and immediate 12-lead ECG as priority diagnostic step.',
     questionCount: 3,
-    pageRange: 'Pages 66–67',
+    pageRange: '',
     colorTheme: 'red',
     iconName: 'Heart',
     highYieldConcepts: [
@@ -506,7 +523,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Infectious Diseases & Toxicology',
     description: 'Culture-directed antibiotic de-escalation, withholding antibiotics in viral URTIs, rational empiric therapy in severe CAP, renal dose adjustments in CKD, and selective antimicrobial pressure mechanisms.',
     questionCount: 5,
-    pageRange: 'Pages 67–70',
+    pageRange: '',
     colorTheme: 'emerald',
     iconName: 'ShieldCheck',
     highYieldConcepts: [
@@ -523,7 +540,7 @@ export const CLINICAL_TOPICS: Topic[] = [
     category: 'Endocrinology & Metabolism',
     description: 'Immediate IV Hydrocortisone in acute adrenal crisis, Steroid Equivalence calculations (Prednisolone 40mg = Methylprednisolone 32mg), DEXA screening for glucocorticoid-induced osteoporosis, Fludrocortisone in primary adrenal failure, and HPA axis tapering rules.',
     questionCount: 5,
-    pageRange: 'Pages 70–72',
+    pageRange: '',
     colorTheme: 'amber',
     iconName: 'Pill',
     highYieldConcepts: [
@@ -532,6 +549,40 @@ export const CLINICAL_TOPICS: Topic[] = [
       'Long-term systemic corticosteroid therapy (>3 months) requires DEXA bone mineral density scanning for osteoporosis',
       'Primary adrenal failure with persistent hyperkalemia and salt-wasting requires daily Fludrocortisone mineralocorticoid replacement',
       'Steroids taken >3 weeks cause Hypothalamic-Pituitary-Adrenal (HPA) axis suppression and must be tapered gradually'
+    ]
+  },
+  {
+    id: 'bacterial_meningitis',
+    title: 'Management of Bacterial Meningitis',
+    category: 'Infectious Diseases & Toxicology',
+    description: 'CSF analysis (neutrophilic pleocytosis, low glucose ratio), Adjunctive Dexamethasone timing with first antibiotic dose, blood cultures + empiric antibiotics before CT/LP in focal deficits, DIC/purpura fulminans, and Abducens (CN VI) palsy.',
+    questionCount: 5,
+    pageRange: '',
+    colorTheme: 'purple',
+    iconName: 'Brain',
+    highYieldConcepts: [
+      'CSF neutrophilic pleocytosis (>1000/uL with >80% PMNs) + high protein + low glucose is diagnostic of bacterial meningitis',
+      'Dexamethasone (10 mg IV) should be administered prior to or concurrently with the first dose of IV antibiotics in pneumococcal meningitis',
+      'In patients with focal neurological deficits or altered GCS, draw blood cultures and start IV antibiotics immediately BEFORE brain CT and LP',
+      'Meningococcemia with purpuric non-blanching rash and prolonged PT/aPTT indicates Disseminated Intravascular Coagulation (DIC)',
+      'Sixth cranial nerve (abducens) palsy with lateral rectus weakness and diplopia is a classic false localizing sign of elevated intracranial pressure'
+    ]
+  },
+  {
+    id: 'basic_life_support',
+    title: 'Basic Life Support (BLS)',
+    category: 'Emergency & Critical Care',
+    description: 'Immediate EMS activation and AED retrieval in adult unresponsiveness with agonal gasping, immediate defibrillation for VF, 2-minute compressor rotation to prevent fatigue, CPR + AED prioritization in opioid cardiac arrest, and rescue breathing in respiratory arrest.',
+    questionCount: 5,
+    pageRange: '',
+    colorTheme: 'rose',
+    iconName: 'HeartPulse',
+    highYieldConcepts: [
+      'Unresponsive adult with absent/agonal breathing requires immediate EMS activation and AED retrieval before starting CPR',
+      'When the AED announces "Shock advised", deliver the shock and immediately resume chest compressions without pausing for pulse checks',
+      'Chest compression quality degrades rapidly after 1–2 minutes; rotate CPR compressors every 2 minutes (or every 5 cycles)',
+      'In suspected opioid-induced cardiac arrest, high-quality CPR and early defibrillation take precedence over naloxone administration',
+      'Unresponsive patient in respiratory arrest with a palpable pulse: provide rescue ventilation (1 breath every 5–6 seconds) and consider naloxone'
     ]
   }
 ];

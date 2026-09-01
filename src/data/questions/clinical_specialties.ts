@@ -9,130 +9,130 @@ export const CLINICAL_SPECIALTIES_QUESTIONS: Question[] = [
     topicId: 'sample_bottles',
     topicTitle: 'Types & Use of Sample Bottles',
     questionNumber: 1,
-    clinicalVignette: 'A 45-year-old man on warfarin therapy requires routine international normalized ratio (INR) and prothrombin time (PT) monitoring. Which vacuum blood collection tube (color and additive) must be used for accurate coagulation studies?',
+    clinicalVignette: 'A 45-year-old man presents to the medical outpatient clinic with progressive jaundice, easy bruising, abdominal distension, and recurrent nosebleeds. On examination, he has palmar erythema, spider naevi, and ascites, raising suspicion of chronic liver disease with impaired coagulation. The physician requests Prothrombin Time (PT), Activated Partial Thromboplastin Time (aPTT), and International Normalized Ratio (INR) to assess his clotting function. Which blood collection tube should be used for these investigations?',
     options: [
-      { id: 'A', text: 'Purple / Lavender top (K2-EDTA)' },
-      { id: 'B', text: 'Light Blue top (3.2% Buffered Sodium Citrate in a 9:1 blood-to-anticoagulant ratio)' },
-      { id: 'C', text: 'Grey top (Sodium Fluoride / Potassium Oxalate)' },
-      { id: 'D', text: 'Red / Gold top (Clot Activator / Serum Gel Separator)' }
+      { id: 'A', text: 'Purple/Lavender cap EDTA tube' },
+      { id: 'B', text: 'Grey cap fluoride oxalate tube' },
+      { id: 'C', text: 'Light blue cap sodium citrate tube' },
+      { id: 'D', text: 'Green cap heparin tube' }
     ],
-    correctOption: 'B',
-    correctAnswerText: 'Light Blue top (3.2% Buffered Sodium Citrate in a 9:1 blood-to-anticoagulant ratio)',
-    explanation: 'Light blue capped vacuum tubes contain 3.2% (0.109 M) buffered Sodium Citrate, which acts as a reversible calcium chelator. It is the universally mandated standard for all plasma coagulation studies (PT/INR, aPTT, D-dimer, fibrinogen, factor assays). Crucially, the tube must be filled exactly to the indicator mark to maintain a strict 9:1 blood-to-anticoagulant volume ratio; underfilling causes excess citrate to bind reagent calcium during testing, producing spuriously prolonged clotting times.',
+    correctOption: 'C',
+    correctAnswerText: 'Light blue cap sodium citrate tube',
+    explanation: 'Coagulation studies (PT, aPTT, INR, thrombin time, fibrinogen, D-dimer, and factor assays) must always be collected in a light blue cap tube containing 3.2% (0.109 M) buffered sodium citrate. Sodium citrate reversibly binds ionized calcium (a critical cofactor in both the intrinsic and extrinsic clotting cascades). In the laboratory, calcium is added back to initiate the clotting cascade in an automated analyzer. The tube must be filled to exactly the 9:1 blood-to-anticoagulant ratio line.',
     optionRationales: {
-      A: 'EDTA irreversibly chelates calcium and inhibits clotting factor activity permanently; it cannot be used for PT/INR.',
-      B: 'Correct. Light blue sodium citrate tube (3.2%, 9:1 ratio) is the standard for PT/INR and coagulation testing.',
-      C: 'Grey top fluoride/oxalate is used for glucose and lactate.',
-      D: 'Red/Gold tubes facilitate clotting for serum biochemistry, whereas coagulation testing requires unclotted citrated plasma.'
+      A: 'EDTA irreversibly binds calcium and damages clotting factor V and VIII assays.',
+      B: 'Grey tubes contain sodium fluoride/potassium oxalate for glucose preservation.',
+      C: 'Correct. Light blue cap (3.2% sodium citrate) is the standard tube for all coagulation and clotting studies.',
+      D: 'Heparin accelerates antithrombin III, which inhibits thrombin and invalidates PT/aPTT.'
     },
-    keyTakeaway: 'Light Blue capped tubes containing 3.2% Sodium Citrate (filled to a precise 9:1 blood-to-anticoagulant ratio) are required for PT/INR and coagulation tests.',
-    sourcePageRef: 'Pages 8–9, Q1',
-    difficulty: 'Core Clinical',
-    tags: ['Sample Bottles', 'Sodium Citrate', 'Coagulation', 'PT/INR', 'Phlebotomy']
+    keyTakeaway: 'Coagulation studies (PT, aPTT, INR, D-dimer) require a light blue cap 3.2% sodium citrate tube filled precisely to the 9:1 blood-to-anticoagulant ratio mark.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Sample Bottles', 'Sodium Citrate', 'Coagulation Studies', 'PT/INR', 'Phlebotomy']
   },
   {
     id: 'sb_q2',
     topicId: 'sample_bottles',
     topicTitle: 'Types & Use of Sample Bottles',
     questionNumber: 2,
-    clinicalVignette: 'A 52-year-old woman is scheduled for a 75g Oral Glucose Tolerance Test (OGTT) for suspected diabetes mellitus. The phlebotomy sample will be transported to a central laboratory 3 hours away. Which tube additive is specifically required to prevent in vitro glycolysis and ensure accurate plasma glucose determination?',
+    clinicalVignette: 'A 30-year-old obese woman with a family history of diabetes has a borderline fasting blood glucose level. The physician requests an Oral Glucose Tolerance Test (OGTT) to confirm the diagnosis. Which blood collection tube is used for collecting blood samples during the OGTT?',
     options: [
-      { id: 'A', text: 'Grey top tube containing Sodium Fluoride (glycolytic inhibitor) and Potassium Oxalate (anticoagulant)' },
-      { id: 'B', text: 'Green top tube containing Lithium Heparin' },
-      { id: 'C', text: 'Yellow / Gold top SST tube with silica particles' },
-      { id: 'D', text: 'Purple top EDTA tube' }
+      { id: 'A', text: 'Purple/Lavender cap EDTA tube' },
+      { id: 'B', text: 'Grey cap fluoride oxalate tube' },
+      { id: 'C', text: 'Light blue cap sodium citrate tube' },
+      { id: 'D', text: 'Green cap sodium heparin tube' }
     ],
-    correctOption: 'A',
-    correctAnswerText: 'Grey top tube containing Sodium Fluoride (glycolytic inhibitor) and Potassium Oxalate (anticoagulant)',
-    explanation: 'In unseparated whole blood at room temperature, erythrocytes and leukocytes metabolize glucose via the glycolytic pathway at an approximate rate of 5% to 7% per hour (up to 10 mg/dL/hour). Sodium Fluoride acts as a potent inhibitor of the glycolytic enzyme enolase (phosphopyruvate hydratase), arresting in vitro glycolysis and stabilizing glucose concentrations for up to 24 to 48 hours. Potassium oxalate acts as the anticoagulant. Grey top tubes are standard for glucose, lactate, and OGTT testing.',
+    correctOption: 'B',
+    correctAnswerText: 'Grey cap fluoride oxalate tube',
+    explanation: 'Blood glucose testing (including fasting glucose and OGTT series) requires collection into a grey cap tube containing sodium fluoride and potassium oxalate. Sodium fluoride acts as an enolase inhibitor, blocking the glycolytic pathway in erythrocytes and leukocytes. Without an antiglycolytic agent, red blood cells consume glucose at a rate of 5–7% per hour (approx. 10 mg/dL/hour) at room temperature, resulting in falsely low glucose readings.',
     optionRationales: {
-      A: 'Correct. Sodium fluoride inhibits enolase/glycolysis while potassium oxalate prevents coagulation.',
-      B: 'Lithium heparin prevents clotting but does NOT inhibit enolase; ongoing cellular glycolysis will falsely lower glucose.',
-      C: 'Gold SST tubes allow clot formation without glycolytic inhibition.',
-      D: 'EDTA chelates calcium for hematology but does not arrest glucose consumption.'
+      A: 'EDTA tubes do not inhibit glycolysis, leading to in vitro glucose degradation.',
+      B: 'Correct. Grey cap tubes contain sodium fluoride (enolase inhibitor) to prevent in vitro glycolysis during glucose and OGTT testing.',
+      C: 'Light blue tubes are for coagulation studies.',
+      D: 'Green cap heparin tubes do not halt glycolysis unless centrifuged and separated immediately.'
     },
-    keyTakeaway: 'Grey top tubes with Sodium Fluoride inhibit enolase and prevent in vitro glycolysis, preserving glucose accuracy during transit.',
-    sourcePageRef: 'Page 9, Q2',
+    keyTakeaway: 'Grey cap tubes contain sodium fluoride to inhibit enolase and preserve glucose concentrations during glucose tolerance testing.',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['Sample Bottles', 'Fluoride Oxalate', 'Enolase Inhibition', 'OGTT', 'Glycolysis']
+    tags: ['Sample Bottles', 'Fluoride Oxalate', 'OGTT', 'Glycolysis Inhibition']
   },
   {
     id: 'sb_q3',
     topicId: 'sample_bottles',
     topicTitle: 'Types & Use of Sample Bottles',
     questionNumber: 3,
-    clinicalVignette: 'A medical intern draws blood for a complete blood count (CBC / FBC) into a lavender-top (K2-EDTA) tube. The tube is filled only to 25% of its total designated capacity (underfilled). What spurious laboratory artifact will this underfilling cause on the automated hematology analyzer?',
+    clinicalVignette: 'A 28-year-old woman presents with a 3-month history of fatigue, dizziness, and heavy menstrual bleeding. The physician requests a Complete Blood Count (CBC) to evaluate for anaemia. Which blood collection tube should be used?',
     options: [
-      { id: 'A', text: 'Spurious macrocytosis and elevated platelet count' },
-      { id: 'B', text: 'Osmotic red blood cell shrinkage, falsely decreased MCV, and falsely decreased hematocrit (HCT)' },
-      { id: 'C', text: 'Spurious elevation of white blood cell count' },
-      { id: 'D', text: 'Spurious conversion of hemoglobin to methemoglobin' }
+      { id: 'A', text: 'Grey cap fluoride oxalate tube' },
+      { id: 'B', text: 'Light blue cap sodium citrate tube' },
+      { id: 'C', text: 'Gold cap serum separator tube' },
+      { id: 'D', text: 'Purple/Lavender cap EDTA tube' }
     ],
-    correctOption: 'B',
-    correctAnswerText: 'Osmotic red blood cell shrinkage, falsely decreased MCV, and falsely decreased hematocrit (HCT)',
-    explanation: 'When an EDTA tube is significantly underfilled, the concentration of the EDTA anticoagulant liquid/crystals relative to blood volume is excessively high. This hypertonic microenvironment draws intracellular water out of red blood cells via osmosis, causing erythrocyte shrinkage (crenation). Consequently, the automated analyzer reports a falsely low Mean Corpuscular Volume (MCV) and a falsely decreased calculated Hematocrit (HCT), with a spurious increase in Mean Corpuscular Hemoglobin Concentration (MCHC).',
+    correctOption: 'D',
+    correctAnswerText: 'Purple/Lavender cap EDTA tube',
+    explanation: 'A Complete Blood Count (CBC / FBC), blood film for morphology, erythrocyte sedimentation rate (ESR), hemoglobin electrophoresis, and blood grouping require blood collected into a purple/lavender cap tube containing dipotassium or tripotassium EDTA (K2-EDTA or K3-EDTA). EDTA prevents coagulation by chelating divalent calcium ions while optimally preserving red cell, white cell, and platelet morphology without cellular distortion or clumping.',
     optionRationales: {
-      A: 'Underfilling causes microcytic shrinkage, not macrocytosis.',
-      B: 'Correct. Hypertonic excess EDTA causes osmotic red cell shrinkage, falsely lowering MCV and HCT.',
-      C: 'WBC counts are not directly elevated by EDTA hypertonicity, though morphology may degrade.',
-      D: 'EDTA does not oxidize hemoglobin to methemoglobin.'
+      A: 'Fluoride oxalate lyses red cells and distorts morphology.',
+      B: 'Sodium citrate causes liquid dilution (1:9) and alters cell counts.',
+      C: 'Gold cap tubes contain clot activators and gel separator to produce serum, not whole blood for CBC.',
+      D: 'Correct. Purple/lavender cap EDTA tubes prevent clotting and preserve cell morphology for Complete Blood Count.'
     },
-    keyTakeaway: 'Underfilled EDTA tubes create a hypertonic environment that shrinks red blood cells, causing falsely low MCV and hematocrit (HCT).',
-    sourcePageRef: 'Pages 9–10, Q3',
-    difficulty: 'Core Clinical',
-    tags: ['EDTA Tube', 'Underfilling Artifact', 'MCV Artifact', 'Hematocrit', 'Phlebotomy']
+    keyTakeaway: 'Purple/Lavender cap EDTA tubes are used for CBC, differential, blood film, and Hb electrophoresis because they preserve cellular morphology.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Sample Bottles', 'EDTA', 'CBC', 'Hematology', 'Phlebotomy']
   },
   {
     id: 'sb_q4',
     topicId: 'sample_bottles',
     topicTitle: 'Types & Use of Sample Bottles',
     questionNumber: 4,
-    clinicalVignette: 'A venous blood specimen collected in an EDTA tube is left on a clinic bench in a warm tropical environment for 6 hours before a peripheral blood smear is prepared. Which morphological artifacts are expected on microscopic examination of the stained blood film?',
+    clinicalVignette: 'A medical officer requests a Complete Blood Count (CBC) for a patient with suspected anaemia. After collection, the laboratory scientist notices that the EDTA tube is only half-filled. What is the likely effect of this error on the test results?',
     options: [
-      { id: 'A', text: 'Progressive crenation of erythrocytes, neutrophil nuclear lobulation degeneration (smudge/smear appearance), and cytoplasmic vacuolization' },
-      { id: 'B', text: 'Instantaneous rupture of all platelets with pseudothrombocytosis' },
-      { id: 'C', text: 'Transformation of all mature lymphocytes into atypical blast cells' },
-      { id: 'D', text: 'Complete loss of erythrocyte hemoglobin staining' }
+      { id: 'A', text: 'Formation of fibrin strands due to inadequate clotting' },
+      { id: 'B', text: 'Prolongation of Prothrombin Time (PT)' },
+      { id: 'C', text: 'Excess EDTA relative to blood, causing cellular shrinkage and inaccurate cell indices' },
+      { id: 'D', text: 'Increased blood glucose concentration due to continued glycolysis' }
     ],
-    correctOption: 'A',
-    correctAnswerText: 'Progressive crenation of erythrocytes, neutrophil nuclear lobulation degeneration (smudge/smear appearance), and cytoplasmic vacuolization',
-    explanation: 'Delayed preparation of peripheral blood films from EDTA-anticoagulated blood (>2 to 4 hours, accelerated by warm ambient temperatures) produces characteristic in vitro cellular artifacts: red blood cells develop spicules and crenation (echinocytes), neutrophils display cytoplasmic vacuolation, nuclear pyknosis, karyorrhexis, and disintegration into smudge/smear cells, and platelets may clump or degenerate. Films should ideally be prepared within 1–2 hours of venipuncture.',
+    correctOption: 'C',
+    correctAnswerText: 'Excess EDTA relative to blood, causing cellular shrinkage and inaccurate cell indices',
+    explanation: 'When an EDTA tube is underfilled (e.g. less than half full), the relative concentration of potassium EDTA salt is excessively high compared to blood volume. This creates a hypertonic extracellular environment, drawing water out of erythrocytes (osmotic cellular shrinkage). This artifact falsely decreases the Mean Corpuscular Volume (MCV) and Hematocrit (HCT), artificially elevates the Mean Corpuscular Hemoglobin Concentration (MCHC), and alters platelet counts.',
     optionRationales: {
-      A: 'Correct. Delayed smear preparation causes red cell crenation, neutrophil vacuolation, and smudge cell artifacts.',
-      B: 'Platelet disintegration does not cause uniform pseudothrombocytosis.',
-      C: 'Mature lymphocytes do not dedifferentiate into neoplastic blast cells in vitro.',
-      D: 'Hemoglobin staining remains intact; morphological shape and membrane architecture are what degrade.'
+      A: 'Fibrin strands form if blood is under-mixed, not simply from excess EDTA.',
+      B: 'PT is measured in sodium citrate tubes, not EDTA.',
+      C: 'Correct. Excess EDTA in underfilled tubes causes osmotic erythrocyte shrinkage, falsely lowering MCV and hematocrit.',
+      D: 'EDTA does not increase glucose.'
     },
-    keyTakeaway: 'Delayed peripheral blood smear preparation in EDTA leads to red cell crenation (echinocytes), neutrophil vacuolization, and smudge cell artifacts.',
-    sourcePageRef: 'Page 10, Q4',
+    keyTakeaway: 'Underfilling an EDTA tube leads to hypertonic cellular shrinkage, falsely depressing MCV and hematocrit while artificially elevating MCHC.',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['Blood Smear Artifacts', 'EDTA Delay', 'Crenation', 'Smudge Cells', 'Hematology']
+    tags: ['Sample Bottles', 'EDTA Artifact', 'Underfilled Tube', 'MCV', 'Laboratory Medicine']
   },
   {
     id: 'sb_q5',
     topicId: 'sample_bottles',
     topicTitle: 'Types & Use of Sample Bottles',
     questionNumber: 5,
-    clinicalVignette: 'During a multiple-tube phlebotomy draw for Blood Cultures, Coagulation Profile (PT/INR), Serum Chemistry (Electrolytes/Urea), and Full Blood Count (CBC), what is the correct Clinical and Laboratory Standards Institute (CLSI) "Order of Draw" to prevent cross-contamination of additives?',
+    clinicalVignette: 'A 65-year-old man presents with suspected chronic lymphocytic leukaemia. Blood is collected into an EDTA tube, but the peripheral blood film is prepared 12 hours later. What effect can this delay have on the blood film?',
     options: [
-      { id: 'A', text: 'EDTA (Purple) -> Serum (Gold) -> Citrate (Light Blue) -> Blood Culture' },
-      { id: 'B', text: 'Blood Culture bottles -> Sodium Citrate (Light Blue) -> Serum Tube (Red/Gold) -> Heparin (Green) -> EDTA (Purple) -> Fluoride Oxalate (Grey)' },
-      { id: 'C', text: 'Fluoride (Grey) -> EDTA (Purple) -> Citrate (Light Blue) -> Serum (Gold)' },
-      { id: 'D', text: 'Serum Tube -> EDTA -> Blood Culture -> Citrate' }
+      { id: 'A', text: 'Increased platelet aggregation with complete preservation of cell morphology' },
+      { id: 'B', text: 'Increased serum clot formation' },
+      { id: 'C', text: 'Increased glucose concentration within the specimen' },
+      { id: 'D', text: 'Deterioration of blood cell morphology, making interpretation less reliable' }
     ],
-    correctOption: 'B',
-    correctAnswerText: 'Blood Culture bottles -> Sodium Citrate (Light Blue) -> Serum Tube (Red/Gold) -> Heparin (Green) -> EDTA (Purple) -> Fluoride Oxalate (Grey)',
-    explanation: 'The CLSI standardized Order of Draw prevents cross-contamination of tube additives between collection tubes: 1. Blood culture bottles (sterile first to prevent skin flora/additive contamination); 2. Light Blue (Sodium Citrate - drawn before clot activators to avoid clotting activation); 3. Red / Gold SST (Clot activator / gel); 4. Green (Heparin); 5. Lavender / Purple (K2-EDTA - drawn late to avoid potassium and calcium-chelator carryover into chemistry tubes); 6. Grey (Fluoride/Oxalate).',
+    correctOption: 'D',
+    correctAnswerText: 'Deterioration of blood cell morphology, making interpretation less reliable',
+    explanation: 'Blood films should ideally be prepared within 1 to 4 hours of blood collection in EDTA. Prolonged storage in liquid EDTA (>4–12 hours) leads to degenerative morphologic changes: neutrophil vacuolization, pyknosis, nuclear swelling/lobulation, lymphocyte disintegration into "smudge/basket cells" or "smear cells", and erythrocyte crenation (echinocytes). This significant degradation impairs diagnostic reliability in suspected hematologic malignancies.',
     optionRationales: {
-      A: 'Drawing EDTA before serum causes severe spurious hyperkalemia and hypocalcemia in chemistry results.',
-      B: 'Correct. Sterile Blood Cultures -> Light Blue (Citrate) -> Red/Gold (Serum) -> Green (Heparin) -> Purple (EDTA) -> Grey (Fluoride).',
-      C: 'Grey tube has high potassium/oxalate and must always be drawn last.',
-      D: 'Blood cultures must always be collected first to ensure sterility.'
+      A: 'Morphology deteriorates over 12 hours rather than being preserved.',
+      B: 'EDTA prevents clot formation.',
+      C: 'Glucose decreases over time due to ongoing in vitro cellular metabolism.',
+      D: 'Correct. Delayed slide preparation (>4-12 hours) causes cellular swelling, vacuolation, smudge cells, and artifactual morphological deterioration.'
     },
-    keyTakeaway: 'The CLSI Order of Draw (Blood cultures -> Citrate -> Serum -> Heparin -> EDTA -> Fluoride) prevents additive cross-contamination.',
-    sourcePageRef: 'Page 10, Q5',
-    difficulty: 'High Yield',
-    tags: ['Order of Draw', 'CLSI Protocol', 'Phlebotomy', 'Sample Bottles', 'Cross-Contamination']
+    keyTakeaway: 'Peripheral blood smears must be made within 1–4 hours of collection; prolonged EDTA exposure causes nuclear degeneration, vacuolation, and fragile smudge cells.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Peripheral Blood Film', 'Smudge Cells', 'EDTA Artifact', 'Hematology Delay']
   },
 
   // ----------------------------------------------------
@@ -143,130 +143,130 @@ export const CLINICAL_SPECIALTIES_QUESTIONS: Question[] = [
     topicId: 'medical_prescription_diets',
     topicTitle: 'Medical Prescription of Diets',
     questionNumber: 1,
-    clinicalVignette: 'A 58-year-old man with stage 4 Chronic Kidney Disease (eGFR 22 mL/min/1.73m², serum potassium 5.2 mmol/L, serum phosphate 1.8 mmol/L) is seen in the nephrology clinic for dietary prescription. Which dietary modification is most appropriate to slow CKD progression and prevent uremic complications?',
+    clinicalVignette: 'Which of the following is the most important principle in prescribing a therapeutic diet for a hospitalized medical patient?',
     options: [
-      { id: 'A', text: 'Very high-protein diet (1.5–2.0 g/kg/day) with unlimited dairy products' },
-      { id: 'B', text: 'Moderate protein restriction (0.6–0.8 g/kg/day) with restriction of dietary phosphate, sodium (<2 g/day), and high-potassium foods' },
-      { id: 'C', text: 'Ketogenic high-fat diet with unrestricted salt intake' },
-      { id: 'D', text: 'Pure liquid fruit juice fast' }
+      { id: 'A', text: 'The diet should be identical for all patients with the same medical diagnosis' },
+      { id: 'B', text: 'The diet should be individualized according to the patient\'s clinical and nutritional status' },
+      { id: 'C', text: 'The diet should contain as little fat as possible in all clinical conditions' },
+      { id: 'D', text: 'Dietary prescription should be based solely on laboratory test results without clinical assessment' }
     ],
     correctOption: 'B',
-    correctAnswerText: 'Moderate protein restriction (0.6–0.8 g/kg/day) with restriction of dietary phosphate, sodium (<2 g/day), and high-potassium foods',
-    explanation: 'For non-dialysis dependent CKD stages 3 to 5, clinical practice guidelines (KDOQI / KDIGO) recommend moderate dietary protein restriction (0.6–0.8 g/kg body weight/day) to reduce nitrogenous waste burden, reduce intraglomerular hyperfiltration, and slow decline in GFR. This is coupled with sodium restriction (< 2,000 mg/day / < 5g NaCl) to control hypertension, phosphorus restriction (limiting dairy and inorganic food preservatives) to prevent mineral bone disorder, and potassium monitoring.',
+    correctAnswerText: 'The diet should be individualized according to the patient\'s clinical and nutritional status',
+    explanation: 'The cardinal principle of medical nutrition therapy is individualization. A therapeutic dietary prescription must consider the patient’s primary medical condition, co-morbidities, nutritional status (BMI, sarcopenia, micronutrient deficiencies), metabolic requirements, renal/hepatic functional reserve, chewing/swallowing capabilities, and cultural/religious preferences.',
     optionRationales: {
-      A: 'High protein worsens intraglomerular hypertension, proteinuria, and accelerates renal functional decline.',
-      B: 'Correct. Moderate protein restriction (0.6–0.8 g/kg/day) with sodium, phosphate, and potassium control slows CKD progression.',
-      C: 'Unrestricted salt causes fluid overload, severe hypertension, and accelerated nephrosclerosis.',
-      D: 'Fruit juice fasts contain massive potassium loads that trigger fatal hyperkalemic arrhythmias in stage 4 CKD.'
+      A: 'Rigid uniform diets ignore individual metabolic needs and comorbidities.',
+      B: 'Correct. Therapeutic diets must be tailored to the individual\'s clinical, metabolic, and nutritional status.',
+      C: 'Fat is an essential macronutrient and fat restriction is not universally appropriate.',
+      D: 'Dietary therapy requires holistic clinical assessment, not isolated lab numbers.'
     },
-    keyTakeaway: 'Non-dialysis CKD stage 3–5 requires moderate protein restriction (0.6–0.8 g/kg/day) plus sodium, phosphate, and potassium control.',
-    sourcePageRef: 'Pages 18–19, Q1',
-    difficulty: 'High Yield',
-    tags: ['CKD Nutrition', 'Protein Restriction', 'Phosphate Restriction', 'Nephrology', 'Dietary Prescription']
+    keyTakeaway: 'Therapeutic diet prescriptions must be customized to the patient\'s clinical status, nutritional state, comorbidities, and metabolic demands.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Clinical Nutrition', 'Therapeutic Diets', 'Diet Prescription']
   },
   {
     id: 'diet_q2',
     topicId: 'medical_prescription_diets',
     topicTitle: 'Medical Prescription of Diets',
     questionNumber: 2,
-    clinicalVignette: 'A 62-year-old patient with New York Heart Association (NYHA) Class III Heart Failure with reduced Ejection Fraction (HFrEF 28%) is hospitalized for recurrent pulmonary congestion and bilateral pedal edema. In addition to guideline-directed medical therapy, what is the recommended dietary sodium and fluid prescription?',
+    clinicalVignette: 'A 58-year-old man presents with chronic hypertension and congestive cardiac failure with dependent pedal edema. Which dietary modification is most appropriate to help reduce fluid overload and maintain cardiovascular stability?',
     options: [
-      { id: 'A', text: 'Sodium restriction to < 2,000 mg/day (2 g/day) and fluid restriction to 1.5–2.0 L/day in symptomatic/hyponatremic fluid overload' },
-      { id: 'B', text: 'Sodium loading to 10 g/day to maintain renal perfusion pressure' },
-      { id: 'C', text: 'Unrestricted fluid intake of > 4 L/day to flush the kidneys' },
-      { id: 'D', text: 'Complete exclusion of all dietary proteins and carbohydrates' }
+      { id: 'A', text: 'High-sodium diet' },
+      { id: 'B', text: 'High-protein diet' },
+      { id: 'C', text: 'Low-sodium diet' },
+      { id: 'D', text: 'High-purine diet' }
     ],
-    correctOption: 'A',
-    correctAnswerText: 'Sodium restriction to < 2,000 mg/day (2 g/day) and fluid restriction to 1.5–2.0 L/day in symptomatic/hyponatremic fluid overload',
-    explanation: 'In symptomatic moderate-to-severe heart failure (NYHA III/IV) with congestion and volume retention, sodium restriction (< 2,000 mg/day or < 2 g/day sodium, equivalent to ~5 g salt) is recommended to prevent neurohormonally mediated sodium and water retention. Modest fluid restriction (1.5 to 2.0 L/day) is indicated in patients with refractory congestion, persistent edema, or dilutional hyponatremia (serum Na < 130 mmol/L).',
+    correctOption: 'C',
+    correctAnswerText: 'Low-sodium diet',
+    explanation: 'Sodium is the primary extracellular cation determining osmotic volume. Excessive dietary sodium intake causes fluid retention, expands circulating plasma volume, increases cardiac preload and afterload, and precipitates acute heart failure decompensation. Restricting sodium intake (typically <2,000 mg/day or <5 g NaCl/day) diminishes extracellular fluid accumulation and improves diuretic efficacy.',
     optionRationales: {
-      A: 'Correct. Dietary sodium < 2 g/day and fluid 1.5–2.0 L/day reduce preload, pulmonary congestion, and peripheral edema.',
-      B: 'Sodium loading triggers acute pulmonary edema and decompensation.',
-      C: 'Excess fluid intake worsens volume overload and dilutional hyponatremia.',
-      D: 'Caloric/protein malnutrition leads to cardiac cachexia and increased mortality.'
+      A: 'High sodium causes water retention and worsens congestion.',
+      B: 'High protein does not reduce intravascular fluid overload.',
+      C: 'Correct. Low-sodium diet (<2 g sodium/day) reduces fluid retention and myocardial workload in heart failure.',
+      D: 'High purine increases uric acid and risks gout.'
     },
-    keyTakeaway: 'Heart failure with congestion requires dietary sodium restriction (< 2 g/day) and fluid restriction (1.5–2.0 L/day for hyponatremia/congestion).',
-    sourcePageRef: 'Page 19, Q2',
-    difficulty: 'Core Clinical',
-    tags: ['Heart Failure', 'Sodium Restriction', 'Fluid Restriction', 'Cardiology', 'Dietary Prescription']
+    keyTakeaway: 'Sodium restriction (<2 g sodium / <5 g salt daily) is the cornerstone dietary modification to prevent fluid overload in heart failure and hypertension.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Heart Failure Diet', 'Low-Sodium', 'Cardiovascular Nutrition', 'Fluid Overload']
   },
   {
     id: 'diet_q3',
     topicId: 'medical_prescription_diets',
     topicTitle: 'Medical Prescription of Diets',
     questionNumber: 3,
-    clinicalVignette: 'A 48-year-old man with decompensated liver cirrhosis and moderate ascites presents for nutritional optimization. On examination, he has marked temporal muscle wasting and reduced mid-arm muscle circumference (sarcopenia). Which nutritional strategy is guideline-recommended (EASL/ESPEN) to prevent starvation-induced muscle catabolism in cirrhotic patients?',
+    clinicalVignette: 'Which of the following meals is the best example of an appropriate low-sodium choice for a hypertensive patient?',
     options: [
-      { id: 'A', text: 'Severe dietary protein restriction (<0.5 g/kg/day) to prevent hepatic encephalopathy' },
-      { id: 'B', text: 'Frequent small meals with adequate protein intake (1.2–1.5 g/kg/day) and a mandatory late-evening complex carbohydrate snack' },
-      { id: 'C', text: 'Intermittent prolonged fasting for 18 to 24 hours daily' },
-      { id: 'D', text: 'High-sodium liquid diet' }
+      { id: 'A', text: 'Salted fish cooked with stock-cube-seasoned tomato stew' },
+      { id: 'B', text: 'Instant noodles cooked with full flavour-sachet seasoning' },
+      { id: 'C', text: 'Fresh fish cooked with fresh vegetables and minimal added salt' },
+      { id: 'D', text: 'Processed meat slices served with commercially canned vegetable soup' }
     ],
-    correctOption: 'B',
-    correctAnswerText: 'Frequent small meals with adequate protein intake (1.2–1.5 g/kg/day) and a mandatory late-evening complex carbohydrate snack',
-    explanation: 'Patients with cirrhosis have depleted hepatic glycogen stores and enter a state of "accelerated starvation" after just 6–8 hours of fasting, rapidly breaking down skeletal muscle for gluconeogenesis. Sarcopenia directly increases mortality, infection risk, and hepatic encephalopathy. Current guidelines explicitly advise AGAINST protein restriction; they recommend adequate protein (1.2–1.5 g/kg/day) and a mandatory late-evening carbohydrate/protein snack (LES) to shorten the overnight fasting interval and preserve muscle mass.',
+    correctOption: 'C',
+    correctAnswerText: 'Fresh fish cooked with fresh vegetables and minimal added salt',
+    explanation: 'Fresh, unprocessed fish and fresh vegetables naturally contain minimal sodium. In contrast, commercially processed foods, salted/cured fish, bouillon seasoning cubes (e.g. Maggi/Knorr cubes), instant noodles, and canned soups are packed with enormous concentrations of sodium chloride and monosodium glutamate (MSG).',
     optionRationales: {
-      A: 'Severe protein restriction causes severe muscle breakdown and worsens encephalopathy and mortality.',
-      B: 'Correct. High protein (1.2–1.5 g/kg/day) plus a late-evening complex carbohydrate snack prevents catabolism and sarcopenia.',
-      C: 'Prolonged fasting accelerates muscle proteolysis and gluconeogenesis.',
-      D: 'High sodium exacerbates ascites and fluid retention.'
+      A: 'Salted fish and bouillon seasoning cubes contain massive amounts of sodium.',
+      B: 'Instant noodle flavor packets typically contain >1,500–2,000 mg of sodium per serving.',
+      C: 'Correct. Fresh unprocessed fish and vegetables prepared with fresh herbs and minimal salt provide an optimal low-sodium meal.',
+      D: 'Processed deli meats and canned soups are major sources of hidden dietary sodium.'
     },
-    keyTakeaway: 'Cirrhosis patients require 1.2–1.5 g/kg/day protein and a mandatory late-evening complex carbohydrate snack to prevent accelerated starvation and sarcopenia.',
-    sourcePageRef: 'Pages 19–20, Q3',
-    difficulty: 'High Yield',
-    tags: ['Cirrhosis Nutrition', 'Sarcopenia', 'Late-Evening Snack', 'Protein Intake', 'EASL Guidelines']
+    keyTakeaway: 'Fresh, unprocessed foods seasoned with herbs rather than bouillon cubes or processed meats represent ideal low-sodium choices.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Low-Sodium Meal', 'Hypertension Diet', 'Processed Foods']
   },
   {
     id: 'diet_q4',
     topicId: 'medical_prescription_diets',
     topicTitle: 'Medical Prescription of Diets',
     questionNumber: 4,
-    clinicalVignette: 'A 40-year-old man presents with acute podagra (excruciating pain, erythema, and swelling of the first metatarsophalangeal joint). Serum uric acid is 9.2 mg/dL. In addition to acute anti-inflammatory pharmacotherapy, which long-term dietary modification should be advised to reduce serum uric acid and prevent recurrent gout flares?',
+    clinicalVignette: 'A patient with severe dysphagia following an acute ischemic stroke is unable to safely chew or swallow solid food. Which dietary modification is most appropriate to prevent aspiration pneumonia while maintaining oral intake?',
     options: [
-      { id: 'A', text: 'Limit purine-rich foods (organ meats, red meats, shellfish), eliminate high-fructose corn syrup/sweetened beverages, and restrict alcohol (especially beer)' },
-      { id: 'B', text: 'Consume large quantities of beer and seafood daily' },
-      { id: 'C', text: 'Strict restriction of all green leafy vegetables and low-fat dairy products' },
-      { id: 'D', text: 'High-protein purine-rich ketogenic diet' }
+      { id: 'A', text: 'Low-fat diet' },
+      { id: 'B', text: 'High-energy diet' },
+      { id: 'C', text: 'Low-protein diet' },
+      { id: 'D', text: 'Pureed/texture-modified diet' }
     ],
-    correctOption: 'A',
-    correctAnswerText: 'Limit purine-rich foods (organ meats, red meats, shellfish), eliminate high-fructose corn syrup/sweetened beverages, and restrict alcohol (especially beer)',
-    explanation: 'Purines from dietary animal sources (organ meats, red meats, seafood) are metabolized directly into uric acid. High-fructose corn syrup accelerates hepatic ATP breakdown to AMP and uric acid. Alcohol (especially beer, rich in guanosine purines) generates lactic acid, which competes with urate for renal tubular excretion while stimulating urate synthesis. Conversely, low-fat dairy, vitamin C, and coffee have modest uricosuric and protective effects.',
+    correctOption: 'D',
+    correctAnswerText: 'Pureed/texture-modified diet',
+    explanation: 'Pharyngeal phase dysphagia post-stroke impairs the swallow reflex, airway closure, and cough reflex, putting patients at high risk of choking and life-threatening aspiration pneumonia. Transitioning to a pureed, smooth, cohesive, texture-modified diet (along with thickened fluids according to IDDSI standards) minimizes the risk of bolus fragmentation and tracheobronchial aspiration.',
     optionRationales: {
-      A: 'Correct. Restricting purine meats, high-fructose corn syrup, and beer significantly lowers serum uric acid and gout flares.',
-      B: 'Beer and seafood directly trigger severe hyperuricemia and recurrent attacks.',
-      C: 'Low-fat dairy is uricosuric and protective against gout; purine-rich vegetables do not significantly increase gout risk.',
-      D: 'Ketogenic diets generate ketoacids that inhibit renal uric acid clearance.'
+      A: 'Fat content does not alter swallowing safety.',
+      B: 'Caloric density does not protect against physical bolus aspiration.',
+      C: 'Protein reduction is not indicated and worsens muscle wasting.',
+      D: 'Correct. Texture-modified / pureed diets with thickened liquids prevent aspiration pneumonia in post-stroke dysphagia.'
     },
-    keyTakeaway: 'Gout dietary management requires restricting purine-rich meats, beer, and fructose-sweetened drinks, while encouraging low-fat dairy and adequate hydration.',
-    sourcePageRef: 'Page 20, Q4',
-    difficulty: 'Core Clinical',
-    tags: ['Gout', 'Hyperuricemia', 'Purines', 'Fructose', 'Dietary Prescription']
+    keyTakeaway: 'Texture-modified, pureed diets and thickened fluids are mandatory in post-stroke dysphagia to prevent fatal aspiration pneumonia.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Stroke Dysphagia', 'Pureed Diet', 'Aspiration Pneumonia', 'IDDSI']
   },
   {
     id: 'diet_q5',
     topicId: 'medical_prescription_diets',
     topicTitle: 'Medical Prescription of Diets',
     questionNumber: 5,
-    clinicalVignette: 'A 34-year-old woman is evaluated for refractory iron deficiency anemia and chronic bloating. Duodenal biopsy confirms Celiac Disease (Marsh III total villous atrophy). What is the mandatory, lifelong medical nutritional therapy for this condition?',
+    clinicalVignette: 'Which of the following patients is most likely to benefit from a high-energy, high-protein diet?',
     options: [
-      { id: 'A', text: 'Strict, lifelong exclusion of all gluten-containing grains (wheat, barley, rye) from the diet' },
-      { id: 'B', text: 'Low-carbohydrate, high-fructose diet with wheat supplementation' },
-      { id: 'C', text: 'Temporary 2-week exclusion of lactose only' },
-      { id: 'D', text: 'High-fiber diet supplemented with concentrated wheat germ' }
+      { id: 'A', text: 'A severely malnourished patient with increased nutritional requirements' },
+      { id: 'B', text: 'An obese patient undergoing weight reduction' },
+      { id: 'C', text: 'A patient with uncomplicated hypertension and normal BMI' },
+      { id: 'D', text: 'A patient with an acute attack of gout' }
     ],
     correctOption: 'A',
-    correctAnswerText: 'Strict, lifelong exclusion of all gluten-containing grains (wheat, barley, rye) from the diet',
-    explanation: 'Celiac disease is a systemic autoimmune enteropathy triggered by the ingestion of gluten storage proteins (gliadins and glutenins in wheat, secalins in rye, hordeins in barley) in genetically predisposed individuals (HLA-DQ2 / HLA-DQ8). The only established and effective treatment is complete, strict, lifelong dietary elimination of gluten. Adherence leads to mucosal healing, resolution of malabsorption, and significant reduction in long-term risks such as enteropathy-associated T-cell lymphoma (EATL) and osteoporosis.',
+    correctAnswerText: 'A severely malnourished patient with increased nutritional requirements',
+    explanation: 'Patients with severe malnutrition, advanced cancer cachexia, extensive thermal burns, major surgical trauma, or chronic catabolic wasting (tuberculosis, HIV) have markedly elevated basal metabolic rates and negative nitrogen balance. A high-energy, high-protein diet (1.5–2.0 g protein/kg/day and 30–35 kcal/kg/day) is essential to promote tissue repair, reverse muscle wasting, and restore immune competence.',
     optionRationales: {
-      A: 'Correct. Complete lifelong exclusion of wheat, barley, and rye is mandatory and curative for Celiac disease.',
-      B: 'Wheat directly drives immune mucosal destruction in Celiac disease.',
-      C: 'Secondary lactase deficiency may occur transiently due to villous blunting, but gluten exclusion is the primary lifelong requirement.',
-      D: 'Wheat germ is concentrated in gluten and is toxic to celiac patients.'
+      A: 'Correct. Severe malnutrition and hypercatabolic states require high-energy, high-protein nutritional supplementation.',
+      B: 'Obese weight reduction requires a calorie-controlled, hypocaloric diet.',
+      C: 'Uncomplicated hypertension requires DASH/low-sodium diet, not high-calorie feeding.',
+      D: 'Acute gout requires purine restriction, not high-protein overload.'
     },
-    keyTakeaway: 'The cornerstone of Celiac Disease therapy is strict, lifelong elimination of all gluten-containing grains (wheat, barley, rye).',
-    sourcePageRef: 'Page 20, Q5',
-    difficulty: 'High Yield',
-    tags: ['Celiac Disease', 'Gluten-Free Diet', 'Enteropathy', 'Gastroenterology', 'Dietary Prescription']
+    keyTakeaway: 'High-energy, high-protein diets are indicated in severe malnutrition and hypercatabolic states to restore nitrogen balance and support tissue healing.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['High-Protein Diet', 'Malnutrition', 'Catabolism', 'Clinical Nutrition']
   },
 
   // ----------------------------------------------------
@@ -277,401 +277,185 @@ export const CLINICAL_SPECIALTIES_QUESTIONS: Question[] = [
     topicId: 'blood_transfusion',
     topicTitle: 'Indication & Complications of Blood Transfusion',
     questionNumber: 1,
-    clinicalVignette: 'A 64-year-old man with stable coronary artery disease is admitted for elective hip replacement. Postoperatively on Day 2, his hemoglobin is 7.4 g/dL. He is entirely asymptomatic, hemodynamically stable (BP 125/75 mmHg, HR 72 bpm, SpO2 98%), and has no chest pain or dyspnea. According to international evidence-based transfusion guidelines (AABB / TRICC), what is the recommended transfusion strategy for this patient?',
+    clinicalVignette: 'A 72-year-old man presents with melena and dizziness. After receiving 2 L of isotonic crystalloid, his blood pressure is 118/74 mmHg and pulse is 88 beats per minute. He has no chest pain or shortness of breath. There is no evidence of ongoing active bleeding. His hemoglobin is 8.6 g/dL, platelet count is 210 × 10⁹/L, and INR is 1.1. Which of the following is the most appropriate next step in management?',
     options: [
-      { id: 'A', text: 'Transfuse 3 units of packed red blood cells immediately to achieve a target hemoglobin > 10.0 g/dL' },
-      { id: 'B', text: 'Adopt a restrictive transfusion strategy (transfuse only if hemoglobin falls < 7.0–8.0 g/dL or if symptomatic)' },
-      { id: 'C', text: 'Administer whole blood transfusion until hematocrit reaches 45%' },
-      { id: 'D', text: 'Administer fresh frozen plasma alongside red cells to prevent dilutional coagulopathy' }
+      { id: 'A', text: 'Transfuse 1 unit of fresh frozen plasma' },
+      { id: 'B', text: 'Transfuse 1 unit of packed red blood cells' },
+      { id: 'C', text: 'Monitor the patient closely and treat the underlying cause without transfusion' },
+      { id: 'D', text: 'Administer intravenous iron only' }
     ],
-    correctOption: 'B',
-    correctAnswerText: 'Adopt a restrictive transfusion strategy (transfuse only if hemoglobin falls < 7.0–8.0 g/dL or if symptomatic)',
-    explanation: 'Extensive randomized controlled trials (TRICC, FOCUS, TRISS) and international guidelines recommend a "restrictive transfusion strategy" (transfusion threshold of Hb < 7.0 g/dL for hemodynamically stable hospitalized adults, and Hb < 8.0 g/dL for patients undergoing orthopedic/cardiac surgery or with pre-existing cardiovascular disease). Restrictive strategies significantly reduce transfusion-related complications, viral transmission risk, circulatory overload, and all-cause mortality without compromising clinical outcomes.',
+    correctOption: 'C',
+    correctAnswerText: 'Monitor the patient closely and treat the underlying cause without transfusion',
+    explanation: 'Modern transfusion guidelines (AABB, TRICC trial) recommend a restrictive red blood cell transfusion strategy for hemodynamically stable hospitalized adult patients without active bleeding or acute coronary syndrome. In such patients, the transfusion trigger threshold is hemoglobin < 7.0 g/dL (or < 8.0 g/dL in preexisting cardiovascular disease or orthopedic surgery). Because this patient is stable with Hb 8.6 g/dL and no active bleeding, PRBC transfusion is NOT indicated.',
     optionRationales: {
-      A: 'Liberal transfusion (target Hb > 10 g/dL) increases cardiovascular overload, infection rates, and mortality without clinical benefit.',
-      B: 'Correct. A restrictive strategy (threshold Hb < 7–8 g/dL) is standard of care for stable postoperative patients.',
-      C: 'Whole blood is not indicated for normovolemic postoperative anemia.',
-      D: 'FFP is indicated only for active coagulopathic bleeding, not prophylactic addition to packed cells.'
+      A: 'FFP is only indicated for active bleeding with coagulopathy (INR > 1.5–2.0); his INR is normal (1.1).',
+      B: 'PRBC transfusion is unnecessary at Hb 8.6 g/dL in a stable non-bleeding patient and exposes him to risks without clinical benefit.',
+      C: 'Correct. Restrictive transfusion threshold (Hb < 7.0–8.0 g/dL) applies; monitor vitals and investigate the bleeding source.',
+      D: 'IV iron alone does not replace acute blood loss and monitoring is the core strategy.'
     },
-    keyTakeaway: 'A restrictive transfusion strategy (threshold Hb < 7.0 g/dL in general patients, < 8.0 g/dL in cardiovascular disease) is safer and equally effective compared to liberal transfusion.',
-    sourcePageRef: 'Pages 28–29, Q1',
+    keyTakeaway: 'In hemodynamically stable patients without ongoing active bleeding, red cell transfusion is withheld when hemoglobin is >= 7.0–8.0 g/dL (restrictive strategy).',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['Blood Transfusion', 'Restrictive Strategy', 'Hemoglobin Threshold', 'AABB Guidelines']
+    tags: ['Blood Transfusion', 'Restrictive Strategy', 'Transfusion Trigger', 'Hemoglobin']
   },
   {
     id: 'bt_q2',
     topicId: 'blood_transfusion',
     topicTitle: 'Indication & Complications of Blood Transfusion',
     questionNumber: 2,
-    clinicalVignette: 'A 50-year-old woman receives a unit of packed red blood cells. Ten minutes into the transfusion (after approximately 30 mL infused), she develops acute back pain, fever (39.0°C), rigors, dyspnea, and red-colored urine. Her blood pressure drops from 125/80 to 75/45 mmHg. What is the immediate priority step in management?',
+    clinicalVignette: 'A 55-year-old man with decompensated cirrhosis presents with severe hematemesis. On endoscopy, active bleeding from esophageal varices is noted. Laboratory results show: Hemoglobin 8.1 g/dL, Platelets 180 × 10⁹/L, and INR 2.4. He continues to bleed despite endoscopic band ligation. Which blood component is most specifically indicated to address his elevated INR and coagulopathy?',
     options: [
-      { id: 'A', text: 'Immediately stop the transfusion, maintain IV access with normal saline, check patient and blood unit identifiers, and notify the blood bank' },
-      { id: 'B', text: 'Slow the transfusion rate by half and administer oral paracetamol' },
-      { id: 'C', text: 'Administer IV furosemide and continue the transfusion to completion' },
-      { id: 'D', text: 'Administer oral diphenhydramine and monitor vital signs every 30 minutes' }
+      { id: 'A', text: 'Packed red blood cells' },
+      { id: 'B', text: 'Platelet concentrate' },
+      { id: 'C', text: 'Fresh frozen plasma (FFP)' },
+      { id: 'D', text: 'Cryoprecipitate' }
     ],
-    correctOption: 'A',
-    correctAnswerText: 'Immediately stop the transfusion, maintain IV access with normal saline, check patient and blood unit identifiers, and notify the blood bank',
-    explanation: 'The presentation (acute fever, flank/back pain, hypotension, hemoglobinuria) is classic for an Acute Hemolytic Transfusion Reaction (AHTR), most commonly caused by ABO incompatibility due to clerical/labeling error. The immediate lifesaving actions are: 1. STOP the transfusion immediately; 2. Keep IV line open with 0.9% normal saline; 3. Re-check patient identity and blood bag labels; 4. Alert the blood bank and return the blood bag with fresh post-transfusion blood and urine samples; 5. Aggressive crystalloid hydration and osmotic diuresis to maintain renal blood flow and prevent renal failure.',
+    correctOption: 'C',
+    correctAnswerText: 'Fresh frozen plasma (FFP)',
+    explanation: 'Fresh Frozen Plasma (FFP) contains all soluble coagulation cascade factors (including prothrombin, factor V, VII, IX, X, XI, and fibrinogen). In a patient with active life-threatening hemorrhage and documented coagulopathy (INR 2.4, significantly > 1.5), FFP (dose 10–15 mL/kg) is specifically indicated to replace deficient hepatic clotting factors and promote clot formation.',
     optionRationales: {
-      A: 'Correct. Stopping the transfusion immediately, infusing IV saline, checking identifiers, and sending samples to the blood bank is mandatory.',
-      B: 'Slowing the infusion in AHTR allows more incompatible RBCs to enter, resulting in fatal shock and disseminated intravascular coagulation (DIC).',
-      C: 'Furosemide alone without stopping transfusion will not prevent immune intravascular hemolysis.',
-      D: 'Antihistamines are for mild allergic reactions (urticaria), not life-threatening hemolytic destruction.'
+      A: 'PRBCs restore oxygen carrying capacity but contain no plasma clotting factors.',
+      B: 'Platelet count is normal (180k), so platelet transfusion is not indicated.',
+      C: 'Correct. Fresh Frozen Plasma contains all coagulation factors and is indicated for active bleeding with prolonged INR.',
+      D: 'Cryoprecipitate is specifically for hypofibrinogenemia (<100 mg/dL), factor VIII, or von Willebrand factor deficiency.'
     },
-    keyTakeaway: 'Acute hemolytic transfusion reaction (ABO mismatch) requires immediate cessation of transfusion, IV saline resuscitation, and urgent blood bank notification.',
-    sourcePageRef: 'Page 29, Q2',
+    keyTakeaway: 'Fresh Frozen Plasma (FFP) is indicated in actively bleeding patients with significant coagulopathy (INR > 1.5–2.0) to replace soluble clotting factors.',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['AHTR', 'ABO Incompatibility', 'Transfusion Reaction', 'Emergency Protocol']
+    tags: ['FFP', 'Coagulopathy', 'Cirrhosis', 'Variceal Bleed', 'INR Correction']
   },
   {
     id: 'bt_q3',
     topicId: 'blood_transfusion',
     topicTitle: 'Indication & Complications of Blood Transfusion',
     questionNumber: 3,
-    clinicalVignette: 'A 72-year-old woman with stage 4 CKD and ischemic cardiomyopathy receives 2 units of packed red blood cells over 2 hours for symptomatic anemia. Near the end of the second unit, she develops acute respiratory distress, orthopnea, bilateral coarse crepitations, hypertension (BP 185/105 mmHg), and an elevated Jugular Venous Pressure (JVP). Brain Natriuretic Peptide (BNP) is markedly elevated. Which transfusion complication is this, and what is the primary management?',
+    clinicalVignette: 'A 67-year-old man with end-stage renal disease and heart failure is transfused 2 units of packed red blood cells for symptomatic anemia. Near the end of the second unit, he develops severe dyspnea, orthopnea, tachycardia, hypertension (BP 185/105 mmHg), elevated jugular venous pressure, and diffuse bilateral pulmonary crackles. Chest X-ray demonstrates cardiomegaly and alveolar pulmonary edema. What is the most likely diagnosis?',
     options: [
-      { id: 'A', text: 'Transfusion-Related Acute Lung Injury (TRALI); manage with aggressive crystalloid boluses' },
-      { id: 'B', text: 'Transfusion-Associated Circulatory Overload (TACO); manage by stopping transfusion, upright positioning, oxygen, and IV loop diuretics (furosemide)' },
-      { id: 'C', text: 'Anaphylactic transfusion reaction; manage with subcutaneous epinephrine alone' },
-      { id: 'D', text: 'Septic transfusion reaction; manage with broad-spectrum antibiotics' }
+      { id: 'A', text: 'Transfusion-Related Acute Lung Injury (TRALI)' },
+      { id: 'B', text: 'Transfusion-Associated Circulatory Overload (TACO)' },
+      { id: 'C', text: 'Acute hemolytic transfusion reaction' },
+      { id: 'D', text: 'Anaphylactic transfusion reaction' }
     ],
     correctOption: 'B',
-    correctAnswerText: 'Transfusion-Associated Circulatory Overload (TACO); manage by stopping transfusion, upright positioning, oxygen, and IV loop diuretics (furosemide)',
-    explanation: 'Transfusion-Associated Circulatory Overload (TACO) is hydrostatic pulmonary edema resulting from rapid infusion of blood products in patients with compromised cardiovascular or renal reserve. Key distinguishing features from TRALI include: hypertension (elevated BP), elevated JVP, positive fluid balance, wide pulse pressure, marked elevation of BNP/NT-proBNP, and rapid improvement following IV furosemide diuresis. In contrast, TRALI features normal/low BP, normal JVP, and is non-cardiogenic.',
+    correctAnswerText: 'Transfusion-Associated Circulatory Overload (TACO)',
+    explanation: 'Transfusion-Associated Circulatory Overload (TACO) occurs when blood product infusion exceeds the cardiovascular system\'s capacity, leading to hydrostatic pulmonary edema. Key differentiating features from TRALI include: hypertension (elevated BP), elevated JVP, cardiomegaly on CXR, and response to diuretics. TRALI typically presents with normotension or hypotension, normal JVP, fever, and non-cardiogenic pulmonary edema mediated by antineutrophil antibodies.',
     optionRationales: {
-      A: 'TRALI is non-cardiogenic pulmonary edema with normal/low JVP and hypotension; fluid boluses in TACO worsen pulmonary congestion.',
-      B: 'Correct. TACO is volume-overload hydrostatic pulmonary edema responsive to stopping transfusion, oxygen, and IV loop diuretics.',
-      C: 'Anaphylaxis presents with wheezing, urticaria, angioedema, and hypotension, not fluid overload with elevated JVP.',
-      D: 'Septic reactions cause high fever, rigors, and distributive vasodilatory shock.'
+      A: 'TRALI is non-cardiogenic pulmonary edema with normal JVP and normal/low blood pressure.',
+      B: 'Correct. Acute hypertension, elevated JVP, cardiomegaly, and pulmonary edema in a heart failure/CKD patient define TACO.',
+      C: 'Acute hemolytic reaction causes fever, flank pain, hemoglobinuria, DIC, and hypotension.',
+      D: 'Anaphylaxis causes bronchospasm, stridor, urticaria, and profound hypotension.'
     },
-    keyTakeaway: 'TACO presents with hypertension, elevated JVP, high BNP, and pulmonary edema; it responds rapidly to IV loop diuretics and sitting upright.',
-    sourcePageRef: 'Pages 29–30, Q3',
+    keyTakeaway: 'TACO presents with acute respiratory distress, hypertension, elevated JVP, and cardiogenic pulmonary edema following blood transfusion in susceptible patients.',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['TACO', 'TRALI Differentiation', 'Circulatory Overload', 'Diuretics', 'Cardiology']
+    tags: ['TACO', 'TRALI', 'Transfusion Complications', 'Pulmonary Edema', 'Fluid Overload']
   },
   {
     id: 'bt_q4',
     topicId: 'blood_transfusion',
     topicTitle: 'Indication & Complications of Blood Transfusion',
     questionNumber: 4,
-    clinicalVignette: 'A 32-year-old trauma patient with massive hemorrhagic shock undergoes emergency surgery and receives 12 units of packed red blood cells over 2 hours. According to modern Massive Transfusion Protocols (MTP), what ratio of blood products (Packed Red Blood Cells : Fresh Frozen Plasma : Platelets) should be administered to prevent trauma-induced coagulopathy and dilutional thrombocytopenia?',
+    clinicalVignette: 'A 58-year-old woman with severe community-acquired pneumonia and known coronary artery disease presents with Hb 6.9 g/dL. She receives 1 unit of packed red blood cells. A repeat hemoglobin is 7.8 g/dL. Her dyspnea has significantly improved, vitals are stable, and she has no chest pain or active bleeding. Which of the following is the most appropriate next step?',
     options: [
-      { id: 'A', text: '6 : 1 : 1 ratio' },
-      { id: 'B', text: 'Balanced 1 : 1 : 1 ratio (1 unit PRBC : 1 unit FFP : 1 unit Platelets)' },
-      { id: 'C', text: '10 : 0 : 0 ratio (PRBCs only until hemoglobin exceeds 12 g/dL)' },
-      { id: 'D', text: '1 : 4 : 0 ratio' }
+      { id: 'A', text: 'Transfuse another unit because hemoglobin is below 10 g/dL' },
+      { id: 'B', text: 'Transfuse another unit because of underlying pneumonia' },
+      { id: 'C', text: 'Withhold further transfusion and continue treatment of the underlying disease' },
+      { id: 'D', text: 'Administer fresh frozen plasma' }
     ],
-    correctOption: 'B',
-    correctAnswerText: 'Balanced 1 : 1 : 1 ratio (1 unit PRBC : 1 unit FFP : 1 unit Platelets)',
-    explanation: 'The landmark PROPPR trial and international damage-control resuscitation guidelines demonstrated that a balanced 1:1:1 ratio (1 unit of Packed Red Blood Cells to 1 unit of Fresh Frozen Plasma to 1 unit of apheresis Platelets) in massive hemorrhage prevents dilutional coagulopathy, hypofibrinogenemia, and thrombocytopenia, significantly reducing 24-hour exsanguination mortality compared to red cell-predominant resuscitation.',
+    correctOption: 'C',
+    correctAnswerText: 'Withhold further transfusion and continue treatment of the underlying disease',
+    explanation: 'Single-unit transfusion strategy ("transfuse one unit and reassess") is recommended in non-bleeding patients. Once the initial unit raises the hemoglobin to near the target threshold (7.0–8.0 g/dL) and symptoms of tissue hypoxia resolve, further transfusions should be withheld. Routine multi-unit transfusion to arbitrary targets (>10 g/dL) exposes patients to unnecessary risks of alloimmunization, infection, and TACO without proven benefit.',
     optionRationales: {
-      A: 'High red cell ratios without plasma/platelets produce severe dilutional coagulopathy and uncontrolled hemorrhage.',
-      B: 'Correct. A 1:1:1 balanced ratio is the proven standard for massive transfusion protocols (MTP).',
-      C: 'PRBC-only resuscitation dilutes clotting factors and platelets, leading to fatal trauma-induced coagulopathy.',
-      D: 'Plasma-predominant resuscitation without adequate RBCs leads to critical tissue hypoxia.'
+      A: 'Targeting Hb > 10 g/dL in stable hospitalized patients provides no clinical benefit and increases mortality and fluid overload.',
+      B: 'Pneumonia alone is not an indication for liberal transfusion.',
+      C: 'Correct. Single-unit transfusion raised Hb to 7.8 g/dL with symptom resolution; withhold further blood and continue medical therapy.',
+      D: 'FFP has no role without active bleeding and coagulopathy.'
     },
-    keyTakeaway: 'Massive Transfusion Protocol (MTP) requires a balanced 1:1:1 ratio (PRBC : FFP : Platelets) to prevent trauma coagulopathy and improve survival.',
-    sourcePageRef: 'Page 30, Q4',
-    difficulty: 'High Yield',
-    tags: ['Massive Transfusion', 'MTP', 'Damage Control Resuscitation', '1:1:1 Ratio', 'Trauma']
+    keyTakeaway: 'Practice "single-unit transfusion and reassess"; once symptoms resolve and hemoglobin reaches 7.0–8.0 g/dL, withhold further transfusions.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Single Unit Transfusion', 'Restrictive Strategy', 'Blood Stewardship']
   },
   {
     id: 'bt_q5',
     topicId: 'blood_transfusion',
     topicTitle: 'Indication & Complications of Blood Transfusion',
     questionNumber: 5,
-    clinicalVignette: 'A 28-year-old woman receives a unit of PRBCs. Thirty minutes after transfusion starts, she develops a mild fever rise from 36.8°C to 38.0°C and mild chills, but has normal blood pressure (120/75 mmHg), normal heart rate, clear lungs, and no back pain or dark urine. A diagnosis of Febrile Non-Hemolytic Transfusion Reaction (FNHTR) is made. What is the underlying pathophysiological mechanism, and how can it be prevented in future transfusions?',
+    clinicalVignette: 'A 40-year-old woman with severe postpartum hemorrhage continues to bleed despite receiving 4 units of packed red blood cells and 2 units of fresh frozen plasma. Her fibrinogen concentration is 70 mg/dL (normal: 200–400 mg/dL). Which blood component is the most concentrated and specific source of fibrinogen to correct her hypofibrinogenemia?',
     options: [
-      { id: 'A', text: 'ABO antibody-mediated complement activation; prevent with washed red cells' },
-      { id: 'B', text: 'Recipient antibodies directed against donor human leukocyte antigens (HLA) / cytokines accumulated in storage; prevent with prestorage leukoreduction' },
-      { id: 'C', text: 'Bacterial endotoxin contamination; prevent with prophylactic oral antibiotics' },
-      { id: 'D', text: 'IgA deficiency with anti-IgA antibodies; prevent with irradiated blood products' }
+      { id: 'A', text: 'Packed red blood cells' },
+      { id: 'B', text: 'Platelet concentrate' },
+      { id: 'C', text: 'Cryoprecipitate' },
+      { id: 'D', text: 'Normal saline' }
     ],
-    correctOption: 'B',
-    correctAnswerText: 'Recipient antibodies directed against donor human leukocyte antigens (HLA) / cytokines accumulated in storage; prevent with prestorage leukoreduction',
-    explanation: 'Febrile Non-Hemolytic Transfusion Reaction (FNHTR) is defined as a temperature increase >= 1°C occurring during or shortly after transfusion without hemolysis. It is caused by: 1) Recipient preformed cytotoxic antibodies reacting against donor white blood cell HLA antigens, and 2) Bioactive pyrogenic cytokines (IL-1, IL-6, TNF-alpha) released by donor leukocytes during storage. Routine universal prestorage leukoreduction (filtration of WBCs) has dramatically reduced the incidence of FNHTR.',
+    correctOption: 'C',
+    correctAnswerText: 'Cryoprecipitate',
+    explanation: 'Cryoprecipitate is the cold-insoluble fraction of plasma prepared from thawing FFP. It is uniquely rich in Fibrinogen (approx. 150–250 mg per unit), Factor VIII, von Willebrand Factor (vWF), Factor XIII, and Fibronectin. In massive hemorrhage where fibrinogen falls below 100–150 mg/dL (<1.0–1.5 g/L), cryoprecipitate (typically 10 units pooled) provides rapid, concentrated fibrinogen replacement in a small volume (100–150 mL), avoiding volume overload.',
     optionRationales: {
-      A: 'ABO incompatibility causes acute hemolytic reaction, not benign FNHTR.',
-      B: 'Correct. FNHTR is mediated by anti-HLA antibodies and donor leukocyte cytokines; prevented by prestorage leukoreduction.',
-      C: 'Bacterial contamination causes high fever, septic shock, and severe hypotension.',
-      D: 'Anti-IgA antibodies cause severe anaphylactic reactions with shock, not isolated fever.'
+      A: 'PRBCs contain no fibrinogen.',
+      B: 'Platelet concentrate provides platelets, not concentrated fibrinogen.',
+      C: 'Correct. Cryoprecipitate is the most concentrated source of fibrinogen for severe hypofibrinogenemia (<100 mg/dL).',
+      D: 'Normal saline dilutes existing clotting factors, worsening coagulopathy.'
     },
-    keyTakeaway: 'Febrile Non-Hemolytic Transfusion Reaction (FNHTR) is caused by anti-HLA antibodies and leukocyte cytokines; it is prevented by prestorage leukodepletion.',
-    sourcePageRef: 'Page 30, Q5',
-    difficulty: 'Core Clinical',
-    tags: ['FNHTR', 'Leukoreduction', 'HLA Antibodies', 'Cytokines', 'Transfusion Reaction']
+    keyTakeaway: 'Cryoprecipitate is specifically indicated to rapidly replace fibrinogen in severe hemorrhage when plasma fibrinogen is < 100–150 mg/dL.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Cryoprecipitate', 'Fibrinogen', 'Massive Transfusion', 'Coagulopathy']
   },
 
   // ----------------------------------------------------
-  // TYPES & INDICATIONS OF BIOPSY NEEDLES (Page 51)
+  // TYPES & INDICATIONS OF BIOPSY NEEDLES (Pages 51-52)
   // ----------------------------------------------------
   {
     id: 'bn_q1',
     topicId: 'biopsy_needles',
     topicTitle: 'Types & Indications of Biopsy Needles',
     questionNumber: 1,
-    clinicalVignette: 'A 42-year-old woman presents with a firm 2.5-cm palpable solitary breast mass. The surgical oncologist decides to perform a percutaneous cutting-needle core biopsy rather than fine needle aspiration (FNA). Which of the following is the primary diagnostic advantage of core needle biopsy (e.g., Tru-Cut needle) over fine needle aspiration?',
+    clinicalVignette: 'A 45-year-old man presents with a large exudative pleural effusion. Suspected etiologies include tuberculous pleurisy and pleural malignancy. The clinical team decides to perform a closed pleural biopsy to obtain parietal pleural tissue for histology and culture. Which specialized biopsy needle is traditionally used for closed pleural biopsy?',
     options: [
-      { id: 'A', text: 'Preserves intact tissue histological architecture, enabling differentiation between ductal carcinoma in situ (DCIS) and invasive carcinoma, as well as immunohistochemical receptor testing (ER/PR/HER2)' },
-      { id: 'B', text: 'Completely eliminates the need for local anesthesia' },
-      { id: 'C', text: 'Requires zero post-procedural compression because bleeding never occurs' },
-      { id: 'D', text: 'Provides only single-cell cytological smears comparable to FNA' }
+      { id: 'A', text: 'Menghini needle' },
+      { id: 'B', text: 'Jamshidi needle' },
+      { id: 'C', text: 'Abrams needle' },
+      { id: 'D', text: 'Tru-cut needle' }
     ],
-    correctOption: 'A',
-    correctAnswerText: 'Preserves intact tissue histological architecture, enabling differentiation between ductal carcinoma in situ (DCIS) and invasive carcinoma, as well as immunohistochemical receptor testing (ER/PR/HER2)',
-    explanation: 'Core needle biopsy (Tru-Cut / automated spring-loaded cutting needle) obtains a cylindrical core of intact tissue, preserving histological architecture and basement membrane integrity. This allows definitive differentiation between in situ (e.g., DCIS) and invasive carcinoma (invasion through the basement membrane), histological grading, and robust immunohistochemical staining for hormone receptors (ER, PR) and HER2/neu. In contrast, FNA yields only isolated cells or clusters (cytology) cannot evaluate tissue architecture or invasion.',
+    correctOption: 'C',
+    correctAnswerText: 'Abrams needle',
+    explanation: 'The Abrams needle (and Cope needle) is a specialized closed pleural biopsy needle featuring an outer cannula with a deep lateral cutting notch and an inner rotating cutting stylet. When inserted into the pleural space and hooked onto the parietal pleura on the superior rib border, the inner cylinder is rotated to guillotine a piece of parietal pleura while simultaneously allowing fluid aspiration.',
     optionRationales: {
-      A: 'Correct. Core needle biopsy preserves architecture to distinguish in situ from invasive cancer and allows receptor profiling.',
-      B: 'Core biopsy requires local anesthesia (e.g., 1-2% lidocaine).',
-      C: 'Core biopsy involves a cutting needle that requires post-biopsy manual pressure to prevent hematoma.',
-      D: 'Core needle obtains intact histological tissue cores, not just cytology.'
+      A: 'Menghini needle is a suction-aspiration needle used for liver biopsy.',
+      B: 'Jamshidi needle is a sturdy cylindrical needle used for bone marrow trephine biopsy.',
+      C: 'Correct. Abrams needle (and Cope needle) is the classic specialized tool for closed parietal pleural biopsy.',
+      D: 'Tru-cut needle is a side-notch core cutting needle used for solid organs (kidney, prostate, breast).'
     },
-    keyTakeaway: 'Core needle biopsy (Tru-Cut) preserves tissue architecture to differentiate in situ from invasive cancer and allows immunohistochemical receptor profiling.',
-    sourcePageRef: 'Page 51, Q1',
+    keyTakeaway: 'The Abrams needle is specifically designed with a lateral hook-notch mechanism for closed parietal pleural biopsies in exudative effusions.',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['Biopsy Needles', 'Tru-Cut', 'Core Needle Biopsy', 'Histopathology', 'Breast Cancer']
+    tags: ['Biopsy Needles', 'Abrams Needle', 'Pleural Biopsy', 'Procedures']
   },
   {
     id: 'bn_q2',
     topicId: 'biopsy_needles',
     topicTitle: 'Types & Indications of Biopsy Needles',
     questionNumber: 2,
-    clinicalVignette: 'A 55-year-old woman with suspected primary myelofibrosis and pancytopenia undergoes bone marrow examination. The hematologist utilizes a specialized hollow needle with a tapered cutting tip and internal stylet to obtain a solid core of trabecular bone and marrow tissue from the posterior superior iliac spine (PSIS). Which specialized needle is designed for this bone marrow trephine core biopsy?',
+    clinicalVignette: 'A 52-year-old woman with chronic hepatitis B infection is undergoing percutaneous liver biopsy for staging of hepatic fibrosis and assessment of disease activity. The proceduralist chooses a 1-second suction-aspiration technique. Which biopsy needle operates using this rapid suction mechanism?',
     options: [
-      { id: 'A', text: 'Jamshidi needle' },
-      { id: 'B', text: 'Klima needle' },
-      { id: 'C', text: 'Salah needle' },
-      { id: 'D', text: 'Vim-Silverman needle' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Jamshidi needle',
-    explanation: 'The Jamshidi needle is the classic, standard disposable/reusable hollow-bore needle designed specifically for bone marrow trephine core biopsy (obtaining an intact cylinder of bone and marrow cavity tissue for histopathology and reticulin/collagen fibrosis grading). The Salah and Klima needles are designed primarily for liquid bone marrow aspiration (cytological aspirates), not bone trephine cores.',
-    optionRationales: {
-      A: 'Correct. The Jamshidi needle is the standard instrument for bone marrow trephine core biopsy.',
-      B: 'Klima needle is used for bone marrow aspiration (liquid aspirate), usually sternal or iliac.',
-      C: 'Salah needle is also an aspiration needle featuring an adjustable guard.',
-      D: 'Vim-Silverman was historically used for soft tissue core biopsies (liver/kidney), not bone trephine.'
-    },
-    keyTakeaway: 'The Jamshidi needle is the standard needle used for bone marrow trephine core biopsies to assess cellularity, architecture, and marrow fibrosis.',
-    sourcePageRef: 'Page 51, Q2',
-    difficulty: 'High Yield',
-    tags: ['Jamshidi Needle', 'Bone Marrow Biopsy', 'Trephine Biopsy', 'Hematology Needles']
-  },
-
-  // ----------------------------------------------------
-  // MANAGEMENT OF ERECTILE DYSFUNCTION (Pages 56-57)
-  // ----------------------------------------------------
-  {
-    id: 'ed_q1',
-    topicId: 'erectile_dysfunction',
-    topicTitle: 'Management of Erectile Dysfunction',
-    questionNumber: 1,
-    clinicalVignette: 'A 28-year-old man presents with sudden-onset inability to achieve and maintain erections during intercourse with his new partner over the past 2 months. He reports normal, firm nocturnal penile tumescence (spontaneous morning erections) and normal erections during masturbation. He takes no medications and has no cardiovascular risk factors. What is the most likely etiology of his erectile dysfunction?',
-    options: [
-      { id: 'A', text: 'Severe cavernous arterial insufficiency' },
-      { id: 'B', text: 'Psychogenic erectile dysfunction (performance anxiety)' },
-      { id: 'C', text: 'Diabetic autonomic neuropathy' },
-      { id: 'D', text: 'Venous-occlusive dysfunction (venous leak)' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Psychogenic erectile dysfunction (performance anxiety)',
-    explanation: 'The presence of intact, rigid nocturnal penile tumescence (morning erections) and normal erectile function during masturbation definitively confirms that the neurovascular and physiological mechanisms of erection are anatomically intact. Sudden onset in a young male with situational failure (normal masturbation, failure during partner intercourse) is the hallmark of psychogenic erectile dysfunction, commonly driven by performance anxiety, relationship stress, or situational depression.',
-    optionRationales: {
-      A: 'Arteriogenic ED is gradual in onset and impairs morning erections and masturbation equally.',
-      B: 'Correct. Preserved nocturnal/masturbatory erections with sudden situational failure indicates psychogenic ED.',
-      C: 'Diabetic neuropathy causes gradual, progressive loss of all erections including morning erections.',
-      D: 'Venous leak causes failure to maintain rigidity in all sexual situations.'
-    },
-    keyTakeaway: 'Preserved spontaneous nocturnal and morning erections in erectile dysfunction indicates a psychogenic (rather than organic/vascular) etiology.',
-    sourcePageRef: 'Page 56, Q1',
-    difficulty: 'Core Clinical',
-    tags: ['Erectile Dysfunction', 'Psychogenic ED', 'Nocturnal Penile Tumescence', 'Urology']
-  },
-  {
-    id: 'ed_q2',
-    topicId: 'erectile_dysfunction',
-    topicTitle: 'Management of Erectile Dysfunction',
-    questionNumber: 2,
-    clinicalVignette: 'A 58-year-old man with a 10-year history of type 2 diabetes and hypertension complains of progressive erectile dysfunction over 2 years. He has tried lifestyle modifications without success. The physician considers prescribing oral Sildenafil (a PDE-5 inhibitor). Which medication in the patient\'s history represents an ABSOLUTE contraindication to PDE-5 inhibitor therapy?',
-    options: [
-      { id: 'A', text: 'Sublingual or long-acting Nitrates (e.g., Nitroglycerin, Isosorbide mononitrate/dinitrate)' },
-      { id: 'B', text: 'ACE inhibitors (e.g., Lisinopril)' },
-      { id: 'C', text: 'Metformin' },
-      { id: 'D', text: 'HMG-CoA reductase inhibitors (e.g., Atorvastatin)' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Sublingual or long-acting Nitrates (e.g., Nitroglycerin, Isosorbide mononitrate/dinitrate)',
-    explanation: 'Phosphodiesterase type 5 (PDE-5) inhibitors (Sildenafil, Tadalafil, Vardenafil) prevent the degradation of cyclic GMP (cGMP) in vascular smooth muscle cells. Nitrates act as nitric oxide (NO) donors, stimulating guanylate cyclase to synthesize cGMP. Combining PDE-5 inhibitors with nitrates produces massive, synergistic cGMP accumulation, leading to profound systemic vasodilation, catastrophic refractory hypotension, coronary hypoperfusion, and fatal myocardial infarction. Nitrates are an absolute contraindication.',
-    optionRationales: {
-      A: 'Correct. Concomitant use of PDE-5 inhibitors and organic nitrates causes life-threatening synergistic hypotension.',
-      B: 'ACE inhibitors can be used with PDE-5 inhibitors with routine blood pressure monitoring.',
-      C: 'Metformin has no adverse pharmacokinetic interaction with PDE-5 inhibitors.',
-      D: 'Statins are safe and synergistic in improving endothelial function.'
-    },
-    keyTakeaway: 'Concomitant use of PDE-5 inhibitors (Sildenafil) and nitrates (Nitroglycerin/Isosorbide) is absolutely contraindicated due to catastrophic hypotension.',
-    sourcePageRef: 'Pages 56–57, Q2',
-    difficulty: 'High Yield',
-    tags: ['PDE-5 Inhibitors', 'Sildenafil', 'Nitrates Contraindication', 'Hypotension', 'Pharmacology']
-  },
-  {
-    id: 'ed_q3',
-    topicId: 'erectile_dysfunction',
-    topicTitle: 'Management of Erectile Dysfunction',
-    questionNumber: 3,
-    clinicalVignette: 'A 62-year-old man with hypertension and hyperlipidemia presents with erectile dysfunction. He reports experiencing retrosternal chest tightness when walking two flights of stairs or during moderate exertion. According to the Princeton Consensus Guidelines on Cardiovascular Risk and Sexual Activity, how should this patient be risk-stratified and managed regarding ED therapy?',
-    options: [
-      { id: 'A', text: 'Low cardiovascular risk; prescribe maximum dose sildenafil immediately without cardiac testing' },
-      { id: 'B', text: 'Intermediate / High cardiovascular risk (unstable/exertional angina); defer sexual activity and ED pharmacotherapy until comprehensive cardiac evaluation and exercise treadmill testing are performed' },
-      { id: 'C', text: 'Prescribe sublingual nitroglycerin to take simultaneously with sildenafil before sexual intercourse' },
-      { id: 'D', text: 'Reassure that sexual activity carries zero metabolic or cardiovascular workload' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Intermediate / High cardiovascular risk (unstable/exertional angina); defer sexual activity and ED pharmacotherapy until comprehensive cardiac evaluation and exercise treadmill testing are performed',
-    explanation: 'Sexual activity is equivalent to moderate physical exertion (approx. 3 to 4 METs, comparable to walking 1 mile in 20 min or climbing 2 flights of stairs). According to the Princeton III Consensus guidelines, patients with symptomatic exertional angina, recent MI, or uncontrolled arrhythmias are categorized into intermediate or high cardiovascular risk. In these patients, sexual activity and ED medications must be postponed until formal cardiology evaluation and stress testing establish cardiovascular safety.',
-    optionRationales: {
-      A: 'Exertional chest tightness indicates active coronary ischemia; prescribing sildenafil without evaluation is dangerous.',
-      B: 'Correct. Defer sexual activity and ED treatment until cardiac evaluation and stress testing stratify ischemia risk.',
-      C: 'Combining nitrates with sildenafil is strictly contraindicated.',
-      D: 'Sexual activity requires significant metabolic workload (3-4 METs) and sympathetic surge.'
-    },
-    keyTakeaway: 'Patients with symptomatic exertional angina or high cardiovascular risk must undergo formal cardiac evaluation before initiating ED therapies.',
-    sourcePageRef: 'Page 57, Q3',
-    difficulty: 'High Yield',
-    tags: ['Princeton Consensus', 'Cardiovascular Risk', 'Erectile Dysfunction', 'Exercise Stress Testing']
-  },
-
-  // ----------------------------------------------------
-  // PRINCIPLES OF ANTIBIOTIC USE (Pages 67-70)
-  // ----------------------------------------------------
-  {
-    id: 'abx_q1',
-    topicId: 'antibiotic_principles',
-    topicTitle: 'Principles of Antibiotic Use',
-    questionNumber: 1,
-    clinicalVignette: 'A 58-year-old man is admitted with severe hospital-acquired pneumonia. The clinical pharmacologist explains the difference between "time-dependent" and "concentration-dependent" bactericidal pharmacodynamics. Which of the following antimicrobial classes exhibits classic time-dependent bactericidal activity, where efficacy correlates with the percentage of time that free drug concentration exceeds the Minimum Inhibitory Concentration (%T > MIC)?',
-    options: [
-      { id: 'A', text: 'Aminoglycosides (e.g., Gentamicin, Amikacin)' },
-      { id: 'B', text: 'Beta-lactams (e.g., Penicillins, Cephalosporins, Carbapenems)' },
-      { id: 'C', text: 'Fluoroquinolones (e.g., Ciprofloxacin, Levofloxacin)' },
-      { id: 'D', text: 'Lipopeptides (e.g., Daptomycin)' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Beta-lactams (e.g., Penicillins, Cephalosporins, Carbapenems)',
-    explanation: 'Beta-lactam antibiotics (penicillins, cephalosporins, carbapenems, monobactams) exhibit time-dependent bactericidal killing. Their clinical efficacy depends primarily on the duration of time that free unbound serum drug levels remain above the pathogen\'s MIC (%T > MIC >= 40–70% of the dosing interval). Consequently, optimizing beta-lactams involves frequent dosing, continuous infusions, or extended infusions. In contrast, Aminoglycosides and Daptomycin exhibit concentration-dependent killing (Peak/MIC ratio and AUC/MIC).',
-    optionRationales: {
-      A: 'Aminoglycosides are concentration-dependent (Peak/MIC >= 8-10) with prolonged post-antibiotic effect.',
-      B: 'Correct. Beta-lactams are time-dependent (%T > MIC).',
-      C: 'Fluoroquinolones depend on the 24-hour AUC/MIC ratio.',
-      D: 'Daptomycin exhibits concentration-dependent bactericidal action.'
-    },
-    keyTakeaway: 'Beta-lactams are time-dependent antimicrobials optimized when free drug concentrations exceed the MIC (%T > MIC) for 50–70% of the dosing interval.',
-    sourcePageRef: 'Pages 67–68, Q1',
-    difficulty: 'High Yield',
-    tags: ['Pharmacodynamics', 'Time-Dependent', 'Beta-Lactams', 'MIC', 'Antibiotic Stewardship']
-  },
-  {
-    id: 'abx_q2',
-    topicId: 'antibiotic_principles',
-    topicTitle: 'Principles of Antibiotic Use',
-    questionNumber: 2,
-    clinicalVignette: 'A 21-year-old university student presents with acute high fever, petechial rash, neck stiffness, and photophobia. The medical team initiates empirical intravenous Ceftriaxone 2 g q12h immediately after blood cultures and lumbar puncture. On Day 3, cerebrospinal fluid cultures grow fully penicillin-susceptible Neisseria meningitidis (MIC < 0.06 mg/L). What is the next principle of rational antibiotic stewardship to implement?',
-    options: [
-      { id: 'A', text: 'Continue broad-spectrum empirical Ceftriaxone for 6 weeks regardless of culture results' },
-      { id: 'B', text: 'Add intravenous Vancomycin and Gentamicin to broaden coverage' },
-      { id: 'C', text: 'De-escalate (streamline) therapy to narrow-spectrum targeted intravenous Benzylpenicillin (Penicillin G) based on confirmed microbiological sensitivities' },
-      { id: 'D', text: 'Discontinue all antibiotics immediately because the culture has identified the organism' }
+      { id: 'A', text: 'Abrams needle' },
+      { id: 'B', text: 'Jamshidi needle' },
+      { id: 'C', text: 'Menghini needle' },
+      { id: 'D', text: 'Tru-cut needle' }
     ],
     correctOption: 'C',
-    correctAnswerText: 'De-escalate (streamline) therapy to narrow-spectrum targeted intravenous Benzylpenicillin (Penicillin G) based on confirmed microbiological sensitivities',
-    explanation: 'Antibiotic de-escalation (streamlining) is a fundamental pillar of antimicrobial stewardship. Once microbiological identification and antimicrobial susceptibility results become available (usually at 48–72 hours), broad-spectrum empirical therapy should be safely transitioned to the narrowest-spectrum, most effective, and least toxic targeted agent (in this case, high-dose IV Benzylpenicillin for penicillin-sensitive meningococcus) to reduce selective pressure for resistance, minimize collateral microbiome damage, and lower healthcare costs.',
+    correctAnswerText: 'Menghini needle',
+    explanation: 'The Menghini needle is a thin-walled, beveled biopsy needle designed for rapid suction-aspiration parenchymal liver biopsy ("1-second technique"). Negative pressure is created in an attached pre-loaded syringe filled with saline; the needle is rapidly thrust into the liver parenchyma and withdrawn in under one second, drawing a clean core of hepatic tissue into the lumen and minimizing intra-abdominal bleeding risk.',
     optionRationales: {
-      A: 'Continuing unnecessarily broad empirical coverage drives antimicrobial resistance and C. difficile infection.',
-      B: 'Adding vancomycin and gentamicin without indication is harmful overtreatment.',
-      C: 'Correct. De-escalating from broad empirical therapy to targeted narrow-spectrum Penicillin G is optimal stewardship.',
-      D: 'Antibiotics must be continued for the full targeted therapeutic course (typically 5-7 days for meningococcal meningitis).'
+      A: 'Abrams needle is for closed pleural biopsy.',
+      B: 'Jamshidi needle is for bone marrow core biopsies.',
+      C: 'Correct. The Menghini needle uses a rapid suction-aspiration technique for percutaneous liver parenchymal biopsy.',
+      D: 'Tru-cut needles use a mechanical sliding cutting sheath, requiring multiple steps.'
     },
-    keyTakeaway: 'Antimicrobial stewardship mandates de-escalation from broad empirical coverage to narrow-spectrum targeted therapy once culture sensitivities return.',
-    sourcePageRef: 'Pages 68–69, Q2',
-    difficulty: 'Core Clinical',
-    tags: ['De-escalation', 'Antibiotic Stewardship', 'Targeted Therapy', 'Meningitis', 'Sensitivities']
-  },
-  {
-    id: 'abx_q3',
-    topicId: 'antibiotic_principles',
-    topicTitle: 'Principles of Antibiotic Use',
-    questionNumber: 3,
-    clinicalVignette: 'A 74-year-old man with stage 4 CKD (eGFR 20 mL/min/1.73m²) develops MRSA bacteremia and is prescribed intravenous Vancomycin. How should the dosage of Vancomycin be adjusted to ensure therapeutic efficacy while minimizing nephrotoxicity and ototoxicity?',
-    options: [
-      { id: 'A', text: 'Administer a standard weight-based loading dose (25–30 mg/kg) followed by extended interval maintenance dosing guided by Therapeutic Drug Monitoring (AUC24/MIC target 400–600 mg·h/L or trough monitoring)' },
-      { id: 'B', text: 'Administer standard high doses every 6 hours without checking drug levels' },
-      { id: 'C', text: 'Avoid loading dose entirely and give 500 mg once a month' },
-      { id: 'D', text: 'Discontinue vancomycin completely as it cannot be used in renal insufficiency' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Administer a standard weight-based loading dose (25–30 mg/kg) followed by extended interval maintenance dosing guided by Therapeutic Drug Monitoring (AUC24/MIC target 400–600 mg·h/L or trough monitoring)',
-    explanation: 'Vancomycin is cleared predominantly (>80–90%) by glomerular filtration. In renal impairment, a full weight-based loading dose (25–30 mg/kg) is still required to rapidly establish therapeutic tissue concentrations in severe infections, but subsequent maintenance doses and intervals must be adjusted (e.g. extended interval q24–48h) based on renal function and monitored via Therapeutic Drug Monitoring (TDM) to maintain an AUC24/MIC of 400–600 mg·h/L and avoid toxic accumulation causing acute kidney injury and ototoxicity.',
-    optionRationales: {
-      A: 'Correct. Give weight-based loading dose, extend maintenance interval, and guide therapy with AUC24/MIC drug monitoring.',
-      B: 'Standard dosing every 6-12h without TDM in severe CKD leads to rapid supratherapeutic accumulation and nephrotoxicity.',
-      C: 'Omission of loading dose leads to delayed therapeutic target achievement and treatment failure.',
-      D: 'Vancomycin is the gold standard for MRSA and can be safely used in CKD with proper TDM.'
-    },
-    keyTakeaway: 'In renal impairment, hydrophilic drugs like Vancomycin require a standard weight-based loading dose followed by extended maintenance intervals guided by therapeutic drug monitoring (AUC/MIC).',
-    sourcePageRef: 'Page 69, Q3',
+    keyTakeaway: 'The Menghini needle operates via rapid suction-aspiration for percutaneous liver biopsies, taking under one second to procure a tissue core.',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['Vancomycin', 'Renal Dosing', 'Therapeutic Drug Monitoring', 'TDM', 'AUC24/MIC']
-  },
-  {
-    id: 'abx_q4',
-    topicId: 'antibiotic_principles',
-    topicTitle: 'Principles of Antibiotic Use',
-    questionNumber: 4,
-    clinicalVignette: 'How does the biological mechanism of "selective toxicity" allow modern antibacterial agents to destroy pathogenic bacteria while minimizing host human cellular damage?',
-    options: [
-      { id: 'A', text: 'By binding selectively to human nuclear DNA and stimulating host macrophage synthesis' },
-      { id: 'B', text: 'By exploiting biochemical and structural differences unique to bacteria, such as the peptidoglycan cell wall, 70S bacterial ribosomes (30S/50S subunits), and bacterial DNA gyrase' },
-      { id: 'C', text: 'By converting human cells into bacterial spore structures' },
-      { id: 'D', text: 'By lowering the core body temperature to inhibit bacterial mitosis' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'By exploiting biochemical and structural differences unique to bacteria, such as the peptidoglycan cell wall, 70S bacterial ribosomes (30S/50S subunits), and bacterial DNA gyrase',
-    explanation: 'Selective toxicity is the fundamental principle of antimicrobial chemotherapy: an ideal drug inhibits or destroys microbial pathogens without harming human host tissues. This is achieved by targeting biochemical structures or metabolic pathways unique to prokaryotes that are absent in eukaryotic cells: 1) Peptidoglycan cell wall synthesis (beta-lactams, glycopeptides - humans lack cell walls); 2) 70S bacterial ribosomes with 30S/50S subunits (aminoglycosides, macrolides, tetracyclines - humans have 80S cytosolic ribosomes); 3) Bacterial DNA gyrase/topoisomerase IV (fluoroquinolones); and 4) De novo folate synthesis (sulfonamides/trimethoprim).',
-    optionRationales: {
-      A: 'Targeting human nuclear DNA would cause severe host cytotoxicity and mutagenesis.',
-      B: 'Correct. Selective toxicity targets unique prokaryotic features: peptidoglycan cell walls, 70S ribosomes, DNA gyrase, and folate pathways.',
-      C: 'Human cells do not form bacterial spores.',
-      D: 'Antibiotics do not act by manipulating body temperature.'
-    },
-    keyTakeaway: 'Selective toxicity exploits structural and biochemical differences between prokaryotes and eukaryotes (peptidoglycan wall, 70S ribosomes, DNA gyrase).',
-    sourcePageRef: 'Pages 69–70, Q4',
-    difficulty: 'Core Clinical',
-    tags: ['Selective Toxicity', 'Pharmacology', 'Bacterial Targets', 'Ribosomes', 'Peptidoglycan']
-  },
-  {
-    id: 'abx_q5',
-    topicId: 'antibiotic_principles',
-    topicTitle: 'Principles of Antibiotic Use',
-    questionNumber: 5,
-    clinicalVignette: 'A 68-year-old man is admitted with severe septic shock secondary to an intra-abdominal source (perforated diverticulitis). According to Surviving Sepsis Campaign guidelines, what is the recommended time window for initiating empirical broad-spectrum intravenous antimicrobial therapy?',
-    options: [
-      { id: 'A', text: 'Within 24 to 48 hours after all laparotomy pathology reports are finalized' },
-      { id: 'B', text: 'Within 1 hour of recognition of sepsis or septic shock ("The Golden Hour") immediately after taking blood cultures' },
-      { id: 'C', text: 'Only after the patient is discharged from the ICU to the general ward' },
-      { id: 'D', text: 'Within 12 hours after starting enteral nutrition' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Within 1 hour of recognition of sepsis or septic shock ("The Golden Hour") immediately after taking blood cultures',
-    explanation: 'In severe sepsis and septic shock, every hour of delay in administering appropriate intravenous antimicrobial therapy is associated with a measurable, significant increase in mortality (approximately 7–8% increase in mortality per hour of delay). The Surviving Sepsis Campaign explicitly recommends that appropriate broad-spectrum IV antimicrobials be initiated within the first hour of recognition ("The Golden Hour"), ideally immediately following prompt blood culture collection without delaying antimicrobial administration.',
-    optionRationales: {
-      A: 'A 24-48 hour delay is fatal in acute septic shock.',
-      B: 'Correct. Administration of IV antibiotics within 1 hour ("The Golden Hour") is a lifesaving quality mandate in sepsis.',
-      C: 'Antibiotics must be administered immediately in the emergency/ICU phase.',
-      D: 'Nutrition timing has no bearing on immediate antimicrobial delivery.'
-    },
-    keyTakeaway: 'Broad-spectrum intravenous antibiotics must be administered within 1 hour ("The Golden Hour") of recognition of severe sepsis or septic shock.',
-    sourcePageRef: 'Page 70, Q5',
-    difficulty: 'High Yield',
-    tags: ['Surviving Sepsis', 'Golden Hour', 'Sepsis Guidelines', 'Emergency Antibiotics']
+    tags: ['Biopsy Needles', 'Menghini Needle', 'Liver Biopsy', 'Procedures']
   }
 ];

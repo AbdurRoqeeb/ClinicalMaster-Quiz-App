@@ -2,404 +2,352 @@ import { Question } from '../../types';
 
 export const GASTRO_NEURO_RHEUM_QUESTIONS: Question[] = [
   // ----------------------------------------------------
-  // MANAGEMENT OF UPPER GI BLEEDING (Pages 37-40)
+  // MANAGEMENT OF UPPER GI BLEEDING (Pages 38-40)
   // ----------------------------------------------------
   {
     id: 'ugib_q1',
     topicId: 'upper_gi_bleeding',
     topicTitle: 'Management of Upper GI Bleeding',
     questionNumber: 1,
-    clinicalVignette: 'A 62-year-old man presents with massive hematemesis and melena. He has known liver cirrhosis. On examination: blood pressure is 85/50 mmHg, heart rate is 128 bpm, extremities are cold and clammy, and he has marked splenomegaly. While initiating IV fluid resuscitation with packed red blood cells, which pharmacological regimen should be started immediately prior to emergency endoscopy?',
+    clinicalVignette: 'A 55-year-old woman with a history of regular ibuprofen use for osteoarthritis presents with acute hematemesis and melena. At urgent upper gastrointestinal endoscopy, a 1.5-cm peptic ulcer in the posterior duodenal bulb is identified with active, spurting arterial bleeding (Forrest Ia). Which of the following is the most appropriate endoscopic and pharmacological management?',
     options: [
-      { id: 'A', text: 'Intravenous Terlipressin (or Octreotide) plus prophylactic intravenous Ceftriaxone' },
-      { id: 'B', text: 'Oral Propranolol 40 mg twice daily plus oral sucralfate' },
-      { id: 'C', text: 'Intravenous Tranexamic acid 1 g stat alone' },
-      { id: 'D', text: 'High-dose oral antacid suspension via nasogastric tube' }
+      { id: 'A', text: 'Oral PPI therapy only, followed by repeat endoscopy in 48 hours' },
+      { id: 'B', text: 'Endoscopic injection of adrenaline alone combined with oral PPI' },
+      { id: 'C', text: 'Dual endoscopic haemostatic therapy (e.g. thermal coagulation or mechanical hemoclip plus adrenaline injection) combined with high-dose intravenous PPI therapy' },
+      { id: 'D', text: 'No endoscopic intervention is required because spurting ulcers heal spontaneously' }
     ],
-    correctOption: 'A',
-    correctAnswerText: 'Intravenous Terlipressin (or Octreotide) plus prophylactic intravenous Ceftriaxone',
-    explanation: 'In suspected acute variceal hemorrhage, vasoactive drugs (Terlipressin, Octreotide, Somatostatin) must be initiated immediately on presentation before diagnostic endoscopy to reduce splanchnic blood flow and lower portal venous pressure. Short-term prophylactic antibiotic therapy (IV Ceftriaxone 1 g/day for up to 7 days) is mandatory because bacterial infections occur in up to 50% of cirrhotic bleeders; antibiotic prophylaxis significantly reduces early rebleeding, spontaneous bacterial peritonitis, and all-cause mortality.',
+    correctOption: 'C',
+    correctAnswerText: 'Dual endoscopic haemostatic therapy (e.g. thermal coagulation or mechanical hemoclip plus adrenaline injection) combined with high-dose intravenous PPI therapy',
+    explanation: 'High-risk non-variceal peptic ulcer lesions (Forrest Ia active spurting, Forrest Ib active oozing, or Forrest IIa non-bleeding visible vessel) require dual-modality endoscopic hemostasis. Monotherapy with adrenaline injection is inadequate because adrenaline only provides transient vasoconstriction without permanent mechanical thrombosis. Combining adrenaline injection (for clear visualization) with a definitive second modality (through-the-scope hemoclip or thermal contact coagulation / heater probe), followed by high-dose intravenous PPI (80 mg IV bolus + 8 mg/h infusion for 72 hours), reduces rebleeding and mortality.',
     optionRationales: {
-      A: 'Correct. Vasoactive agents (Terlipressin/Octreotide) reduce portal inflow while prophylactic Ceftriaxone reduces sepsis, rebleeding, and mortality.',
-      B: 'Non-selective beta-blockers (propranolol) are strictly contraindicated in acute shock/active bleeding; they are used only for secondary prophylaxis once stabilized.',
-      C: 'Tranexamic acid has no proven mortality benefit in variceal bleeding and increases thromboembolic complications in cirrhosis.',
-      D: 'Oral antacids are completely ineffective for life-threatening variceal hemorrhage.'
+      A: 'Oral PPI alone without endoscopic hemostasis carries >80% mortality/rebleeding in spurting arterial ulcers.',
+      B: 'Adrenaline monotherapy is inferior and associated with high rebleeding rates; dual therapy is the international standard.',
+      C: 'Correct. Dual endoscopic therapy (hemoclip/thermal + adrenaline) plus high-dose IV PPI is the gold standard for Forrest Ia/Ib lesions.',
+      D: 'Active arterial spurting requires immediate physical hemostasis.'
     },
-    keyTakeaway: 'Early IV vasoactive therapy (Terlipressin / Octreotide) combined with prophylactic antibiotics (IV Ceftriaxone) is mandatory in acute variceal bleeding.',
-    sourcePageRef: 'Pages 37–38, Q1',
+    keyTakeaway: 'Forrest Ia spurting peptic ulcers mandate dual endoscopic hemostatic therapy (hemoclip or thermal coagulation plus adrenaline) and high-dose intravenous PPI therapy.',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['Variceal Bleeding', 'Terlipressin', 'Ceftriaxone Prophylaxis', 'Cirrhosis', 'Upper GI Bleed']
+    tags: ['Upper GI Bleeding', 'Forrest Classification', 'Endoscopic Hemostasis', 'Dual Therapy', 'PPI']
   },
   {
     id: 'ugib_q2',
     topicId: 'upper_gi_bleeding',
     topicTitle: 'Management of Upper GI Bleeding',
     questionNumber: 2,
-    clinicalVignette: 'A 58-year-old man presents with melena following 2 weeks of high-dose ibuprofen use for severe osteoarthritis. Emergency upper endoscopy reveals a 1.5-cm peptic ulcer in the duodenal bulb with active arterial spurting (Forrest Class Ia). Which endoscopic intervention is recommended as the standard of care for definitive hemostasis?',
+    clinicalVignette: 'A 62-year-old man taking diclofenac for chronic back pain presents to the emergency department with fresh hematemesis and dark tarry stools. On arrival, he is pale, cold, and clammy. Blood pressure is 82/54 mmHg, and pulse is 126/min. What is the most appropriate immediate management strategy?',
     options: [
-      { id: 'A', text: 'Epinephrine (adrenaline) injection alone as monotherapy' },
-      { id: 'B', text: 'Dual endoscopic therapy (e.g., Epinephrine injection combined with thermal coagulation or mechanical through-the-scope hemoclips)' },
-      { id: 'C', text: 'Argon plasma coagulation alone without mechanical clipping' },
-      { id: 'D', text: 'Immediate emergency laparotomy and partial gastrectomy without endoscopic therapy' }
+      { id: 'A', text: 'Urgent endoscopy within 30 minutes before IV fluid resuscitation' },
+      { id: 'B', text: 'Commence ABC resuscitation with two wide-bore IV cannulae (14–16G), rapid crystalloid infusion, cross-match blood, and stabilize hemodynamics prior to endoscopy' },
+      { id: 'C', text: 'Administer oral omeprazole 40 mg and observe in the medical ward' },
+      { id: 'D', text: 'Perform gastric lavage with ice-cold saline before inserting IV access' }
     ],
     correctOption: 'B',
-    correctAnswerText: 'Dual endoscopic therapy (e.g., Epinephrine injection combined with thermal coagulation or mechanical through-the-scope hemoclips)',
-    explanation: 'For high-risk peptic ulcer bleeding (Forrest Class Ia active spurting, Ib active oozing, or IIa non-bleeding visible vessel), dual endoscopic therapy is guideline-mandated. Epinephrine injection provides transient local vasoconstriction and initial visualization, but must ALWAYS be combined with a second definitive hemostatic modality (mechanical hemoclips or thermal contact coagulation / bipolar probe). Epinephrine monotherapy is inadequate due to unacceptably high rebleeding rates.',
+    correctAnswerText: 'Commence ABC resuscitation with two wide-bore IV cannulae (14–16G), rapid crystalloid infusion, cross-match blood, and stabilize hemodynamics prior to endoscopy',
+    explanation: 'In acute massive upper gastrointestinal bleeding presenting with hemorrhagic shock (hypotension BP 82/54 mmHg, tachycardia HR 126 bpm), the absolute first priority is Airway, Breathing, and Circulation (ABC) resuscitation. Immediate management requires establishing two large-bore peripheral IV lines (14G or 16G), infusing isotonic crystalloids, sending blood for full blood count, coagulation profile, and urgent cross-matching, and restoring intravascular volume and tissue perfusion BEFORE performing endoscopy.',
     optionRationales: {
-      A: 'Epinephrine monotherapy has high rebleeding rates and is inferior to combination therapy.',
-      B: 'Correct. Dual therapy (epinephrine injection plus mechanical hemoclip or thermal coagulation) is the standard of care.',
-      C: 'Argon plasma coagulation is non-contact and insufficient for deep arterial spurters in peptic ulcers.',
-      D: 'Surgery is reserved for refractory bleeding that fails repeated endoscopic intervention.'
+      A: 'Sedating and instrumenting an unresuscitated, hypotensive patient for endoscopy causes aspiration, cardiovascular collapse, and death.',
+      B: 'Correct. Immediate resuscitation with large-bore IV access and crystalloids to stabilize hemodynamics must precede endoscopy.',
+      C: 'Oral medication has no role in severe hemorrhagic shock.',
+      D: 'Ice-cold gastric lavage is obsolete and delays essential vascular resuscitation.'
     },
-    keyTakeaway: 'High-risk bleeding peptic ulcers (Forrest Ia, Ib, IIa) require dual endoscopic therapy (epinephrine injection plus mechanical hemoclip or thermal coagulation).',
-    sourcePageRef: 'Page 38, Q2',
+    keyTakeaway: 'In severe upper GI bleeding with shock, hemodynamic stabilization and fluid resuscitation via two large-bore IV cannulae must strictly precede endoscopic intervention.',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['Peptic Ulcer', 'Forrest Classification', 'Dual Endoscopy', 'Hemoclips', 'Hemostasis']
+    tags: ['Hemorrhagic Shock', 'ABC Resuscitation', 'Upper GI Bleeding', 'IV Access']
   },
   {
     id: 'ugib_q3',
     topicId: 'upper_gi_bleeding',
     topicTitle: 'Management of Upper GI Bleeding',
     questionNumber: 3,
-    clinicalVignette: 'A 70-year-old woman presents with a single episode of mild coffee-ground emesis. Her initial Glasgow-Blatchford Score (GBS) is calculated as 0 (Hemoglobin 13.5 g/dL, Blood Urea 4.2 mmol/L, Systolic BP 125 mmHg, Heart Rate 72 bpm, no melena, syncope, hepatic disease, or heart failure). Which of the following is the most appropriate management plan?',
+    clinicalVignette: 'A 48-year-old man with decompensated chronic liver disease and ascites presents with massive hematemesis. His BP is 88/52 mmHg and pulse is 118/min. While arrangements are being made for emergency endoscopy, which pharmacological approach is recommended in the initial resuscitation phase?',
     options: [
-      { id: 'A', text: 'Urgent ICU admission, balloon tamponade, and emergent angiography' },
-      { id: 'B', text: 'Safe outpatient management with low risk of requiring blood transfusion or endoscopic intervention' },
-      { id: 'C', text: 'Immediate endotracheal intubation and emergency surgical consultation' },
-      { id: 'D', text: 'High-dose IV PPI infusion for 72 hours in the high-dependency unit' }
+      { id: 'A', text: 'Intravenous pentagastrin infusion' },
+      { id: 'B', text: 'Vasoactive drug therapy (e.g. intravenous terlipressin or octreotide) combined with prophylactic intravenous antibiotics (e.g. ceftriaxone)' },
+      { id: 'C', text: 'Oral propranolol 40 mg immediately' },
+      { id: 'D', text: 'Intravenous vitamin K as sole pharmacological therapy' }
     ],
     correctOption: 'B',
-    correctAnswerText: 'Safe outpatient management with low risk of requiring blood transfusion or endoscopic intervention',
-    explanation: 'The Glasgow-Blatchford Score (GBS) is the standard risk-stratification score used at initial presentation of upper GI bleeding before endoscopy. A GBS of 0 (or score <= 1 in many clinical guidelines) identifies very low-risk patients who have virtually zero risk of mortality, negligible need for endoscopic hemostatic intervention, and no requirement for blood transfusion. Such patients can be safely discharged for outpatient diagnostic workup.',
+    correctAnswerText: 'Vasoactive drug therapy (e.g. intravenous terlipressin or octreotide) combined with prophylactic intravenous antibiotics (e.g. ceftriaxone)',
+    explanation: 'In suspected acute variceal hemorrhage, international guidelines (Baveno VII) recommend immediate initiation of: (1) a vasoactive drug (Terlipressin, Octreotide, or Somatostatin) to induce splanchnic vasoconstriction and reduce portal venous inflow/pressure, PLUS (2) short-term prophylactic intravenous antibiotics (Ceftriaxone 1 g/day for up to 7 days). Antibiotic prophylaxis reduces bacterial translocation, prevents spontaneous bacterial peritonitis (SBP), and significantly reduces rebleeding and all-cause mortality.',
     optionRationales: {
-      A: 'ICU and balloon tamponade are for catastrophic refractory variceal shock.',
-      B: 'Correct. A GBS of 0 identifies very low risk, allowing safe outpatient management without hospital admission.',
-      C: 'Intubation and emergent surgery are completely unnecessary for a GBS score of 0.',
-      D: 'Continuous 72-hour IV PPI infusions are indicated only after successful endoscopic treatment of high-risk ulcer stigmata.'
+      A: 'Pentagastrin stimulates gastric acid secretion and has no role in variceal bleeding.',
+      B: 'Correct. Early vasoactive therapy (Terlipressin/Octreotide) plus prophylactic IV antibiotics (Ceftriaxone) is the standard pre-endoscopic regimen in variceal bleeds.',
+      C: 'Non-selective beta-blockers (propranolol) are used for secondary prophylaxis after recovery, but are strictly contraindicated during acute bleeding.',
+      D: 'Vitamin K takes 24 hours to act and cannot achieve acute portal decompressive hemostasis.'
     },
-    keyTakeaway: 'A Glasgow-Blatchford Score (GBS) of 0 identifies very low-risk upper GI bleed patients who can safely be managed as outpatients.',
-    sourcePageRef: 'Pages 38–39, Q3',
-    difficulty: 'Core Clinical',
-    tags: ['Glasgow-Blatchford Score', 'GBS', 'Risk Stratification', 'Upper GI Bleeding', 'Triage']
+    keyTakeaway: 'Suspected acute variceal bleeding requires immediate vasoactive therapy (terlipressin/octreotide) and prophylactic intravenous antibiotics (ceftriaxone) prior to endoscopy.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Variceal Bleeding', 'Terlipressin', 'Octreotide', 'Antibiotic Prophylaxis', 'Baveno VII']
   },
   {
     id: 'ugib_q4',
     topicId: 'upper_gi_bleeding',
     topicTitle: 'Management of Upper GI Bleeding',
     questionNumber: 4,
-    clinicalVignette: 'A 65-year-old cirrhotic patient with massive refractory esophageal variceal hemorrhage continues to bleed exsanguinating amounts of blood despite endoscopic band ligation and IV terlipressin infusion. As a temporary bridge to definitive rescue therapy (TIPS / Shunt), a Sengstaken-Blakemore tube is placed and inflated. What is the maximum recommended duration for continuous balloon inflation to prevent ischemic pressure necrosis and esophageal perforation?',
+    clinicalVignette: 'A 52-year-old man with cirrhosis has massive hematemesis from large esophageal varices that fails to respond to endoscopic variceal band ligation and intravenous terlipressin. A Sengstaken-Blakemore balloon tube is placed as a temporary bridging measure, successfully halting active hemorrhage. What is the most appropriate definitive next step in management?',
     options: [
-      { id: 'A', text: '6 hours' },
-      { id: 'B', text: '24 hours (with periodic deflation)' },
-      { id: 'C', text: '72 hours continuously' },
-      { id: 'D', text: '7 days' }
+      { id: 'A', text: 'Leave the Sengstaken-Blakemore balloon inflated continuously for 5 days' },
+      { id: 'B', text: 'Start oral propranolol while the tube is in place and remove the tube in 48 hours' },
+      { id: 'C', text: 'Deflate the balloon and re-attempt endoscopic adrenaline injection' },
+      { id: 'D', text: 'Arrange urgent salvage transjugular intrahepatic portosystemic shunt (TIPS)' }
     ],
-    correctOption: 'B',
-    correctAnswerText: '24 hours (with periodic deflation)',
-    explanation: 'Balloon tamponade (using Sengstaken-Blakemore or Minnesota tubes) is strictly a temporary rescue bridge for catastrophic, refractory variceal bleeding when endoscopy fails. Because prolonged mucosal compression causes severe ischemic mucosal necrosis, ulceration, and catastrophic esophageal perforation, the balloon should not remain inflated continuously for more than 24 hours (and ideally no more than 12–24 hours). Deflation of the esophageal balloon every 6–12 hours for 5 minutes is recommended to maintain mucosal viability while organizing TIPS or surgery.',
+    correctOption: 'D',
+    correctAnswerText: 'Arrange urgent salvage transjugular intrahepatic portosystemic shunt (TIPS)',
+    explanation: 'Balloon tamponade (Sengstaken-Blakemore or Minnesota tube) is strictly a temporary rescue bridge (maximum 24 hours) because prolonged balloon inflation causes catastrophic esophageal necrosis, ulceration, and perforation. In refractory variceal bleeding failing endoscopic and pharmacological therapy, early/salvage Transjugular Intrahepatic Portosystemic Shunt (TIPS) is the definitive rescue procedure of choice to decompress the portal venous system.',
     optionRationales: {
-      A: '6 hours may be too short if organizing transfer for TIPS, though shorter duration is always safer.',
-      B: 'Correct. The maximum duration is 24 hours with intermittent deflation to prevent fatal esophageal rupture/necrosis.',
-      C: 'Leaving the balloon inflated for 72 hours causes extensive transmural esophageal necrosis and perforation.',
-      D: '7 days would inevitably cause fatal esophageal wall necrosis.'
+      A: 'Balloon inflation >24 hours leads to pressure necrosis and fatal esophageal rupture.',
+      B: 'Oral beta-blockers cannot prevent rebleeding once the balloon is deflated after refractory hemorrhage.',
+      C: 'Adrenaline injection is ineffective and unsafe for high-pressure varices.',
+      D: 'Correct. Salvage TIPS is the definitive procedure for variceal bleeding refractory to endoscopic banding.'
     },
-    keyTakeaway: 'Balloon tamponade (Sengstaken-Blakemore tube) is a short-term bridge to TIPS/surgery and must not be left inflated continuously for more than 24 hours.',
-    sourcePageRef: 'Page 39, Q4',
+    keyTakeaway: 'Balloon tamponade is only a temporary bridge (<=24 hours); refractory variceal bleeding requires urgent salvage Transjugular Intrahepatic Portosystemic Shunt (TIPS).',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['Sengstaken-Blakemore', 'Balloon Tamponade', 'Variceal Bleed', 'Esophageal Perforation']
+    tags: ['TIPS', 'Refractory Varices', 'Balloon Tamponade', 'Sengstaken-Blakemore', 'Cirrhosis']
   },
   {
     id: 'ugib_q5',
     topicId: 'upper_gi_bleeding',
     topicTitle: 'Management of Upper GI Bleeding',
     questionNumber: 5,
-    clinicalVignette: 'A 54-year-old man with a bleeding duodenal ulcer undergoes successful endoscopic hemoclipping and thermal coagulation. He is started on an intravenous Omeprazole bolus of 80 mg followed by a continuous infusion of 8 mg/hour for 72 hours. What is the precise physiological rationale for maintaining an intragastric pH above 6.0 following endoscopic hemostasis?',
+    clinicalVignette: 'A 45-year-old man presents with non-variceal upper GI bleeding and is successfully stabilized with IV fluids. Within what timeframe should diagnostic and therapeutic upper GI endoscopy ideally be performed in a hemodynamically stabilized patient?',
     options: [
-      { id: 'A', text: 'Intragastric pH > 6.0 is required to eradicate Helicobacter pylori within 24 hours' },
-      { id: 'B', text: 'Pepsin is irreversibly inactivated and platelet aggregation and fibrin clot stabilization are optimized at pH >= 6.0' },
-      { id: 'C', text: 'High intragastric pH increases gastric mucosal hydrochloric acid secretion to prevent bacterial overgrowth' },
-      { id: 'D', text: 'High pH induces splanchnic arterial vasoconstriction comparable to terlipressin' }
+      { id: 'A', text: 'Within 6 hours in all patients regardless of stability' },
+      { id: 'B', text: 'Within 24 hours of presentation after adequate resuscitation' },
+      { id: 'C', text: 'After 72 hours of complete fasting and observation' },
+      { id: 'D', text: 'Only if re-bleeding occurs during the hospital admission' }
     ],
     correctOption: 'B',
-    correctAnswerText: 'Pepsin is irreversibly inactivated and platelet aggregation and fibrin clot stabilization are optimized at pH >= 6.0',
-    explanation: 'Platelet aggregation and blood coagulation are virtually abolished at acidic pH (< 5.4), and gastric pepsin (which lyses fibrin clots) is maximally active at pH 1.5–3.5. Raising and maintaining the intragastric pH >= 6.0 irreversibly inactivates pepsin, stabilizes platelet aggregation, prevents fibrin clot dissolution over the sealed blood vessel, and significantly reduces the risk of recurrent peptic ulcer hemorrhage.',
+    correctAnswerText: 'Within 24 hours of presentation after adequate resuscitation',
+    explanation: 'International guidelines (ESGE, ACG) recommend that early upper gastrointestinal endoscopy be performed within 24 hours of presentation in patients with acute upper GI bleeding once hemodynamic stabilization and adequate resuscitation have been achieved. Performing endoscopy within 24 hours provides accurate diagnostic assessment, delivers timely hemostasis for high-risk stigmata, reduces hospital length of stay, and prevents rebleeding.',
     optionRationales: {
-      A: 'H. pylori eradication requires oral antibiotic combination regimens, not acute IV PPI monotherapy.',
-      B: 'Correct. At pH >= 6.0, pepsin is inactivated and platelet aggregation/fibrin clot stability is maintained.',
-      C: 'High pH suppresses acid secretion rather than increasing it.',
-      D: 'PPIs do not act on splanchnic vascular receptors.'
+      A: 'Endoscopy within <6 hours has not been shown to improve outcomes compared to 24 hours and may risk inadequate resuscitation.',
+      B: 'Correct. Early endoscopy within 24 hours after hemodynamic stabilization is the recommended international standard.',
+      C: 'Waiting 72 hours delays hemostasis for high-risk ulcers and increases rebleeding rates.',
+      D: 'Diagnostic endoscopy is indicated in all presenting upper GI bleeds, not just recurrent bleeds.'
     },
-    keyTakeaway: 'Maintaining intragastric pH >= 6.0 with high-dose IV PPI therapy inactivates pepsin and stabilizes platelet clot formation, preventing ulcer rebleeding.',
-    sourcePageRef: 'Pages 39–40, Q5',
-    difficulty: 'High Yield',
-    tags: ['Proton Pump Inhibitors', 'Intragastric pH', 'Pepsin Inactivation', 'Clot Stabilization']
-  },
-
-  // ----------------------------------------------------
-  // COMPARISON OF CT SCAN & MRI IN STROKE MANAGEMENT (Pages 52-53)
-  // ----------------------------------------------------
-  {
-    id: 'stroke_q1',
-    topicId: 'stroke_imaging',
-    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
-    questionNumber: 1,
-    clinicalVignette: 'A 65-year-old man presents with sudden-onset right hemiplegia and expressive aphasia starting 90 minutes ago. Non-contrast CT (NCCT) head shows no acute hemorrhage and no hyperdense MCA sign, with an Alberta Stroke Program Early CT Score (ASPECTS) of 10. What is the primary role of non-contrast CT head in the hyperacute management of suspected ischemic stroke within the thrombolysis window?',
-    options: [
-      { id: 'A', text: 'Identifying salvageable ischemic penumbra' },
-      { id: 'B', text: 'Rapidly ruling out intracranial hemorrhage and large established core infarction before intravenous thrombolysis' },
-      { id: 'C', text: 'Visualizing the precise site of distal cortical microvascular thrombosis' },
-      { id: 'D', text: 'Confirming the specific histologic subtype of ischemic neuronal necrosis' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Rapidly ruling out intracranial hemorrhage and large established core infarction before intravenous thrombolysis',
-    explanation: 'The primary, indispensable clinical role of non-contrast head CT in hyperacute stroke (<= 4.5 hours) is to rapidly exclude acute intracranial hemorrhage (which is an absolute contraindication to thrombolysis) and detect early extensive established infarction (such as hypoattenuation involving > 1/3 of the MCA territory, which carries prohibitive bleeding risk). NCCT is widely available, rapid (<1 minute), and reliably rules out bleeding.',
-    optionRationales: {
-      A: 'Ischemic penumbra requires CT Perfusion (CTP) or MRI DWI-PWI mismatch, not routine NCCT.',
-      B: 'Correct. Non-contrast CT is performed primarily to rule out intracranial hemorrhage and massive established infarct.',
-      C: 'Distal cortical thrombi require CT Angiography (CTA) or MR Angiography (MRA).',
-      D: 'Histology cannot be determined by non-contrast CT.'
-    },
-    keyTakeaway: 'The primary goal of non-contrast CT head in acute stroke is rapid exclusion of intracranial hemorrhage prior to thrombolysis.',
-    sourcePageRef: 'Page 52, Q1',
-    difficulty: 'High Yield',
-    tags: ['Stroke Imaging', 'NCCT', 'Thrombolysis', 'Intracranial Hemorrhage', 'ASPECTS']
-  },
-  {
-    id: 'stroke_q2',
-    topicId: 'stroke_imaging',
-    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
-    questionNumber: 2,
-    clinicalVignette: 'A 58-year-old woman presents with acute left-sided weakness 2 hours after symptom onset. On MRI brain, Diffusion-Weighted Imaging (DWI) shows high signal intensity (bright) with corresponding low signal on Apparent Diffusion Coefficient (ADC) in the right middle cerebral artery territory, while T2/FLAIR images appear entirely normal. What does this "DWI-FLAIR mismatch" signify?',
-    options: [
-      { id: 'A', text: 'An acute ischemic lesion within the early time window (<4.5 hours) where brain tissue is salvageable before irreversible FLAIR hyperintensity develops' },
-      { id: 'B', text: 'A subacute ischemic stroke occurring more than 48 hours ago' },
-      { id: 'C', text: 'An acute subarachnoid hemorrhage with false-negative CT' },
-      { id: 'D', text: 'An imaging artifact caused by patient motion during MRI acquisition' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'An acute ischemic lesion within the early time window (<4.5 hours) where brain tissue is salvageable before irreversible FLAIR hyperintensity develops',
-    explanation: 'Diffusion-Weighted Imaging (DWI) is exquisitely sensitive to cytotoxic edema (restricted water diffusion) within minutes of arterial occlusion. In contrast, T2/FLAIR hyperintensity requires 4 to 6 hours to develop as vasogenic edema and tissue breakdown accumulate. Therefore, a lesion visible on DWI but not yet visible on FLAIR ("DWI-FLAIR mismatch") definitively establishes that the stroke is hyperacute (< 4.5 hours old), making the patient eligible for IV thrombolysis even when the exact time of symptom onset is unknown.',
-    optionRationales: {
-      A: 'Correct. DWI-positive with FLAIR-negative proves the stroke is < 4.5 hours old (salvageable ischemic tissue).',
-      B: 'Subacute strokes (>48 hours) show prominent FLAIR and T2 hyperintensity.',
-      C: 'Subarachnoid hemorrhage appears hyperintense on FLAIR in CSF spaces, not an isolated parenchymal DWI lesion.',
-      D: 'This is a genuine biological mismatch validating hyperacute ischemia.'
-    },
-    keyTakeaway: 'DWI-FLAIR mismatch (positive DWI, negative FLAIR) proves that an ischemic stroke is within the 4.5-hour thrombolysis window.',
-    sourcePageRef: 'Pages 52–53, Q2',
-    difficulty: 'High Yield',
-    tags: ['DWI-FLAIR Mismatch', 'MRI Brain', 'Thrombolysis Window', 'Cytotoxic Edema']
-  },
-  {
-    id: 'stroke_q3',
-    topicId: 'stroke_imaging',
-    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
-    questionNumber: 3,
-    clinicalVignette: 'A 70-year-old man goes to bed normal at 10:00 PM and awakens at 6:00 AM with left hemiparesis and hemineglect ("wake-up stroke"). Because the exact time of stroke onset is unknown, which advanced neuroimaging strategy is indicated by current AHA/ASA guidelines to determine eligibility for intravenous thrombolysis (alteplase / tenecteplase)?',
-    options: [
-      { id: 'A', text: 'Routine non-contrast CT head alone' },
-      { id: 'B', text: 'MRI brain demonstrating DWI positive lesion with negative FLAIR (DWI-FLAIR mismatch) or CT perfusion showing ischemic core vs penumbra mismatch' },
-      { id: 'C', text: 'Skull X-ray and carotid Doppler ultrasonography' },
-      { id: 'D', text: 'Immediate cerebral angiography via femoral artery catheterization' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'MRI brain demonstrating DWI positive lesion with negative FLAIR (DWI-FLAIR mismatch) or CT perfusion showing ischemic core vs penumbra mismatch',
-    explanation: 'In "wake-up strokes" and strokes with unknown time of onset, advanced neuroimaging has revolutionized patient selection. Based on the WAKE-UP trial, patients with MRI DWI-FLAIR mismatch (indicating stroke onset < 4.5 hours) benefit significantly from IV thrombolysis with excellent functional recovery. Alternatively, automated CT Perfusion (CTP) demonstrating a small ischemic core with a large salvageable penumbral mismatch qualifies patients for thrombolysis or endovascular thrombectomy.',
-    optionRationales: {
-      A: 'NCCT alone cannot determine the precise age of the ischemic core in wake-up strokes.',
-      B: 'Correct. MRI DWI-FLAIR mismatch or CT Perfusion core-penumbra mismatch identifies candidates for reperfusion therapy.',
-      C: 'Skull X-rays and Doppler ultrasound cannot assess parenchymal brain ischemia or penumbra.',
-      D: 'Invasive catheter angiography is therapeutic for thrombectomy, but non-invasive MRI/CT perfusion is required first for selection.'
-    },
-    keyTakeaway: 'MRI DWI-FLAIR mismatch or CT Perfusion enables safe reperfusion therapy in wake-up strokes and unknown onset times.',
-    sourcePageRef: 'Page 53, Q3',
-    difficulty: 'High Yield',
-    tags: ['Wake-up Stroke', 'CT Perfusion', 'WAKE-UP Trial', 'Penumbra', 'Thrombolysis']
-  },
-  {
-    id: 'stroke_q4',
-    topicId: 'stroke_imaging',
-    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
-    questionNumber: 4,
-    clinicalVignette: 'A 60-year-old woman receives IV alteplase for acute ischemic stroke. Two hours after the infusion, she suddenly complains of severe headache, nausea, and her Glasgow Coma Scale (GCS) drops precipitously from 14 to 9 with a blood pressure of 190/110 mmHg. What is the immediate priority diagnostic and management action?',
-    options: [
-      { id: 'A', text: 'Immediately discontinue ongoing infusions, perform emergent non-contrast CT head to evaluate for symptomatic intracranial hemorrhage, and check stat fibrinogen and coagulation panel' },
-      { id: 'B', text: 'Administer high-dose intravenous heparin bolus to prevent recurrent arterial re-occlusion' },
-      { id: 'C', text: 'Administer oral aspirin 300 mg and observe in the ward' },
-      { id: 'D', text: 'Discharge to general medical ward for supportive nursing care' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Immediately discontinue ongoing infusions, perform emergent non-contrast CT head to evaluate for symptomatic intracranial hemorrhage, and check stat fibrinogen and coagulation panel',
-    explanation: 'Symptomatic Intracranial Hemorrhage (sICH) is the most feared and lethal complication of IV thrombolytic therapy (occurring in ~5–6% of cases). Sudden neurological deterioration, acute headache, vomiting, acute hypertension, or reduced consciousness warrants immediate cessation of any thrombolytic/antiplatelet agents, emergent non-contrast CT head to detect bleeding, STAT coagulation studies (fibrinogen, PT/INR, aPTT, platelets), and immediate preparation of reversal agents (Cryoprecipitate for fibrinogen < 150 mg/dL, tranexamic acid, and prothrombin complex concentrate).',
-    optionRationales: {
-      A: 'Correct. Stop infusions, perform emergent NCCT to confirm/exclude sICH, and check fibrinogen for reversal.',
-      B: 'Heparin is strictly contraindicated and will cause catastrophic fatal hemorrhage if intracranial bleeding has occurred.',
-      C: 'Aspirin is contraindicated during acute hemorrhagic transformation.',
-      D: 'Discharge is inappropriate; this is a neuro-critical life-threatening emergency.'
-    },
-    keyTakeaway: 'Sudden neurological deterioration after thrombolysis demands immediate drug cessation, emergent NCCT head, and stat fibrinogen/coagulation workup for sICH.',
-    sourcePageRef: 'Page 53, Q4',
-    difficulty: 'High Yield',
-    tags: ['Thrombolysis Complications', 'sICH', 'Emergency NCCT', 'Fibrinogen', 'Reversal']
-  },
-  {
-    id: 'stroke_q5',
-    topicId: 'stroke_imaging',
-    topicTitle: 'Comparison of CT Scan & MRI in Stroke Management',
-    questionNumber: 5,
-    clinicalVignette: 'A 72-year-old hypertensive man presents with acute vertigo, ataxia, dysarthria, dysphagia, and right Horner\'s syndrome (lateral medullary syndrome / Wallenberg syndrome). A non-contrast head CT performed on arrival is reported as normal. Why is MRI (specifically DWI and T2) markedly superior to CT in evaluating posterior fossa and brainstem strokes?',
-    options: [
-      { id: 'A', text: 'CT produces prominent beam-hardening and streak artifacts from the dense petrous temporal and occipital bones obscuring brainstem detail' },
-      { id: 'B', text: 'CT cannot differentiate gray matter from white matter in any part of the brain' },
-      { id: 'C', text: 'MRI cannot detect ischemic strokes in the anterior circulation' },
-      { id: 'D', text: 'Posterior fossa strokes do not cause restricted water diffusion' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'CT produces prominent beam-hardening and streak artifacts from the dense petrous temporal and occipital bones obscuring brainstem detail',
-    explanation: 'Non-contrast CT has very poor sensitivity (<20–30%) for acute posterior fossa (brainstem and cerebellar) ischemic strokes because the thick, dense surrounding bones of the skull base (petrous temporal bone and occipital bone) cause severe "beam-hardening" and streak artifacts, obscuring the brainstem and cerebellum. MRI (specifically DWI/T2/FLAIR) is not subject to bone-attenuation artifacts and has >95% sensitivity for brainstem and posterior fossa infarctions.',
-    optionRationales: {
-      A: 'Correct. Beam-hardening artifacts from the dense skull base bones severely degrade CT visualization of the brainstem.',
-      B: 'CT can differentiate cortical gray-white matter boundaries in the supratentorial hemispheres.',
-      C: 'MRI is equally superior for both anterior and posterior circulation strokes.',
-      D: 'Posterior fossa strokes cause profound cytotoxic edema and restricted diffusion visible on DWI.'
-    },
-    keyTakeaway: 'MRI DWI is the gold standard for posterior fossa/brainstem strokes because CT is obscured by dense bone beam-hardening artifacts.',
-    sourcePageRef: 'Page 53, Q5',
-    difficulty: 'High Yield',
-    tags: ['Posterior Fossa Stroke', 'Beam-Hardening Artifact', 'MRI DWI', 'Brainstem Ischemia']
-  },
-
-  // ----------------------------------------------------
-  // INDICATIONS FOR STEROID USE & STEROID EQUIVALENT DOSES (Pages 70-72)
-  // ----------------------------------------------------
-  {
-    id: 'steroid_q1',
-    topicId: 'steroid_prescribing',
-    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
-    questionNumber: 1,
-    clinicalVignette: 'A 32-year-old woman with known Addison\'s disease (primary adrenal insufficiency) on daily oral maintenance therapy presents with acute bacterial gastroenteritis, persistent vomiting, high fever (39.2°C), and hypotension (BP 80/50 mmHg). What is the appropriate adjustment to her corticosteroid regimen during this acute severe physiological stress?',
-    options: [
-      { id: 'A', text: 'Temporarily discontinue all corticosteroid replacement until vomiting subsides' },
-      { id: 'B', text: 'Switch immediately to parenteral Hydrocortisone (100 mg IV stat bolus followed by 100 mg IV every 6 to 8 hours or 200 mg/24h continuous infusion) with vigorous IV saline rehydration' },
-      { id: 'C', text: 'Double her usual oral fludrocortisone dose without administering hydrocortisone' },
-      { id: 'D', text: 'Administer low-dose oral dexamethasone (0.5 mg once daily)' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'Switch immediately to parenteral Hydrocortisone (100 mg IV stat bolus followed by 100 mg IV every 6 to 8 hours or 200 mg/24h continuous infusion) with vigorous IV saline rehydration',
-    explanation: 'Patients with adrenal insufficiency cannot mount an endogenous cortisol response to severe physiological stress (fever, sepsis, trauma, surgery) or retain oral medications during vomiting. Without prompt "stress-dose" parenteral hydrocortisone (100 mg IV bolus followed by 50–100 mg IV q6–8h or 200 mg/day continuous infusion) and aggressive IV 0.9% normal saline rehydration, the patient will rapidly deteriorate into fatal circulatory collapse (adrenal crisis).',
-    optionRationales: {
-      A: 'Discontinuing steroids precipitates lethal hypovolemic shock and adrenal crisis.',
-      B: 'Correct. Stress-dose IV hydrocortisone (100 mg stat, then q6-8h) with IV saline is life-saving in adrenal crisis.',
-      C: 'At high doses (>=100 mg/day), hydrocortisone provides sufficient mineralocorticoid activity; fludrocortisone is unnecessary acutely and oral drugs cannot be absorbed during vomiting.',
-      D: 'Low-dose oral dexamethasone is inadequate and cannot be retained during active vomiting.'
-    },
-    keyTakeaway: 'Adrenal insufficiency patients facing severe physiological stress or vomiting require immediate stress-dose parenteral hydrocortisone (100 mg IV bolus then q6–8h) and IV saline.',
-    sourcePageRef: 'Pages 70–71, Q1',
-    difficulty: 'High Yield',
-    tags: ['Adrenal Crisis', 'Addison Disease', 'Stress-Dose Hydrocortisone', 'Steroid Prescribing']
-  },
-  {
-    id: 'steroid_q2',
-    topicId: 'steroid_prescribing',
-    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
-    questionNumber: 2,
-    clinicalVignette: 'A patient with severe Crohn\'s disease is treated with oral Prednisolone 40 mg daily for 8 weeks. His bowel symptoms resolve completely, and the physician plans to discontinue the medication. Which of the following is the most critical physiological reason for tapering systemic corticosteroids gradually rather than stopping abruptly?',
-    options: [
-      { id: 'A', text: 'To prevent sudden rebound hypoglycemia' },
-      { id: 'B', text: 'To allow recovery of the suppressed hypothalamic-pituitary-adrenal (HPA) axis and prevent acute secondary adrenal crisis' },
-      { id: 'C', text: 'To stimulate gastric acid secretion and accelerate mucosal healing' },
-      { id: 'D', text: 'To prevent acute severe hypercalcemia' }
-    ],
-    correctOption: 'B',
-    correctAnswerText: 'To allow recovery of the suppressed hypothalamic-pituitary-adrenal (HPA) axis and prevent acute secondary adrenal crisis',
-    explanation: 'Exogenous corticosteroid therapy at supraphysiological doses (> 5 mg/day prednisolone equivalent) for more than 3 to 4 weeks causes prolonged negative feedback inhibition of hypothalamic CRH and pituitary ACTH secretion. This leads to bilateral adrenal cortical atrophy. Abrupt cessation of the drug unmasks severe secondary adrenal insufficiency (acute adrenal crisis) and causes severe disease rebound. Gradual dose tapering allows the pituitary-adrenal axis and adrenal cortex sufficient time (weeks to months) to recover endogenous steroidogenesis.',
-    optionRationales: {
-      A: 'Steroids cause hyperglycemia; stopping them does not cause isolated rebound hypoglycemia as the primary hazard.',
-      B: 'Correct. Gradual tapering is essential to allow HPA axis recovery and prevent life-threatening secondary adrenal crisis.',
-      C: 'Steroids do not heal ulcers; they increase peptic ulcer risk.',
-      D: 'Hypercalcemia is not the driving reason for steroid tapering.'
-    },
-    keyTakeaway: 'Corticosteroids used for >3 weeks suppress the HPA axis; gradual dose tapering is mandatory to avoid secondary adrenal crisis.',
-    sourcePageRef: 'Page 71, Q2',
-    difficulty: 'High Yield',
-    tags: ['HPA Axis Suppression', 'Steroid Tapering', 'Secondary Adrenal Insufficiency', 'Pharmacology']
-  },
-  {
-    id: 'steroid_q3',
-    topicId: 'steroid_prescribing',
-    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
-    questionNumber: 3,
-    clinicalVignette: 'A 55-year-old woman with polymyalgia rheumatica requires long-term corticosteroid therapy with Prednisolone 15 mg daily for at least 12 months. Which of the following prophylactic regimens should be routinely initiated from the onset of therapy to mitigate glucocorticoid-induced osteoporosis (GIOP)?',
-    options: [
-      { id: 'A', text: 'Calcium (1,000–1,200 mg/day) and Vitamin D (800–2,000 IU/day) supplementation plus an oral bisphosphonate (e.g., Alendronate or Risedronate) based on fracture risk assessment' },
-      { id: 'B', text: 'High-dose loop diuretics and phosphate binders' },
-      { id: 'C', text: 'Immediate cessation of all dietary calcium intake to avoid hypercalciuria' },
-      { id: 'D', text: 'Daily intramuscular parathyroid hormone injections without calcium' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Calcium (1,000–1,200 mg/day) and Vitamin D (800–2,000 IU/day) supplementation plus an oral bisphosphonate (e.g., Alendronate or Risedronate) based on fracture risk assessment',
-    explanation: 'Glucocorticoids cause rapid bone loss within the first 3 to 6 months of therapy by inhibiting osteoblastogenesis, promoting osteoclast survival, reducing intestinal calcium absorption, and increasing renal calcium wasting. Guidelines (ACR/IOF) recommend baseline fracture risk assessment (FRAX, DEXA), lifestyle counseling, daily Calcium (1,000–1,200 mg/day) and Vitamin D (800–2,000 IU/day), plus oral bisphosphonates (Alendronate 70 mg weekly or Risedronate 35 mg weekly) in individuals at moderate-to-high fracture risk receiving >= 2.5–5 mg/day prednisolone for >= 3 months.',
-    optionRationales: {
-      A: 'Correct. Calcium, Vitamin D, and Bisphosphonates form the cornerstone of GIOP prevention.',
-      B: 'Loop diuretics increase renal calcium loss and worsen osteoporosis.',
-      C: 'Dietary calcium restriction worsens negative calcium balance and bone loss.',
-      D: 'Teriparatide (PTH analog) is second-line for very high risk, but always requires calcium/vitamin D repletion.'
-    },
-    keyTakeaway: 'Long-term corticosteroid therapy requires proactive prevention of Glucocorticoid-Induced Osteoporosis (GIOP) with Calcium, Vitamin D, and Bisphosphonates.',
-    sourcePageRef: 'Pages 71–72, Q3',
+    keyTakeaway: 'Early upper GI endoscopy should be performed within 24 hours of presentation following adequate hemodynamic resuscitation.',
+    sourcePageRef: '',
     difficulty: 'Core Clinical',
-    tags: ['GIOP', 'Osteoporosis Prophylaxis', 'Bisphosphonates', 'Prednisolone', 'Bone Health']
+    tags: ['Endoscopy Timing', 'Upper GI Bleeding', 'Clinical Guidelines', 'Resuscitation']
   },
+
+  // ----------------------------------------------------
+  // INVESTIGATION OF DIABETIC FOOT ULCERS (Pages 40-43)
+  // ----------------------------------------------------
   {
-    id: 'steroid_q4',
-    topicId: 'steroid_prescribing',
-    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
-    questionNumber: 4,
-    clinicalVignette: 'A patient with confirmed primary adrenal insufficiency requires lifelong maintenance hormone replacement therapy. Which combination of corticosteroids best replicates normal physiological adrenal cortical endocrine output?',
+    id: 'dfu_q1',
+    topicId: 'diabetic_foot_ulcers',
+    topicTitle: 'Investigation of Diabetic Foot Ulcers',
+    questionNumber: 1,
+    clinicalVignette: 'A 62-year-old man with type 2 diabetes presents with a 2-cm deep plantar ulcer under the first metatarsal head. On examination with a sterile blunt metal probe, a positive "probe-to-bone" test is noted (the probe contacts hard, gritty bone). Inflammatory markers show an ESR of 78 mm/h and CRP of 42 mg/L. Plain radiographs of the foot show soft-tissue swelling but no obvious cortical bone destruction. Which of the following is the most appropriate next imaging investigation to confirm or exclude underlying osteomyelitis?',
     options: [
-      { id: 'A', text: 'Oral Hydrocortisone (15–25 mg daily in divided doses, 2/3 on waking, 1/3 in early afternoon) plus oral Fludrocortisone (0.05–0.2 mg once daily in the morning)' },
-      { id: 'B', text: 'Oral Dexamethasone 4 mg once daily alone' },
-      { id: 'C', text: 'Intravenous Methylprednisolone 500 mg weekly' },
-      { id: 'D', text: 'Oral Prednisolone 30 mg every other day without mineralocorticoid replacement' }
-    ],
-    correctOption: 'A',
-    correctAnswerText: 'Oral Hydrocortisone (15–25 mg daily in divided doses, 2/3 on waking, 1/3 in early afternoon) plus oral Fludrocortisone (0.05–0.2 mg once daily in the morning)',
-    explanation: 'Primary adrenal insufficiency involves destruction of all three adrenal cortical zones, resulting in deficiency of both glucocorticoids (cortisol) and mineralocorticoids (aldosterone). Physiological maintenance replacement requires oral Hydrocortisone (15–25 mg/day split in a circadian pattern: highest dose upon waking, smaller dose in early afternoon to mimic normal circadian rhythm) PLUS oral Fludrocortisone (0.05–0.2 mg/day) to regulate sodium retention, potassium excretion, and intravascular volume.',
-    optionRationales: {
-      A: 'Correct. Circadian Hydrocortisone (glucocorticoid) plus Fludrocortisone (mineralocorticoid) perfectly replaces physiological adrenal cortical secretion.',
-      B: 'Dexamethasone has zero mineralocorticoid activity, long half-life, and causes HPA suppression and cushingoid features.',
-      C: 'High-dose weekly pulses are for severe inflammatory autoimmune pulses, not physiological replacement.',
-      D: 'Prednisolone alone lacks sufficient mineralocorticoid potency for primary adrenal failure without fludrocortisone.'
-    },
-    keyTakeaway: 'Primary adrenal insufficiency replacement requires circadian Hydrocortisone (glucocorticoid) plus Fludrocortisone (mineralocorticoid).',
-    sourcePageRef: 'Page 72, Q4',
-    difficulty: 'High Yield',
-    tags: ['Adrenal Insufficiency', 'Hydrocortisone', 'Fludrocortisone', 'Circadian Dosing']
-  },
-  {
-    id: 'steroid_q5',
-    topicId: 'steroid_prescribing',
-    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
-    questionNumber: 5,
-    clinicalVignette: 'A 45-year-old man with severe asthma has been taking Prednisolone 20 mg daily for 6 months. How does the anti-inflammatory potency and mineralocorticoid activity of Prednisolone compare to Hydrocortisone (cortisol)?',
-    options: [
-      { id: 'A', text: 'Prednisolone is half as potent as hydrocortisone with zero anti-inflammatory activity' },
-      { id: 'B', text: 'Prednisolone has approximately 4 to 5 times the anti-inflammatory potency of hydrocortisone and significantly less mineralocorticoid (salt-retaining) activity' },
-      { id: 'C', text: 'Prednisolone is 30 times more potent than dexamethasone' },
-      { id: 'D', text: 'Prednisolone has pure mineralocorticoid effects with no glucocorticoid action' }
+      { id: 'A', text: 'Superficial swab culture only' },
+      { id: 'B', text: 'Magnetic resonance imaging (MRI) of the foot' },
+      { id: 'C', text: 'Computed tomography (CT) scan without contrast' },
+      { id: 'D', text: 'Repeat plain radiograph in 6 months' }
     ],
     correctOption: 'B',
-    correctAnswerText: 'Prednisolone has approximately 4 to 5 times the anti-inflammatory potency of hydrocortisone and significantly less mineralocorticoid (salt-retaining) activity',
-    explanation: 'Standard systemic corticosteroid equivalencies: Hydrocortisone (cortisol) = 20 mg (anti-inflammatory potency 1.0, mineralocorticoid potency 1.0); Prednisone / Prednisolone = 5 mg (anti-inflammatory potency 4.0–5.0, mineralocorticoid potency 0.8); Methylprednisolone = 4 mg (potency 5.0, mineralocorticoid 0.5); Dexamethasone = 0.75 mg (potency 25–30, mineralocorticoid 0). Therefore, 5 mg of prednisolone equals 20 mg of hydrocortisone (4x more potent anti-inflammatory) with slightly less mineralocorticoid salt-retaining effect.',
+    correctAnswerText: 'Magnetic resonance imaging (MRI) of the foot',
+    explanation: 'A positive probe-to-bone test in a high-prevalence setting has a high positive predictive value (>85%) for diabetic foot osteomyelitis. Plain radiographs take 10–14 days to show visible cortical bone resorption or periosteal reaction. When osteomyelitis is suspected clinically with elevated inflammatory markers but plain X-rays are normal or equivocal, Magnetic Resonance Imaging (MRI) is the gold-standard imaging modality of choice (sensitivity >90%, specificity >80%), detecting early bone marrow edema (T1 low signal, T2/STIR high signal).',
     optionRationales: {
-      A: 'Prednisolone is 4–5 times MORE potent than hydrocortisone.',
-      B: 'Correct. Prednisolone is 4–5x more potent than hydrocortisone with reduced mineralocorticoid activity.',
-      C: 'Dexamethasone is ~6 times more potent than prednisolone (0.75 mg dex = 5 mg pred).',
-      D: 'Prednisolone is predominantly a glucocorticoid (anti-inflammatory), not a pure mineralocorticoid.'
+      A: 'Superficial swabs culture skin colonizers and do not diagnose bony involvement.',
+      B: 'Correct. MRI is the most sensitive and specific imaging modality for diagnosing early diabetic foot osteomyelitis.',
+      C: 'CT is superior for cortical sequestrum but lacks MRI\'s high sensitivity for early marrow edema.',
+      D: 'Waiting 6 months leads to uncontrolled infection, tissue loss, and amputation.'
     },
-    keyTakeaway: 'Prednisolone (5 mg) is 4–5 times more potent than Hydrocortisone (20 mg) as an anti-inflammatory and has lower mineralocorticoid salt-retaining effect.',
-    sourcePageRef: 'Page 72, Q5',
+    keyTakeaway: 'When diabetic foot osteomyelitis is suspected with a positive probe-to-bone test but normal plain X-rays, MRI of the foot is the imaging gold standard.',
+    sourcePageRef: '',
     difficulty: 'High Yield',
-    tags: ['Steroid Equivalencies', 'Prednisolone', 'Hydrocortisone', 'Anti-inflammatory Potency']
+    tags: ['Diabetic Foot', 'Osteomyelitis', 'Probe-to-Bone', 'MRI Foot', 'Infectious Disease']
+  },
+  {
+    id: 'dfu_q2',
+    topicId: 'diabetic_foot_ulcers',
+    topicTitle: 'Investigation of Diabetic Foot Ulcers',
+    questionNumber: 2,
+    clinicalVignette: 'A 70-year-old woman with a 25-year history of poorly controlled diabetes presents with a non-healing ulcer on the lateral border of her right foot. Clinical examination reveals absent dorsalis pedis and posterior tibial pulses, cool extremities, shiny skin, and loss of hair. An Ankle-Brachial Index (ABI) is performed and reveals a value of 1.52. What is the most appropriate clinical explanation for this ABI finding?',
+    options: [
+      { id: 'A', text: 'The patient has completely normal lower extremity arterial perfusion, ruling out peripheral artery disease' },
+      { id: 'B', text: 'The patient has mild peripheral artery disease that requires no further evaluation' },
+      { id: 'C', text: 'Medial arterial calcification (Mönckeberg sclerosis) has produced an incompressible, rigid tibial artery, producing a falsely elevated ABI' },
+      { id: 'D', text: 'The elevated ABI confirms severe critical limb ischemia with absolute accuracy' }
+    ],
+    correctOption: 'C',
+    correctAnswerText: 'Medial arterial calcification (Mönckeberg sclerosis) has produced an incompressible, rigid tibial artery, producing a falsely elevated ABI',
+    explanation: 'An ABI > 1.30 or > 1.40 is abnormally elevated due to Medial Arterial Calcification (Mönckeberg medial calcinosis / sclerosis) in the tunica media of lower extremity arteries. The calcified, rigid arterial walls resist external compression by the pneumatic blood pressure cuff, yielding falsely elevated ankle systolic pressures. This artifact completely masks underlying severe occlusive peripheral artery disease (PAD). In such patients, alternative tests such as Toe-Brachial Index (TBI, using digital arteries that are rarely calcified) or arterial duplex ultrasound must be performed.',
+    optionRationales: {
+      A: 'ABI > 1.40 is an artifactual elevation, not normal perfusion.',
+      B: 'An elevated ABI indicates non-compressible calcified vessels, which frequently conceals severe ischemia.',
+      C: 'Correct. Medial arterial calcification causes vessel wall rigidity, falsely elevating the ABI (>1.40).',
+      D: 'The elevated number is a false artifact caused by calcification, not a direct measurement of ischemia.'
+    },
+    keyTakeaway: 'An ABI > 1.40 indicates non-compressible, calcified tibial arteries (Mönckeberg sclerosis) which falsely masks severe peripheral artery disease; evaluate with Toe-Brachial Index (TBI).',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Ankle-Brachial Index', 'Monckeberg Sclerosis', 'Medial Calcification', 'Diabetic Foot', 'PAD']
+  },
+  {
+    id: 'dfu_q3',
+    topicId: 'diabetic_foot_ulcers',
+    topicTitle: 'Investigation of Diabetic Foot Ulcers',
+    questionNumber: 3,
+    clinicalVignette: 'A 58-year-old man with diabetes presents with a foul-smelling, purulent diabetic foot ulcer. A superficial swab of the ulcer base was previously taken and grew Pseudomonas aeruginosa and mixed staphylococci. What is the most accurate and recommended method for obtaining a microbiological specimen in diabetic foot infections?',
+    options: [
+      { id: 'A', text: 'Repeat the superficial swab without cleaning the ulcer' },
+      { id: 'B', text: 'Obtain a swab of intact skin adjacent to the ulcer' },
+      { id: 'C', text: 'Obtain a deep tissue specimen (biopsy or curettage of the ulcer base) following thorough cleansing and surgical debridement of superficial slough' },
+      { id: 'D', text: 'Blood culture is the only acceptable specimen for diagnosing ulcer infections' }
+    ],
+    correctOption: 'C',
+    correctAnswerText: 'Obtain a deep tissue specimen (biopsy or curettage of the ulcer base) following thorough cleansing and surgical debridement of superficial slough',
+    explanation: 'Superficial wound swabs invariably capture non-pathogenic superficial colonizing skin flora rather than true deep invasive tissue pathogens. International guidelines (IWGDF, IDSA) mandate that microbiological specimens must be obtained by deep tissue curettage (scraping the ulcer base) or aseptic deep tissue biopsy after thorough wound cleansing and sharp surgical debridement of superficial slough and necrotic debris.',
+    optionRationales: {
+      A: 'Superficial uncleaned swabs sample colonizers and lead to inappropriate antibiotic overuse.',
+      B: 'Skin swabs sample commensal flora, not deep pathogens.',
+      C: 'Correct. Deep tissue curettage or biopsy after debridement is the gold standard microbiological specimen.',
+      D: 'Blood cultures are positive in only a minority of non-bacteremic diabetic foot infections.'
+    },
+    keyTakeaway: 'Microbiology in diabetic foot infections must be obtained from deep tissue biopsy or curettage after debridement, never from superficial uncleaned swabs.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Diabetic Foot', 'Microbiology Specimen', 'Deep Tissue Biopsy', 'Infection Guidelines']
+  },
+  {
+    id: 'dfu_q4',
+    topicId: 'diabetic_foot_ulcers',
+    topicTitle: 'Investigation of Diabetic Foot Ulcers',
+    questionNumber: 4,
+    clinicalVignette: 'A 65-year-old man with type 2 diabetes presents for diabetic foot screening. He has a chronic plantar ulcer. His peripheral pulses are easily palpable and the ABI is 1.08. Which simple, standardized bedside investigation is recommended as the primary tool to assess for Loss of Protective Sensation (LOPS)?',
+    options: [
+      { id: 'A', text: '128-Hz tuning fork vibration testing only' },
+      { id: 'B', text: '10-g Semmes-Weinstein monofilament testing' },
+      { id: 'C', text: 'Ankle-brachial index' },
+      { id: 'D', text: 'Electromyography and nerve conduction studies' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: '10-g Semmes-Weinstein monofilament testing',
+    explanation: 'The 10-g Semmes-Weinstein monofilament test (applying 10 grams of buckling force across designated plantar sites such as the plantar surface of the hallux and 1st, 3rd, and 5th metatarsal heads) is the international standard bedside screening test for identifying Loss of Protective Sensation (LOPS). Inability to perceive the 10-g monofilament indicates advanced sensory peripheral neuropathy and a dramatically increased risk of pressure ulceration.',
+    optionRationales: {
+      A: 'A 128-Hz tuning fork assesses vibration sense, which is complementary, but the 10-g monofilament specifically defines LOPS.',
+      B: 'Correct. 10-g Semmes-Weinstein monofilament is the gold-standard test for loss of protective sensation (LOPS).',
+      C: 'ABI evaluates macrovascular arterial perfusion, not sensory nerve function.',
+      D: 'EMG/NCS is reserved for complex atypical neuropathies, not routine bedside foot ulcer screening.'
+    },
+    keyTakeaway: 'The 10-g Semmes-Weinstein monofilament is the gold-standard bedside tool for detecting loss of protective sensation (LOPS) in the diabetic foot.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Monofilament Test', 'Diabetic Neuropathy', 'LOPS', 'Foot Screening']
+  },
+  {
+    id: 'dfu_q5',
+    topicId: 'diabetic_foot_ulcers',
+    topicTitle: 'Investigation of Diabetic Foot Ulcers',
+    questionNumber: 5,
+    clinicalVignette: 'A 67-year-old man presents with a painful, necrotic ulcer on his right great toe. Examination shows absent distal pulses, dependent rubor, and an ABI of 0.38, confirming critical limb-threatening ischemia. Which investigation is indicated to define the detailed arterial vascular anatomy and plan surgical or endovascular revascularization?',
+    options: [
+      { id: 'A', text: 'HbA1c level' },
+      { id: 'B', text: 'Plain X-ray of the foot' },
+      { id: 'C', text: 'CT angiography (CTA) of the lower extremity or digital subtraction angiography (DSA)' },
+      { id: 'D', text: '10-g monofilament sensory testing' }
+    ],
+    correctOption: 'C',
+    correctAnswerText: 'CT angiography (CTA) of the lower extremity or digital subtraction angiography (DSA)',
+    explanation: 'In critical limb-threatening ischemia (ABI < 0.40, resting pain, tissue necrosis), detailed vascular anatomical roadmapping is essential to identify the location, length, and severity of arterial occlusions from the aortoiliac segment down to the tibial/pedal vessels. Computed Tomography Angiography (CTA), Magnetic Resonance Angiography (MRA), or invasive Digital Subtraction Angiography (DSA) are the definitive investigations to guide surgical bypass or endovascular angioplasty.',
+    optionRationales: {
+      A: 'HbA1c monitors long-term glycemic control but cannot guide vascular surgery.',
+      B: 'Plain X-rays assess bone structure, not vascular lumen anatomy.',
+      C: 'Correct. CT angiography, MRA, or catheter DSA is required to map arterial anatomy for revascularization.',
+      D: 'Monofilament evaluates neuropathy, not arterial occlusive anatomy.'
+    },
+    keyTakeaway: 'CT angiography, MRA, or Digital Subtraction Angiography (DSA) is required in critical limb ischemia to map vascular anatomy for revascularization.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Vascular Roadmapping', 'CT Angiography', 'Critical Limb Ischemia', 'Revascularization']
+  },
+
+  // ----------------------------------------------------
+  // MANAGEMENT OF ERECTILE DYSFUNCTION (Pages 56-58)
+  // ----------------------------------------------------
+  {
+    id: 'ed_q1',
+    topicId: 'erectile_dysfunction',
+    topicTitle: 'Management of Erectile Dysfunction',
+    questionNumber: 1,
+    clinicalVignette: 'A 32-year-old man presents with severe anxiety regarding sexual performance following a single episode of erectile failure. He reports normal, rigid morning erections and normal nocturnal penile tumescence. Which autonomic mechanism explains his situational erectile failure?',
+    options: [
+      { id: 'A', text: 'Excessive parasympathetic activity causing premature venous leakage' },
+      { id: 'B', text: 'Subclinical testosterone deficiency' },
+      { id: 'C', text: 'Increased sympathetic activity causing cavernosal arteriolar vasoconstriction' },
+      { id: 'D', text: 'Reduced penile sensory nerve conduction' }
+    ],
+    correctOption: 'C',
+    correctAnswerText: 'Increased sympathetic activity causing cavernosal arteriolar vasoconstriction',
+    explanation: 'Penile erection is mediated by parasympathetic-driven release of nitric oxide (NO), stimulating guanylate cyclase to increase cGMP, resulting in cavernosal smooth muscle relaxation and engorgement. In psychogenic ED and performance anxiety, high central sympathetic tone triggers massive release of norepinephrine, stimulating alpha-1 adrenergic receptors on penile helicine arterioles and trabecular smooth muscle, causing profound vasoconstriction and preventing sinusoidal filling despite intact vascular anatomy (as evidenced by normal nocturnal erections).',
+    optionRationales: {
+      A: 'Parasympathetic activity produces erection, not flaccidity or venous leakage.',
+      B: 'Testosterone deficiency causes low libido and loss of morning erections.',
+      C: 'Correct. Excessive sympathetic outflow releases norepinephrine, causing alpha-1 mediated vasoconstriction that aborts erection.',
+      D: 'Sensory conduction is preserved in psychogenic ED.'
+    },
+    keyTakeaway: 'Performance anxiety triggers sympathetic overactivity, releasing norepinephrine to cause alpha-1 mediated cavernosal vasoconstriction (psychogenic ED).',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Erectile Dysfunction', 'Psychogenic ED', 'Sympathetic Tone', 'Alpha-1 Vasoconstriction']
+  },
+  {
+    id: 'ed_q2',
+    topicId: 'erectile_dysfunction',
+    topicTitle: 'Management of Erectile Dysfunction',
+    questionNumber: 2,
+    clinicalVignette: 'A 60-year-old man with severe diabetic vasculopathy and neuropathy presents with refractory erectile dysfunction. He has failed maximum-dose oral PDE-5 inhibitors (sildenafil, tadalafil) taken with correct timing and sexual stimulation. Serum total testosterone is normal. He is motivated and willing to self-administer localized therapy. Which of the following is the most appropriate second-line treatment?',
+    options: [
+      { id: 'A', text: 'Discontinue all ED therapy permanently' },
+      { id: 'B', text: 'Intracavernosal alprostadil (prostaglandin E1) injection therapy' },
+      { id: 'C', text: 'Oral testosterone undecanoate' },
+      { id: 'D', text: 'Daily oral isosorbide mononitrate' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Intracavernosal alprostadil (prostaglandin E1) injection therapy',
+    explanation: 'When oral phosphodiesterase-5 (PDE-5) inhibitors fail or are contraindicated, second-line therapies for erectile dysfunction include Intracavernosal Injection (ICI) therapy (Alprostadil / PGE1, or combination Trimix: alprostadil + papaverine + phentolamine), intraurethral alprostadil pellets (MUSE), or Vacuum Erection Devices (VED). Alprostadil acts directly on cavernosal smooth muscle EP receptors to increase intracellular cAMP, bypassing impaired endothelial nitric oxide pathways.',
+    optionRationales: {
+      A: 'Second-line and third-line effective therapies remain available.',
+      B: 'Correct. Intracavernosal alprostadil injection therapy is the evidence-based second-line treatment of choice following oral PDE-5 inhibitor failure.',
+      C: 'Testosterone supplementation is ineffective when baseline testosterone levels are normal.',
+      D: 'Nitrates combined with prior PDE-5 inhibitors cause fatal refractory hypotension and do not treat ED.'
+    },
+    keyTakeaway: 'Intracavernosal Alprostadil (PGE1) injections are the standard second-line treatment for erectile dysfunction refractory to oral PDE-5 inhibitors.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Erectile Dysfunction', 'Alprostadil', 'Intracavernosal Injection', 'Second-Line ED']
+  },
+  {
+    id: 'ed_q3',
+    topicId: 'erectile_dysfunction',
+    topicTitle: 'Management of Erectile Dysfunction',
+    questionNumber: 3,
+    clinicalVignette: 'A 55-year-old man with hypertension and type 2 diabetes presents with a 1-year history of worsening erectile dysfunction. He has normal libido and no symptoms of hypogonadism. Cardiovascular evaluation reveals stable low-risk cardiac status, and he is not taking any nitrate medications. Which of the following is the recommended first-line oral pharmacological treatment?',
+    options: [
+      { id: 'A', text: 'Intramuscular testosterone cypionate' },
+      { id: 'B', text: 'Intracavernosal alprostadil' },
+      { id: 'C', text: 'Oral phosphodiesterase-5 (PDE-5) inhibitor (e.g. Sildenafil or Tadalafil)' },
+      { id: 'D', text: 'Vacuum erection device as exclusive first-line drug therapy' }
+    ],
+    correctOption: 'C',
+    correctAnswerText: 'Oral phosphodiesterase-5 (PDE-5) inhibitor (e.g. Sildenafil or Tadalafil)',
+    explanation: 'Oral Phosphodiesterase type 5 (PDE-5) inhibitors (Sildenafil, Tadalafil, Vardenafil, Avanafil) are the universal first-line pharmacological treatment of choice for erectile dysfunction across diverse etiologies (vascular, diabetic, neurogenic, psychogenic). By inhibiting the PDE-5 enzyme that degrades cyclic GMP in the corpus cavernosum, they sustain intracellular cGMP levels and smooth muscle relaxation during sexual arousal. They are contraindicated in patients taking organic nitrates.',
+    optionRationales: {
+      A: 'Testosterone is only indicated in confirmed biochemical hypogonadism with low morning testosterone.',
+      B: 'Intracavernosal injections are invasive second-line therapies.',
+      C: 'Correct. Oral PDE-5 inhibitors (Sildenafil, Tadalafil) are the recommended first-line pharmacological therapy.',
+      D: 'Vacuum erection device is a non-pharmacological mechanical option.'
+    },
+    keyTakeaway: 'Oral PDE-5 inhibitors (Sildenafil, Tadalafil) are the first-line pharmacological therapy for erectile dysfunction in patients without nitrate contraindications.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Erectile Dysfunction', 'Sildenafil', 'PDE-5 Inhibitors', 'First-Line Therapy']
   }
 ];
