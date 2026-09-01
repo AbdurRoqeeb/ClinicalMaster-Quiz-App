@@ -100,25 +100,3 @@ export interface StoredProgress {
     isFinished: boolean;
   };
 }
-
-export interface ChatMessage {
-  id: string;
-  role: 'user' | 'model';
-  text: string;
-  timestamp: number;
-  questionIdContext?: string;
-  isStreaming?: boolean;
-  error?: boolean;
-}
-
-export interface QuestionContextPayload {
-  id: string;
-  topicTitle: string;
-  vignette: string;
-  question: string;
-  options: { id: string; text: string }[];
-  correctOption: string;
-  correctAnswerText: string;
-  rationale: string;
-  takeaway: string;
-}

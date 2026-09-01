@@ -13,7 +13,6 @@ import { CLINICAL_TOPICS } from '../data/topics';
 interface HeaderProps {
   stats: QuizStats;
   onOpenCheatSheet: () => void;
-  onOpenAIChat: () => void;
   onResetProgress: () => void;
   onViewStats: () => void;
   searchQuery: string;
@@ -27,7 +26,6 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({
   stats,
   onOpenCheatSheet,
-  onOpenAIChat,
   onResetProgress,
   onViewStats,
   searchQuery,
@@ -87,17 +85,6 @@ export const Header: React.FC<HeaderProps> = ({
           >
             <Sparkles className="w-3.5 h-3.5 text-indigo-600" />
             <span className="hidden sm:inline">Pearls</span>
-          </button>
-
-          {/* AI Clinical Mentor Button */}
-          <button
-            id="ai-mentor-btn"
-            onClick={onOpenAIChat}
-            className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-900 hover:bg-slate-800 text-white rounded-xs text-xs font-bold uppercase tracking-wider transition-colors cursor-pointer shadow-xs"
-          >
-            <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <span className="hidden sm:inline">AI Mentor</span>
-            <span className="sm:hidden">AI</span>
           </button>
 
           {/* Clear Progress Button */}

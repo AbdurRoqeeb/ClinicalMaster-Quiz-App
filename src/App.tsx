@@ -27,7 +27,6 @@ import { QuestionMatrix } from './components/QuestionMatrix';
 import { HighYieldModal } from './components/HighYieldModal';
 import { ExamResultsModal } from './components/ExamResultsModal';
 import { ResetProgressModal } from './components/ResetProgressModal';
-import { AIChatModal } from './components/AIChatModal';
 import { CLINICAL_TOPICS } from './data/topics';
 
 export default function App() {
@@ -61,21 +60,12 @@ export default function App() {
 
   const [activeTab, setActiveTab] = useState<'practice' | 'directory'>('directory');
   const [isResetModalOpen, setIsResetModalOpen] = useState<boolean>(false);
-  const [isAIChatOpen, setIsAIChatOpen] = useState<boolean>(false);
-  const [aiChatInitialPrompt, setAiChatInitialPrompt] = useState<string | null>(null);
 
   const activeTopic = CLINICAL_TOPICS.find((t) => t.id === activeTopicId);
   const activeTopicBreakdown = activeTopicId ? stats.topicBreakdown[activeTopicId] : null;
 
   const handleReturnToTopics = () => {
     setActiveTab('directory');
-  };
-
-  const handleOpenAIChat = (prompt?: string) => {
-    if (prompt) {
-      setAiChatInitialPrompt(prompt);
-    }
-    setIsAIChatOpen(true);
   };
 
   const handleNext = () => {
@@ -110,7 +100,6 @@ export default function App() {
       <Header
         stats={stats}
         onOpenCheatSheet={() => setIsCheatSheetOpen(true)}
-        onOpenAIChat={() => handleOpenAIChat()}
         onResetProgress={() => setIsResetModalOpen(true)}
         onViewStats={() => setIsResultsModalOpen(true)}
         searchQuery={searchQuery}
@@ -207,7 +196,6 @@ export default function App() {
                   userNote={notes[currentQuestion.id]}
                   onSelectOption={(optId) => handleSelectOption(currentQuestion.id, optId)}
                   onRetryQuestion={() => handleClearQuestionAnswer(currentQuestion.id)}
-                  onAskAI={(prompt) => handleOpenAIChat(prompt)}
                   onToggleBookmark={() => handleToggleBookmark(currentQuestion.id)}
                   onSaveNote={(note) => handleSaveNote(currentQuestion.id, note)}
                   onPreviousQuestion={handlePrev}
@@ -344,26 +332,6 @@ export default function App() {
         activeTopicTitle={activeTopic?.title}
         totalAnswered={stats.answeredCount}
         topicAnsweredCount={activeTopicBreakdown?.answered || 0}
-      />
-
-      {/* Floating Ask AI Mentor Action Button */}
-      <button
-        id="floating-ai-mentor-btn"
-        onClick={() => handleOpenAIChat()}
-        className="fixed bottom-5 right-5 z-40 bg-slate-900 hover:bg-indigo-700 text-white px-4 py-2.5 rounded-xs shadow-xl border border-slate-700 hover:border-indigo-500 transition-all flex items-center gap-2.5 text-xs font-bold uppercase tracking-wider cursor-pointer group hover:scale-105 active:scale-95"
-      >
-        <div className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse" />
-        <Sparkles className="w-4 h-4 text-amber-300 group-hover:rotate-12 transition-transform" />
-        <span>Ask AI Mentor</span>
-      </button>
-
-      {/* Gemini AI Clinical Mentor Chatbot Modal */}
-      <AIChatModal
-        isOpen={isAIChatOpen}
-        onClose={() => setIsAIChatOpen(false)}
-        currentQuestion={currentQuestion}
-        initialPrompt={aiChatInitialPrompt}
-        onClearInitialPrompt={() => setAiChatInitialPrompt(null)}
       />
     </div>
   );

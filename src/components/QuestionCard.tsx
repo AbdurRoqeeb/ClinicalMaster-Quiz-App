@@ -28,7 +28,6 @@ interface QuestionCardProps {
   userNote: string | undefined;
   onSelectOption: (optionId: string) => void;
   onRetryQuestion?: () => void;
-  onAskAI?: (prompt?: string) => void;
   onToggleBookmark: () => void;
   onSaveNote: (note: string) => void;
   onPreviousQuestion: () => void;
@@ -48,7 +47,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   userNote,
   onSelectOption,
   onRetryQuestion,
-  onAskAI,
   onToggleBookmark,
   onSaveNote,
   onPreviousQuestion,
@@ -144,20 +142,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           </span>
         </div>
 
-        {/* Action icons (Bookmark & Personal Note Toggle & Ask AI) */}
+        {/* Action icons (Bookmark & Personal Note Toggle) */}
         <div className="flex items-center gap-2">
-          {onAskAI && (
-            <button
-              type="button"
-              onClick={() => onAskAI(`Explain the reasoning and diagnostic approach for Question #${question.questionNumber}: "${question.clinicalVignette.slice(0, 100)}..."`)}
-              className="flex items-center gap-1.5 px-2.5 py-1 rounded-xs font-semibold text-xs transition-colors cursor-pointer bg-slate-900 hover:bg-slate-800 text-white shadow-2xs"
-              title="Ask AI Mentor about this question"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-amber-300" />
-              <span className="hidden sm:inline uppercase tracking-wider text-[11px]">Ask AI</span>
-            </button>
-          )}
-
           <button
             type="button"
             onClick={() => setShowNoteEditor(!showNoteEditor)}
@@ -383,29 +369,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 );
               })}
             </div>
-
-            {/* Ask AI Helper Banner */}
-            {onAskAI && (
-              <div className="bg-indigo-50/60 border border-indigo-200 rounded-xs p-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-7 h-7 rounded-xs bg-indigo-600 text-white flex items-center justify-center shrink-0">
-                    <Sparkles className="w-3.5 h-3.5" />
-                  </div>
-                  <div>
-                    <span className="font-bold text-indigo-950">Have questions about this clinical case?</span>
-                    <p className="text-slate-600 text-[11px]">Ask the AI Clinical Mentor to explain distractor traps, pathophysiology, or clinical decision trees.</p>
-                  </div>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => onAskAI(`Explain why the correct answer for Q${question.questionNumber} is preferred over the other options, and give me a high-yield clinical pearl.`)}
-                  className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold uppercase tracking-wider text-[11px] rounded-xs transition-colors shrink-0 shadow-2xs cursor-pointer flex items-center gap-1.5"
-                >
-                  <Sparkles className="w-3 h-3 text-amber-300" />
-                  <span>Ask AI Mentor</span>
-                </button>
-              </div>
-            )}
 
             {/* High-Yield Key Takeaway Callout (Dark Geometric Module) */}
             <div className="bg-slate-900 text-white rounded-xs p-4 sm:p-5 border border-slate-800 flex items-start gap-3 shadow-xs">
