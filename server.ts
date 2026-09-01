@@ -1,14 +1,10 @@
 import express from 'express';
 import path from 'path';
-import { fileURLToPath } from 'url';
 import { createServer as createViteServer } from 'vite';
 import { GoogleGenAI } from '@google/genai';
 import dotenv from 'dotenv';
 
 dotenv.config();
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = 3000;
@@ -87,7 +83,7 @@ Key Clinical Takeaway: ${questionContext.takeaway || ''}
       res.setHeader('Connection', 'keep-alive');
 
       const responseStream = await ai.models.generateContentStream({
-        model: 'gemini-3.5-flash',
+        model: 'gemini-3.7-flash',
         contents: formattedContents,
         config: {
           systemInstruction: dynamicSystemInstruction,
@@ -105,7 +101,7 @@ Key Clinical Takeaway: ${questionContext.takeaway || ''}
       res.end();
     } else {
       const response = await ai.models.generateContent({
-        model: 'gemini-3.5-flash',
+        model: 'gemini-3.7-flash',
         contents: formattedContents,
         config: {
           systemInstruction: dynamicSystemInstruction,
