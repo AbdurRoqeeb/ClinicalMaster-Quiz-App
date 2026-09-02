@@ -401,5 +401,273 @@ export const INFECTIOUS_ENDO_QUESTIONS: Question[] = [
     sourcePageRef: '',
     difficulty: 'Core Clinical',
     tags: ['Hashimoto Thyroiditis', 'Levothyroxine', 'Anti-TPO', 'Hypothyroidism', 'Endocrinology']
+  },
+
+  // ----------------------------------------------------
+  // PRINCIPLES OF ANTIBIOTIC USE
+  // ----------------------------------------------------
+  {
+    id: 'abx_q1',
+    topicId: 'antibiotic_principles',
+    topicTitle: 'Principles of Antibiotic Use',
+    questionNumber: 1,
+    clinicalVignette: 'A 68-year-old man is admitted with fever, dysuria, and flank pain. Urinalysis shows pyuria and bacteriuria. He is started empirically on ceftriaxone. Two days later, urine culture grows Escherichia coli that is susceptible to trimethoprim-sulfamethoxazole and several other antibiotics. He is clinically improving and can tolerate oral medications. What is the best next step?',
+    options: [
+      { id: 'A', text: 'Continue ceftriaxone for the entire treatment course' },
+      { id: 'B', text: 'Change to a narrower effective oral antibiotic' },
+      { id: 'C', text: 'Add vancomycin to prevent resistance' },
+      { id: 'D', text: 'Add gentamicin for synergistic activity' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Change to a narrower effective oral antibiotic',
+    explanation: 'The cornerstone of antimicrobial stewardship is "de-escalation" (or streamlining). Once microbiological culture and sensitivity results identify a susceptible pathogen and the patient is clinically improving and tolerating oral medications, broad-spectrum empiric IV therapy (ceftriaxone) should be switched to a targeted, narrower-spectrum oral agent (such as trimethoprim-sulfamethoxazole or ciprofloxacin). This reduces selective antibiotic pressure, decreases the risk of Clostridioides difficile infection, prevents catheter-related bloodstream infections, and lowers healthcare costs.',
+    optionRationales: {
+      A: 'Continuing broad-spectrum IV ceftriaxone when a targeted oral agent is available increases antimicrobial selective pressure, hospital stay, and C. difficile risk.',
+      B: 'Correct. De-escalating from broad-spectrum IV ceftriaxone to a targeted narrow-spectrum oral agent (e.g. TMP-SMX) is the gold standard of antibiotic stewardship once culture results are available and the patient is clinically improving.',
+      C: 'Vancomycin is an anti-Gram-positive agent targeting MRSA/Enterococcus with no activity against Gram-negative E. coli, and adding it causes unnecessary nephrotoxicity and resistance.',
+      D: 'Adding gentamicin is unnecessary for an improving patient with a sensitive isolate and adds substantial nephrotoxicity and ototoxicity risks.'
+    },
+    keyTakeaway: 'Once pathogen identification and susceptibilities return in a clinically improving patient tolerating oral intake, de-escalate from broad-spectrum IV to narrow-spectrum oral antibiotics.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Antibiotic Stewardship', 'De-escalation', 'Pyelonephritis', 'E. coli', 'Pharmacology']
+  },
+  {
+    id: 'abx_q2',
+    topicId: 'antibiotic_principles',
+    topicTitle: 'Principles of Antibiotic Use',
+    questionNumber: 2,
+    clinicalVignette: 'A 24-year-old woman presents with 2 days of nasal congestion, rhinorrhea, sore throat, and a nonproductive cough. Temperature is 37.4°C (99.3°F). Examination shows mild pharyngeal erythema without tonsillar exudates. Lungs are clear. A rapid antigen test for group A Streptococcus is negative. She requests antibiotics because she "usually gets better faster" when taking them. Which of the following is the most appropriate management?',
+    options: [
+      { id: 'A', text: 'Amoxicillin for 10 days' },
+      { id: 'B', text: 'Azithromycin for 5 days' },
+      { id: 'C', text: 'Amoxicillin-clavulanate for 7 days' },
+      { id: 'D', text: 'Supportive treatment without antibiotics' }
+    ],
+    correctOption: 'D',
+    correctAnswerText: 'Supportive treatment without antibiotics',
+    explanation: 'The patient has a classic viral upper respiratory tract infection (rhinorrhea, nasal congestion, cough, low-grade temperature, absence of tonsillar exudate, and negative rapid antigen detection test for Group A Strep). Antibiotics are completely ineffective against viral pathogens, do not shorten symptom duration, do not prevent secondary bacterial infections, and expose patients to adverse events (diarrhea, rash, anaphylaxis) while driving antimicrobial resistance. Management consists of patient education and symptomatic supportive care (saline nasal sprays, oral analgesics/antipyretics, adequate hydration).',
+    optionRationales: {
+      A: 'Amoxicillin is indicated for confirmed bacterial Group A streptococcal pharyngitis, which is ruled out by the negative rapid test and viral constellation.',
+      B: 'Azithromycin is inappropriate for viral coryza and unnecessarily drives macrolide resistance.',
+      C: 'Amoxicillin-clavulanate is broad-spectrum and inappropriate for viral rhinosinusitis/pharyngitis, with high rates of gastrointestinal side effects.',
+      D: 'Correct. Viral upper respiratory infections are self-limiting; symptomatic supportive therapy without antibiotics is the standard of care.'
+    },
+    keyTakeaway: 'Acute viral upper respiratory tract infections (negative strep screen, presence of cough/rhinorrhea) should be treated supportively without antimicrobial therapy.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Viral URTI', 'Antibiotic Stewardship', 'Pharyngitis', 'Supportive Care', 'Strep Pharyngitis']
+  },
+  {
+    id: 'abx_q3',
+    topicId: 'antibiotic_principles',
+    topicTitle: 'Principles of Antibiotic Use',
+    questionNumber: 3,
+    clinicalVignette: 'A 72-year-old man presents with fever, productive cough, dyspnea, and pleuritic chest pain. Chest radiograph shows a right lower-lobe infiltrate. He is diagnosed with community-acquired pneumonia. Before culture results are available, antibiotics are initiated. The rationale for this approach is best described as:',
+    options: [
+      { id: 'A', text: 'Antibiotics should always be started before microbiological testing' },
+      { id: 'B', text: 'Empiric therapy is appropriate when bacterial infection is sufficiently likely and delaying treatment could cause harm' },
+      { id: 'C', text: 'Broad-spectrum therapy is always superior to narrow-spectrum therapy' },
+      { id: 'D', text: 'Antibiotics should be continued regardless of culture results' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Empiric therapy is appropriate when bacterial infection is sufficiently likely and delaying treatment could cause harm',
+    explanation: 'Empiric antibiotic therapy is initiated when a bacterial infection is clinically diagnosed and the risk of delaying treatment while awaiting culture results (24-72 hours) outweighs the risk of initial broad-spectrum therapy. In severe infections such as community-acquired pneumonia or sepsis, every hour of delay in administering effective antimicrobial therapy is associated with increased mortality, progression to respiratory failure, and systemic shock. Once microbiological cultures and susceptibility results return, therapy is tailored and de-escalated.',
+    optionRationales: {
+      A: 'Diagnostic specimens (blood cultures, sputum) should ideally be collected prior to initiating antibiotics whenever feasible without causing substantial treatment delays.',
+      B: 'Correct. Empiric therapy is indicated when bacterial infection is probable and delay in treatment would lead to clinical deterioration or increased mortality.',
+      C: 'Broad-spectrum therapy is not inherently superior; it carries greater risk of toxicity, collateral damage to host microbiome, and selection of resistant strains.',
+      D: 'Antibiotic regimens should always be re-evaluated and streamlined once definitive microbiological identification and sensitivities are obtained.'
+    },
+    keyTakeaway: 'Prompt empiric antimicrobial therapy is essential in suspected bacterial infections when delaying treatment while awaiting cultures could result in clinical deterioration or mortality.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Empiric Therapy', 'Community-Acquired Pneumonia', 'CAP', 'Sepsis', 'Antibiotic Stewardship']
+  },
+  {
+    id: 'abx_q4',
+    topicId: 'antibiotic_principles',
+    topicTitle: 'Principles of Antibiotic Use',
+    questionNumber: 4,
+    clinicalVignette: 'A 70-year-old man with chronic kidney disease is diagnosed with a bacterial infection. The antibiotic selected is predominantly eliminated by the kidneys. Which of the following is most appropriate?',
+    options: [
+      { id: 'A', text: 'Automatically double the dose' },
+      { id: 'B', text: 'Ignore renal function because antibiotics are unaffected by kidney disease' },
+      { id: 'C', text: 'Adjust the dose or dosing interval according to renal function' },
+      { id: 'D', text: 'Always discontinue the antibiotic' }
+    ],
+    correctOption: 'C',
+    correctAnswerText: 'Adjust the dose or dosing interval according to renal function',
+    explanation: 'Hydrophilic antibiotics (such as aminoglycosides, beta-lactams, vancomycin, and fluoroquinolones) that undergo primary renal clearance will accumulate in patients with reduced glomerular filtration rate (GFR). To maintain therapeutic serum concentrations while avoiding drug accumulation and toxicities (e.g. ototoxicity, nephrotoxicity, neurotoxicity, encephalopathy), the dosing regimen must be adjusted based on estimated creatinine clearance (CrCl) or eGFR by either reducing the individual dose, extending the dosing interval, or both.',
+    optionRationales: {
+      A: 'Doubling the dose in renal impairment would rapidly cause severe drug accumulation and life-threatening toxicity.',
+      B: 'Renal clearance directly determines the elimination half-life of many antibiotics; ignoring renal function causes severe drug toxicity.',
+      C: 'Correct. Renally eliminated antimicrobials require dose reduction or interval extension calibrated to estimated GFR/creatinine clearance to prevent toxicity.',
+      D: 'Renally cleared antibiotics do not need to be discontinued; they are safely and effectively utilized when appropriately dose-adjusted for renal function.'
+    },
+    keyTakeaway: 'Renally cleared antibiotics require dose reduction or interval elongation matched to the patient\'s estimated GFR/CrCl to prevent toxic drug accumulation.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Renal Dosing', 'Chronic Kidney Disease', 'CKD', 'Pharmacokinetics', 'Toxicity']
+  },
+  {
+    id: 'abx_q5',
+    topicId: 'antibiotic_principles',
+    topicTitle: 'Principles of Antibiotic Use',
+    questionNumber: 5,
+    clinicalVignette: 'A hospital notices increasing rates of multidrug-resistant Klebsiella pneumoniae. Review of prescribing practices shows frequent use of broad-spectrum antibiotics for uncomplicated infections. Which mechanism best explains how excessive antibiotic use contributes to resistance?',
+    options: [
+      { id: 'A', text: 'Antibiotics directly mutate bacterial DNA in every organism' },
+      { id: 'B', text: 'Antibiotics select for resistant organisms that survive and proliferate' },
+      { id: 'C', text: 'Antibiotics prevent horizontal gene transfer' },
+      { id: 'D', text: 'Antibiotics permanently eliminate bacterial resistance genes' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Antibiotics select for resistant organisms that survive and proliferate',
+    explanation: 'Antibiotics do not intentionally induce adaptive mutations in bacterial genomes. Rather, antimicrobial exposure exerts powerful Darwinian selective pressure: susceptible bacterial populations (both pathogenic and normal commensal flora) are eradicated, creating an open ecological niche. Spontaneously resistant mutant organisms or strains harboring plasmid-mediated resistance genes (e.g., carbapenemases, ESBLs) survive, multiply unchecked, and become the dominant circulating strain within hospital and community reservoirs.',
+    optionRationales: {
+      A: 'Antibiotics do not directly cause directed targeted mutations in bacterial DNA; mutations occur spontaneously, and antibiotics select for those that confer survival.',
+      B: 'Correct. Antibiotics exert selective pressure that eliminates susceptible competition, allowing resistant bacteria to survive, dominate, and proliferate.',
+      C: 'Antibiotics do not prevent horizontal gene transfer; in fact, stress responses (SOS response) under antibiotic pressure can increase plasmid conjugation and transposon movement.',
+      D: 'Antibiotic overuse increases, rather than eliminates, the prevalence of resistance genes in microbial ecosystems.'
+    },
+    keyTakeaway: 'Antibiotic overuse exerts selective pressure that destroys susceptible flora, allowing pre-existing or mutated resistant organisms to survive and multiply.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Antimicrobial Resistance', 'Selective Pressure', 'Klebsiella', 'Multidrug Resistance', 'Hospital Epidemiology']
+  },
+
+  // ----------------------------------------------------
+  // INDICATIONS FOR STEROID USE & STEROID EQUIVALENT DOSE
+  // ----------------------------------------------------
+  {
+    id: 'steroid_q1',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
+    questionNumber: 1,
+    clinicalVignette: 'A 35-year-old woman with an endocrine history presents with severe fatigue, persistent vomiting, low blood pressure (80/50 mmHg), confusion, generalized skin hyperpigmentation, and hyponatremia/hyperkalemia. Which is the most appropriate next step in management?',
+    options: [
+      { id: 'A', text: 'Initiate oral prednisolone 20 mg once daily' },
+      { id: 'B', text: 'Administer intravenous hydrocortisone 100 mg immediately' },
+      { id: 'C', text: 'Give intravenous dexamethasone 4 mg only and monitor' },
+      { id: 'D', text: 'Await dynamic hormone test results before initiating treatment' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Administer intravenous hydrocortisone 100 mg immediately',
+    explanation: 'The patient presents with classic Acute Adrenal Crisis (Addisonian crisis), characterized by refractory hypotension/vascular collapse, persistent vomiting, confusion, generalized hyperpigmentation (elevated POMC/ACTH in primary adrenal failure), hyponatremia, and hyperkalemia. Acute adrenal crisis is an immediately life-threatening emergency. The primary management is STAT administration of IV Hydrocortisone 100 mg alongside rapid aggressive crystalloid infusion (0.9% normal saline with 5% dextrose). Hydrocortisone provides immediate glucocorticoid replacement and, at high doses, sufficient mineralocorticoid activity to restore vascular tone and electrolyte balance. Treatment must never be delayed to await confirmatory diagnostic testing.',
+    optionRationales: {
+      A: 'Oral medications are contraindicated in acute adrenal crisis due to vomiting, delayed gastric absorption, and the emergency requirement for rapid parenteral replacement.',
+      B: 'Correct. STAT intravenous Hydrocortisone 100 mg along with IV saline resuscitation is the immediate life-saving treatment for acute adrenal crisis.',
+      C: 'Dexamethasone lacks mineralocorticoid activity and 4 mg alone without fluid resuscitation and appropriate dosing is suboptimal for primary acute crisis.',
+      D: 'Diagnostic workup or awaiting laboratory confirmation must never delay life-saving empiric steroid and fluid therapy in suspected adrenal crisis.'
+    },
+    keyTakeaway: 'Acute adrenal crisis is a medical emergency requiring STAT IV Hydrocortisone 100 mg and aggressive IV normal saline resuscitation without delaying for lab tests.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Adrenal Crisis', 'Hydrocortisone', 'Addison Disease', 'Hyponatremia', 'Emergency Endocrinology']
+  },
+  {
+    id: 'steroid_q2',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
+    questionNumber: 2,
+    clinicalVignette: 'A 48-year-old male patient with systemic lupus erythematosus is currently managed on oral prednisolone 40 mg once daily. Due to severe vomiting, he requires immediate transition to intravenous methylprednisolone. What is the equivalent daily dose of intravenous methylprednisolone?',
+    options: [
+      { id: 'A', text: '16 mg daily' },
+      { id: 'B', text: '24 mg daily' },
+      { id: 'C', text: '32 mg daily' },
+      { id: 'D', text: '40 mg daily' }
+    ],
+    correctOption: 'C',
+    correctAnswerText: '32 mg daily',
+    explanation: 'Standard corticosteroid anti-inflammatory equivalent potencies are:\n• Hydrocortisone: 20 mg (Potency = 1)\n• Prednisone / Prednisolone: 5 mg (Potency = 4)\n• Methylprednisolone: 4 mg (Potency = 5)\n• Triamcinolone: 4 mg (Potency = 5)\n• Dexamethasone: 0.75 mg (Potency = 25-30)\n• Betamethasone: 0.6–0.75 mg (Potency = 25-30)\n\nTo convert Prednisolone to Methylprednisolone:\nRatio = 4 mg Methylprednisolone / 5 mg Prednisolone = 0.8.\nEquivalent dose = 40 mg Prednisolone × (4 / 5) = 32 mg IV Methylprednisolone daily.',
+    optionRationales: {
+      A: '16 mg is 50% under-dosed (equivalent to only 20 mg of prednisolone).',
+      B: '24 mg is equivalent to 30 mg of prednisolone.',
+      C: 'Correct. 40 mg of oral prednisolone is equivalent to 32 mg of IV methylprednisolone based on the 5:4 equivalence ratio.',
+      D: '40 mg would represent a 1:1 dosing conversion, ignoring that methylprednisolone is 1.25x more potent than prednisolone (would equal 50 mg prednisolone).'
+    },
+    keyTakeaway: 'Corticosteroid equivalence rule: 5 mg Prednisolone = 4 mg Methylprednisolone (40 mg Prednisolone = 32 mg Methylprednisolone).',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Steroid Equivalence', 'Prednisolone', 'Methylprednisolone', 'Pharmacology', 'SLE']
+  },
+  {
+    id: 'steroid_q3',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
+    questionNumber: 3,
+    clinicalVignette: 'A 56-year-old woman with a history of severe rheumatoid arthritis has been taking prednisolone 10 mg daily for the past 3 years. She reports mild back pain but has no history of active trauma. Which screening investigation is indicated as part of standard monitoring for her long-term steroid therapy?',
+    options: [
+      { id: 'A', text: 'Electroencephalography (EEG)' },
+      { id: 'B', text: 'Dual-energy X-ray absorptiometry (DEXA) scan' },
+      { id: 'C', text: 'Electrocardiography (ECG)' },
+      { id: 'D', text: 'Spirometry' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Dual-energy X-ray absorptiometry (DEXA) scan',
+    explanation: 'Chronic systemic glucocorticoid therapy (prednisolone >=5-7.5 mg/day for >=3 months) is the leading secondary cause of osteoporosis. Glucocorticoids directly inhibit osteoblast function, stimulate osteoclastogenesis, impair intestinal calcium absorption, and increase renal calcium wasting. This leads to rapid trabecular bone loss, notably in the vertebrae and femoral neck, causing asymptomatic or insidious compression fractures presenting as back pain. Dual-energy X-ray Absorptiometry (DEXA) scanning is the gold standard monitoring investigation to evaluate bone mineral density (BMD) and guide bisphosphonate / anti-resorptive prophylaxis.',
+    optionRationales: {
+      A: 'EEG is used for seizure disorders and encephalopathy, not for glucocorticoid bone adverse effect monitoring.',
+      B: 'Correct. DEXA scan of the lumbar spine and hip is mandatory to screen for glucocorticoid-induced osteoporosis in patients on chronic steroid therapy (>3 months).',
+      C: 'ECG does not screen for steroid-induced bone mineral loss or osteoporotic fracture risk.',
+      D: 'Spirometry evaluates pulmonary ventilatory defects, not steroid-induced osteoporosis.'
+    },
+    keyTakeaway: 'Long-term systemic glucocorticoid therapy (>3 months) requires regular DEXA bone mineral density scanning to screen for glucocorticoid-induced osteoporosis.',
+    sourcePageRef: '',
+    difficulty: 'Core Clinical',
+    tags: ['Osteoporosis', 'DEXA Scan', 'Glucocorticoid Side Effects', 'Rheumatoid Arthritis', 'Bone Health']
+  },
+  {
+    id: 'steroid_q4',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
+    questionNumber: 4,
+    clinicalVignette: 'A 40-year-old patient with primary adrenal failure is successfully resuscitated from an acute crisis. Two days later, she is stable on maintenance therapy but has persistent hyponatremia and hyperkalemia. What is the most appropriate management adjustment?',
+    options: [
+      { id: 'A', text: 'Increase the dose of hydrocortisone indefinitely' },
+      { id: 'B', text: 'Add fludrocortisone' },
+      { id: 'C', text: 'Start spironolactone' },
+      { id: 'D', text: 'Restrict sodium intake' }
+    ],
+    correctOption: 'B',
+    correctAnswerText: 'Add fludrocortisone',
+    explanation: 'Primary adrenal insufficiency (Addison disease) results from global destruction of the adrenal cortex, producing deficiencies in both cortisol (zona fasciculata) and aldosterone (zona glomerulosa). While supra-physiologic acute crisis doses of hydrocortisone provide cross-reactivity at the mineralocorticoid receptor, standard maintenance physiologic glucocorticoid doses (15-25 mg hydrocortisone daily) do not provide sufficient mineralocorticoid activity. Persistent renal salt-wasting, postural hypotension, hyponatremia, and hyperkalemia indicate mineralocorticoid deficiency, requiring the addition of oral Fludrocortisone (0.05-0.2 mg once daily) to restore renal tubular sodium reabsorption and potassium excretion.',
+    optionRationales: {
+      A: 'Increasing hydrocortisone indefinitely leads to iatrogenic Cushing syndrome, weight gain, hypertension, and osteoporosis without adequately addressing pure mineralocorticoid needs.',
+      B: 'Correct. Fludrocortisone is the synthetic mineralocorticoid of choice to correct persistent hyponatremia, hyperkalemia, and salt-wasting in primary adrenal insufficiency.',
+      C: 'Spironolactone is an aldosterone receptor antagonist that would worsen hyperkalemia, promote fatal salt wasting, and trigger recurrent adrenal crisis.',
+      D: 'Patients with primary adrenal failure are salt-wasters; sodium restriction is hazardous and contraindicated.'
+    },
+    keyTakeaway: 'Primary adrenal failure with persistent hyperkalemia and salt-wasting requires fludrocortisone (0.05–0.2 mg daily) for targeted mineralocorticoid replacement.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Addison Disease', 'Fludrocortisone', 'Mineralocorticoid', 'Electrolytes', 'Endocrinology']
+  },
+  {
+    id: 'steroid_q5',
+    topicId: 'steroid_prescribing',
+    topicTitle: 'Indications for Steroid Use & Steroid Equivalent Doses',
+    questionNumber: 5,
+    clinicalVignette: 'A 55-year-old woman has been taking prednisolone 15 mg daily for 8 months to control rheumatoid arthritis. Her pain has resolved, and she requests to stop taking her medication immediately to avoid side effects. What is the most appropriate clinical guidance?',
+    options: [
+      { id: 'A', text: 'Stop prednisolone immediately since her symptoms have resolved' },
+      { id: 'B', text: 'Switch to dexamethasone and stop after 2 days' },
+      { id: 'C', text: 'Gradually taper the prednisolone dose before discontinuation' },
+      { id: 'D', text: 'Maintain her current prednisolone dose indefinitely' }
+    ],
+    correctOption: 'C',
+    correctAnswerText: 'Gradually taper the prednisolone dose before discontinuation',
+    explanation: 'Prolonged administration of supraphysiologic exogenous glucocorticoids (>5 mg prednisolone equivalent for >3 weeks) suppresses the Hypothalamic-Pituitary-Adrenal (HPA) axis through negative feedback on CRH and ACTH secretion, resulting in secondary adrenocortical atrophy. Abrupt cessation of steroids precipitates acute secondary adrenal crisis (hypotension, nausea, vomiting, lethargy, vascular collapse) and sudden rebound flare of the underlying disease. A gradual steroid taper allows the atrophied adrenal cortex sufficient time (which may take weeks to months) to recover endogenous steroidogenic capacity.',
+    optionRationales: {
+      A: 'Abrupt cessation of long-term glucocorticoids is dangerous and precipitates life-threatening acute secondary adrenal insufficiency and severe disease rebound.',
+      B: 'Dexamethasone is a potent glucocorticoid that also suppresses the HPA axis; stopping after 2 days would still precipitate adrenal crisis.',
+      C: 'Correct. Any patient receiving systemic glucocorticoids for >3 weeks requires a gradual tapering schedule to allow HPA axis recovery and prevent adrenal crisis.',
+      D: 'Indefinite maintenance when disease is in remission unnecessarily exposes the patient to long-term glucocorticoid toxicity (osteoporosis, diabetes, infections, cataracts).'
+    },
+    keyTakeaway: 'Systemic corticosteroid therapy exceeding 3 weeks suppresses the HPA axis and must be gradually tapered to avoid life-threatening secondary adrenal crisis.',
+    sourcePageRef: '',
+    difficulty: 'High Yield',
+    tags: ['Steroid Tapering', 'HPA Axis Suppression', 'Adrenal Crisis', 'Rheumatoid Arthritis', 'Glucocorticoid Withdrawal']
   }
 ];
