@@ -64,8 +64,29 @@ export default function App() {
   const activeTopic = CLINICAL_TOPICS.find((t) => t.id === activeTopicId);
   const activeTopicBreakdown = activeTopicId ? stats.topicBreakdown[activeTopicId] : null;
 
+  // Next topic progression logic
+  const currentTopicId = activeTopicId || currentQuestion?.topicId;
+  const currentTopicIndex = CLINICAL_TOPICS.findIndex((t) => t.id === currentTopicId);
+  const nextTopic = currentTopicIndex >= 0 && currentTopicIndex < CLINICAL_TOPICS.length - 1 
+    ? CLINICAL_TOPICS[currentTopicIndex + 1] 
+    : null;
+
+  const currentTopicBreakdown = currentTopicId ? stats.topicBreakdown[currentTopicId] : null;
+  const isCurrentTopicCompleted = currentTopicBreakdown
+    ? currentTopicBreakdown.answered >= currentTopicBreakdown.total && currentTopicBreakdown.total > 0
+    : false;
+
   const handleReturnToTopics = () => {
     setActiveTab('directory');
+  };
+
+  const handleNextTopic = () => {
+    if (nextTopic) {
+      handleSelectTopic(nextTopic.id);
+      setActiveTab('practice');
+    } else {
+      setActiveTab('directory');
+    }
   };
 
   const handleNext = () => {
@@ -203,6 +224,11 @@ export default function App() {
                   onReturnToTopics={handleReturnToTopics}
                   hasPrevious={currentQuestionIndex > 0}
                   hasNext={currentQuestionIndex < filteredQuestions.length - 1}
+                  nextTopic={nextTopic}
+                  onNextTopic={handleNextTopic}
+                  isTopicCompleted={isCurrentTopicCompleted}
+                  topicScore={currentTopicBreakdown}
+                  currentTopicTitle={activeTopic?.title}
                 />
               ) : (
                 /* Empty state when filters return 0 questions */

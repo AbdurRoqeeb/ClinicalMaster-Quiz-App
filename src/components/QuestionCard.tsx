@@ -14,7 +14,10 @@ import {
   BookOpen, 
   HelpCircle,
   Stethoscope,
-  RotateCcw
+  RotateCcw,
+  ArrowRight,
+  Layers,
+  GraduationCap
 } from 'lucide-react';
 import { Question } from '../types';
 
@@ -35,6 +38,11 @@ interface QuestionCardProps {
   onReturnToTopics?: () => void;
   hasPrevious: boolean;
   hasNext: boolean;
+  nextTopic?: { id: string; title: string; questionCount: number; category?: string } | null;
+  onNextTopic?: () => void;
+  isTopicCompleted?: boolean;
+  topicScore?: { answered: number; total: number; correct: number } | null;
+  currentTopicTitle?: string;
 }
 
 export const QuestionCard: React.FC<QuestionCardProps> = ({
@@ -54,6 +62,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   onReturnToTopics,
   hasPrevious,
   hasNext,
+  nextTopic,
+  onNextTopic,
+  isTopicCompleted = false,
+  topicScore,
+  currentTopicTitle,
 }) => {
   const [showNoteEditor, setShowNoteEditor] = useState<boolean>(false);
   const [localNote, setLocalNote] = useState<string>(userNote || '');
@@ -403,6 +416,93 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                 </p>
               </div>
             </div>
+
+            {/* Topic Completion or Next Topic Progression Card */}
+            {(isTopicCompleted || !hasNext) && nextTopic && onNextTopic && (
+              <div 
+                id="topic-completion-card"
+                className="bg-emerald-50/70 border border-emerald-300/80 rounded-xs p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xs"
+              >
+                <div className="flex items-start gap-3.5">
+                  <div className="w-9 h-9 rounded-xs bg-emerald-600 text-white flex items-center justify-center shrink-0 shadow-xs mt-0.5">
+                    <CheckCircle2 className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="flex items-center flex-wrap gap-2">
+                      <span className="text-[10px] font-bold uppercase tracking-widest text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-none font-mono">
+                        {isTopicCompleted ? 'Topic Completed' : 'End of Topic Questions'}
+                      </span>
+                      {topicScore && topicScore.total > 0 && (
+                        <span className="text-[11px] font-bold text-emerald-950">
+                          Score: {topicScore.correct}/{topicScore.total} ({Math.round((topicScore.correct / topicScore.total) * 100)}%)
+                        </span>
+                      )}
+                    </div>
+                    <h4 className="text-sm font-bold text-slate-900 mt-1">
+                      Ready to advance to the next topic?
+                    </h4>
+                    <p className="text-xs text-slate-600 mt-0.5">
+                      Next Module: <strong className="text-slate-900">{nextTopic.title}</strong> ({nextTopic.questionCount} clinical scenarios)
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 w-full sm:w-auto shrink-0">
+                  {onReturnToTopics && (
+                    <button
+                      type="button"
+                      onClick={onReturnToTopics}
+                      className="px-3 py-2 bg-white hover:bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wider rounded-xs border border-slate-300 transition-colors cursor-pointer"
+                    >
+                      Directory
+                    </button>
+                  )}
+                  <button
+                    id="btn-move-to-next-topic"
+                    type="button"
+                    onClick={onNextTopic}
+                    className="flex-1 sm:flex-initial px-4 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold uppercase tracking-wider text-xs rounded-xs transition-all shadow-xs cursor-pointer flex items-center justify-center gap-2 group"
+                  >
+                    <span>Move to Next Topic</span>
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* All Topics Completed State */}
+            {(isTopicCompleted || !hasNext) && !nextTopic && onReturnToTopics && (
+              <div 
+                id="all-topics-completed-card"
+                className="bg-indigo-50/70 border border-indigo-200 rounded-xs p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 shadow-xs"
+              >
+                <div className="flex items-start gap-3.5">
+                  <div className="w-9 h-9 rounded-xs bg-indigo-600 text-white flex items-center justify-center shrink-0 shadow-xs mt-0.5">
+                    <GraduationCap className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-indigo-800 bg-indigo-100 px-2 py-0.5 rounded-none font-mono">
+                      Curriculum Complete
+                    </span>
+                    <h4 className="text-sm font-bold text-slate-900 mt-1">
+                      You have reviewed all 35 clinical medicine topics!
+                    </h4>
+                    <p className="text-xs text-slate-600 mt-0.5">
+                      Review your performance summary or test missed questions in the directory.
+                    </p>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={onReturnToTopics}
+                  className="w-full sm:w-auto px-4 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-bold uppercase tracking-wider text-xs rounded-xs transition-all shadow-xs cursor-pointer flex items-center justify-center gap-2"
+                >
+                  <span>Return to Topic Directory</span>
+                  <BookOpen className="w-4 h-4" />
+                </button>
+              </div>
+            )}
           </section>
         )}
       </div>
@@ -428,19 +528,37 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
           Keys: <kbd className="bg-slate-200 px-1 rounded-none text-slate-800">A-E</kbd> / <kbd className="bg-slate-200 px-1 rounded-none text-slate-800">1-5</kbd> select • <kbd className="bg-slate-200 px-1 rounded-none text-slate-800">←</kbd> <kbd className="bg-slate-200 px-1 rounded-none text-slate-800">→</kbd> nav
         </span>
 
-        <button
-          type="button"
-          onClick={onNextQuestion}
-          disabled={!hasNext}
-          className={`flex items-center gap-1.5 px-4 py-2 rounded-xs font-bold uppercase tracking-wider text-xs transition-colors cursor-pointer ${
-            hasNext
-              ? 'bg-slate-900 hover:bg-indigo-600 text-white shadow-xs'
-              : 'text-slate-400 bg-slate-100 border border-slate-200 cursor-not-allowed opacity-50'
-          }`}
-        >
-          <span>Next</span>
-          <ChevronRight className="w-4 h-4" />
-        </button>
+        {/* Next Question or Next Topic Button */}
+        {hasNext ? (
+          <button
+            type="button"
+            onClick={onNextQuestion}
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xs font-bold uppercase tracking-wider text-xs transition-colors cursor-pointer bg-slate-900 hover:bg-indigo-600 text-white shadow-xs"
+          >
+            <span>Next</span>
+            <ChevronRight className="w-4 h-4" />
+          </button>
+        ) : nextTopic && onNextTopic ? (
+          <button
+            id="next-topic-footer-btn"
+            type="button"
+            onClick={onNextTopic}
+            className="flex items-center gap-2 px-4 py-2 rounded-xs font-bold uppercase tracking-wider text-xs transition-all cursor-pointer bg-emerald-600 hover:bg-emerald-700 text-white shadow-xs group"
+          >
+            <span>Next Topic</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </button>
+        ) : (
+          <button
+            id="finish-curriculum-footer-btn"
+            type="button"
+            onClick={onReturnToTopics}
+            className="flex items-center gap-1.5 px-4 py-2 rounded-xs font-bold uppercase tracking-wider text-xs transition-colors cursor-pointer bg-slate-900 hover:bg-indigo-600 text-white shadow-xs"
+          >
+            <span>Topics Directory</span>
+            <BookOpen className="w-4 h-4" />
+          </button>
+        )}
       </div>
     </article>
   );
